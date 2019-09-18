@@ -1,0 +1,27 @@
+1.3 Fill in the blanks in each of the following statements (based on
+Section 1.8):
+a) Objects have the property of ___ — although objects may know how to
+communicate with one another across well-defined interfaces, they normally are
+not allowed to know how other objects are implemented.
+b) C++ programmers concentrate on creating ___, which contain data members and
+the member functions that manipulate those data members and provide services to
+clients.
+c) The process of analyzing and designing a system from an object-oriented
+point of view is called ___.
+d) With ___, new classes of objects ared erived by absorbing characteristics of
+existing classes, then adding unique characteristics of their own.
+e) ___ is a graphical language that allows people who design software systems
+to use an industry-standard notation to represent them.
+f) The size, shape, color and weight of an object are considered ___ of the
+object's class.
+
+********************************************************************************
+Resolved by: The book author
+********************************************************************************
+
+a) information hiding
+b) classes
+c) object-oriented analysis and design (OOAD)
+d) inheritance
+e) The Unified Modeling Language (UML)
+f) attributes

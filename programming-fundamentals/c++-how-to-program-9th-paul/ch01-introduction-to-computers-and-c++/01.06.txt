@@ -1,0 +1,13 @@
+1.6 Fill in the blanks in each of the following statements:
+a) C++ programs normally go through six phases — ___, ___, ___, ___, ___,
+and ___.
+b) A(n) ___ provides many tools that support the software development process,
+such as editors for writing and editing programs, debuggers for locating logic
+errors in programs, and many other features.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) edit, preprocess, compile, link, load, execute
+b) integrated development environments (IDE)

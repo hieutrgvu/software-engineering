@@ -1,0 +1,23 @@
+1.7 You're probably wearing on your wrist one of the world's most common types
+of objects — a watch. Discuss how each of the following terms and concepts
+applies to the notion of a watch: object, attributes, behaviors, class,
+inheritance (consider, for example, an alarm clock), modeling, messages,
+encapsulation, interface and information hiding.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Class: smart watch
++ Object: my smart watch - Garmin Vivomove HR
++ Attributes: time, color, style (digital or analog), heart rate, etc.
++ Behaviors: get time, set time, set alarm, get heart rate, etc.
++ Inheritance: inherit basic features from watch class, e.g. time, alarm
++ Messages: setting alarm sends an message to smart watch to perform a task
+which is notifying users when time's up
++ Interface: watch face and touch screen
++ Encapsulation: the mechanics, e.g. moving part, gear, etc., are encapsulated
+(hidden) inside the watch.
++ Information hiding: The user of the watch does not need to know the mechanics
+of the watch in order to use it; the user only needs to know that the watch
+keeps the proper time.

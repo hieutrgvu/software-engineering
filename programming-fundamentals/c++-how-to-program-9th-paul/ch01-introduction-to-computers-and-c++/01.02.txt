@@ -1,0 +1,17 @@
+1.2 Fill in the blanks in each of the following sentences about the C++
+environment.
+a) C++ programs are normally typed into a computer using a(n) ___ program.
+b) In a C++ system, a(n) ___ program executes before the compiler's translation
+phase begins.
+c) The ___ program combines the output of the compiler with various library
+functions to produce an executable program.
+d) The ___ program transfers the executable program from disk to memory.
+
+********************************************************************************
+Resolved by: The book author
+********************************************************************************
+
+a) editor
+b) preprocessor
+c) linker
+d) loader

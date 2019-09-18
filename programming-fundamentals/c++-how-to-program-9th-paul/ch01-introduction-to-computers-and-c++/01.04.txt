@@ -1,0 +1,32 @@
+1.4 Fill in the blanks in each of the following statements:
+a) The logical unit of the computer that receives information from outside the
+computer for use by the computer is the ___.
+b) The process of instructing the computer to solve a problem is called ___.
+c) ___ is a type of computer language that uses English-like abbreviations for
+machine-language instructions.
+d) ___ is a logical unit of the computer that sends information which has
+already been processed by the computer to various devices so that it may be
+used outside the computer.
+e) ___ and ___ are logical units of the computer that retain information.
+f) ___ is a logical unit of the computer that performs calculations.
+g) ___ is a logical unit of the computer that makes logical decisions.
+h) ___ languages are most convenient to the programmer for writing programs
+quickly and easily.
+i) The only language a computer can directly understand is that computer's ___.
+j) ___ is a logical unit of the computer that coordinates the activities of all
+the other logical units.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) input unit
+b) programming
+c) Assembly languages
+d) Output unit
+e) Memory unit, secondary storage unit
+f) Arithmetic unit
+g) Logic unit
+h) High-level
+i) machine language
+j) Central processing unit (CPU)

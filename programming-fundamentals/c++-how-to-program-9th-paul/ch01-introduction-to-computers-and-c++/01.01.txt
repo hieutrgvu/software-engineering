@@ -1,0 +1,26 @@
+1.1 Fill in the blanks in each of the following statements:
+a) Computers process data under the control of sets of instructions called ___.
+b) The key logical units of the computer are the ___, ___, ___, ___, ___,
+and ___.
+c) The three types of languages discussed in the chapter are ___, ___ and ___.
+d) The programs that translate high-level language programs into machine
+language are called ___.
+e) ___ is an operating system for mobile devices based on the Linux kernel
+and Java.
+f) ___ software is generally feature complete and (supposedly) bug free and
+ready for use by the community.
+g) The Wii Remote, as well as many smartphones, uses a(n) ___ which allows the
+device to respond to motion.
+
+********************************************************************************
+Resolved by: The book author
+********************************************************************************
+
+a) programs
+b) input unit, output unit, memory unit, central processing unit, arithmetic
+and logic unit, secondary storage unit
+c) machine languages, assembly languages, high-level languages
+d) compilers
+e) Android
+f) Release candidates
+g) accelerometer

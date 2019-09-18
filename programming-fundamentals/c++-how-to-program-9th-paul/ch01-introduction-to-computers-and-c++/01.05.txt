@@ -1,0 +1,12 @@
+1.5 Fill in the blanks in each of the following statements:
+a) ___ initially became widely known as the development language of the Unix
+operating system.
+b) The ___ programming language was developed by Bjarne Stroustrup in the early
+1980s at Bell Laboratories.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) C
+b) C++
