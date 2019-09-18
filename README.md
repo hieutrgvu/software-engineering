@@ -82,6 +82,15 @@ git push -u origin {contributorname} // for the first time
 git push origin {contributorname}    // after the first time
 ```
 
+An answer for an exercise should be devided into 3 parts: exercise, author, and
+answer.
++ The exercise section can be a block of comments in source files or just texts
+in text files.
++ The author section should have the format `Resolved by: {Contributor Name}`.
+This section must have at least a blank line after the exercise section and
+before the answer section.
++ The answer section depends to the contributors.
+
 ### Sharing knowledge by creating issue
 Each contributor can see the work of the others, so it is possible to make
 comments and discussion via a GitHub feature called "Opening An Issue". To know
