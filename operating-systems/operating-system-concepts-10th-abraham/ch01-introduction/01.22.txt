@@ -1,0 +1,10 @@
+1.22 Describe a mechanism for enforcing memory protection in order to prevent
+a program from modifying the memory associated with other programs.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Each process has its own address space, and the processor will keep track this
+information. Every memory access, the boundary must be checked to limit access
+to locations that are outside of a program’s extent.

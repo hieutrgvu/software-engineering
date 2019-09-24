@@ -1,0 +1,14 @@
+1.19 Rank the following storage systems from slowest to fastest:
+a. Hard-disk drives
+b. Registers
+c. Optical disk
+d. Main memory
+e. Nonvolatile memory
+f. Magnetic tapes
+g. Cache
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+f, c, a, e, d, g, b

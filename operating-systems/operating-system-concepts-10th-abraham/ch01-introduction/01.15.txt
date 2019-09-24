@@ -1,0 +1,16 @@
+1.15 Explain how the Linux kernel variables HZ and jiffies can be used to
+determine the number of seconds the system has been running since it was booted.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+On Linux systems, the kernel configuration parameter HZ specifies the frequency
+of timer interrupts. An HZ value of 250 means that the timer generates 250
+interrupts per second, or one interrupt every 4 milliseconds. The value of HZ
+depends upon how the kernel is configured, as well the machine type and
+architecture on which it is running. A related kernel variable is jiffies,
+which represent the number of timer interrupts that have occurred since the
+system was booted.
+
+Equation: t_second_from_running_to_booted = jiffies * 1 / HZ

@@ -1,0 +1,18 @@
+1.17 Some computer systems do not provide a privileged mode of operation in
+hardware. Is it possible to construct a secure operating system for these
+computer systems? Give arguments both that it is and that it is not possible.
+
+********************************************************************************
+Resolved by: http://www.uobabylon.edu.iq/eprints/publication_11_12805_1410.pdf
+********************************************************************************
+
+An operating system for a machine of this type would need to remain in control
+(or monitor mode) at all times. This could be accomplished by two methods:
+
++ Software interpretation of all user programs (like some BASIC, Java, and LISP
+systems, for example). The software interpreter would provide, in software, what
+the hardware does not provide.
+
++ Require meant that all programs be written in high-level languages so that all
+object code is compiler-produced. The compiler would generate (either in-line
+or by function calls) the protection checks that the hardware is missing.

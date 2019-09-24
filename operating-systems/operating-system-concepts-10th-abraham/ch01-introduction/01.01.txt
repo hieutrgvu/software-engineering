@@ -1,0 +1,11 @@
+1.1 What are the three main purposes of an operating system?
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
++ To provide an environment for users to execute programs on computer hardware
+in a convenient manner.
++ To control the execution of application software and I/O devices.
++ To manage system resources, allocate them to specific programs efficiently
+and fairly.

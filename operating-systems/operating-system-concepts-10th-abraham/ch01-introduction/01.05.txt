@@ -1,0 +1,20 @@
+1.5 How does the distinction between kernel mode and user mode function as a
+rudimentary form of protection (security)?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+A bit, called the mode bit, is added to the hardware of the computer to
+indicate the current mode: kernel (0) or user (1). With the mode bit, we can
+distinguish between a task that is executed on behalf of the operating system
+and one that is executed on behalf of the user.
+
+The dual mode of operation provides us with the means for protecting the
+operating system from errant users—and errant users from one another. We
+accomplish this protection by designating some of the machine instructions
+that may cause harm as privileged instructions. The hardware allows privileged
+instructions to be executed only in kernel mode. If an attempt is made to
+execute a privileged instruction in user mode, the hardware does not execute
+the instruction but rather treats it as illegal and traps it to the operating
+system

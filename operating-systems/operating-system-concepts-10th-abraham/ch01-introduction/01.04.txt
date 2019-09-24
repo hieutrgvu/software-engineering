@@ -1,0 +1,25 @@
+1.4 Keeping in mind the various definitions of operating system, consider
+whether the operating system should include applications such as web browsers
+and mail programs. Argue both that it should and that it should not, and support
+your answers.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Applications such as web browsers and email tools are performing an increasingly
+important role in modern desktop computer systems. To fulfill this role, they
+should be incorporated as part of the operating system. By doing so, they can
+provide better performance and better integration with the rest of the system.
+In addition, these important applications can have the same look-and-feel as the
+operating system software.
+
+A lesson from Microsoft: In 1998, the United States Department of Justice
+filed suit against Microsoft, in essence claiming that Microsoft included too
+much functionality in its operating systems and thus prevented application
+vendors from competing. (For example, a web browser was an integral part of
+Microsoft’s operating systems.) As a result, Microsoft was found guilty of using
+its operating-system monopoly to limit competition. Therefore, an operating
+system should be the minimal software that creates environment for and control
+user applications. If needed, users can install the extra tools like browsers,
+mail applications, etc.

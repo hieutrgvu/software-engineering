@@ -1,0 +1,20 @@
+1.21 Discuss, with examples, how the problem of maintaining coherence of cached
+data manifests itself in the following processing environments:
+a. Single-processor systems
+b. Multiprocessor systems
+c. Distributed systems
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. In single-processor systems, the memory needs to be updated when a processor
+issues updates to cached values. These updates can be performed immediately or
+in a lazy manner.
+
+b. In a multiprocessor system, different processors might be caching the same
+memory location in its local caches. When updates are made, the other cached
+locations need to be invalidated or updated.
+
+c. In distributed systems, consistency of cached memory values is not an issue.
+However, consistency problems might arise when a client caches file data.

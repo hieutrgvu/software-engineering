@@ -1,0 +1,15 @@
+1.8 Some CPUs provide for more than two modes of operation. What are two
+possible uses of these multiple modes?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ CPUs that support virtualization frequently have a separate mode to indicate
+when the virtual machine manager (VMM) is in control of the system. In this
+mode, the VMM has more privileges than user processes but fewer than the kernel.
+
++ Multiple modes could be used to provide a finer-grained security policy. For
+example, rather than distinguishing between just user and kernel mode, it could
+distinguish between different types of user mode. Perhaps users belonging to the
+same group could execute each other's code.

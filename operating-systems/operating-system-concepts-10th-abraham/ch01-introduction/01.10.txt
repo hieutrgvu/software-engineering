@@ -1,0 +1,19 @@
+1.10 Give two reasons why caches are useful. What problems do they solve? What
+ problems do they cause? If a cache can be made as large as the device for which
+it is caching (for instance, a cache as large as a disk), why not make it that
+large and eliminate the device?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Caches are useful because they can increase the speed of the average memory
+access, and they do so without taking up as much physical space as the lower
+elements of the memory hierarchy.
+
++ Caches solve the big speed gap between CPU and main memory.
+
++ Caches introduce the problems about (coherency and consistency assurance). The
+same data may appear in different levels of the storage system.
+
++ Caches are expensive and volatile memory.

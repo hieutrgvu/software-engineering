@@ -1,0 +1,22 @@
+1.27 Identify several advantages and several disadvantages of open-source
+operating systems. Identify the types of people who would find each aspect to
+be an advantage or a disadvantage.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Open-source operating systems have many people working on and debugging them.
+They are ease of access and distribution. Therefor, they enable students to use
+source code as a learning tool. They can modify programs and explore mature,
+full-featured operating systems, compilers, tools, user interfaces, and other
+types of programs. Another advantage of working with open-source operating
+systems is their diversity.
+
++ Some open source operating systems do not offer paid support programs. Some
+companies avoid open source projects because they need paid support, so that
+they have some entity to hold accountable if there is a problem or they need
+help fixing an issue. A lack of discipline in the coding of open source
+operating systems means that backward compatiblity is lacking making upgrades
+difficult, and that the frequent release cycle exacerbates these issues by
+forcing users to upgrade frequently.

@@ -1,0 +1,14 @@
+1.25 What are some advantages of peer-to-peer systems over client – server
+systems?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Peer-to-peer is useful because services are distributed across a collection of
+peers, rather than having a single, centralized server. Peer-to-peer provides
+fault tolerance and redundancy. Also, because peers constantly migrate, they can
+provide a level of security over a server that always exists at a known location
+on the Internet. Peer-to-peer systems can also potentially provide higher
+network bandwidth because you can collectively use all the bandwidth of peers,
+rather than the single bandwidth that is available to a single server.

@@ -1,0 +1,16 @@
+1.6 Which of the following instructions should be privileged?
+a. Set value of timer.
+b. Read the clock.
+c. Clear memory.
+d. Issue a trap instruction.
+e. Turn off interrupts.
+f. Modify entries in device-status table.
+g. Switch from user to kernel mode.
+h. Access I/O device.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The instructions should be privileged: a, c, e, f, h.
+The rest can be performed in user mode.

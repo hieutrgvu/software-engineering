@@ -1,0 +1,16 @@
+1.18 Many SMP systems have different levels of caches; one level is local to
+each processing core, and another level is shared among all processing cores.
+Why are caching systems designed this way?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The benefit is that many processes can run simultaneously, N processes can run
+if there are N CPUs, without causing performance to deteriorate significantly.
+However, since the CPUs are separate, one may be sitting idle while another is
+overloaded, resulting in inefficiencies. These inefficiencies can be avoided if
+the processors share certain data structures. A multiprocessor system of this
+form will allow processes and resources—such as memory—to be shared dynamically
+among the various processors and can lower the workload variance among the
+processors.

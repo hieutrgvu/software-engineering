@@ -1,0 +1,27 @@
+1.16 Direct memory access is used for high-speed I/O devices in order to avoid
+increasing the CPU’s execution load.
+a. How does the CPU interface with the device to coordinate the transfer?
+b. How does the CPU know when the memory operations are complete?
+c. The CPU is allowed to execute other programs while the DMA controller is
+transferring data. Does this process interfere with the execution of the user
+programs? If so, describe what forms of interference are caused.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. The CPU can initiate a DMA operation by writing values into special
+registers that can be independently accessed by the device. After setting up
+buffers, pointers, and counters for the I/O device, the device controller
+transfers an entire block of data directly to or from the device and main
+memory, with no intervention by the CPU.
+
+b. Only one interrupt is generated per block, to tell the device driver that
+the operation has completed, rather than the one interrupt per byte generated
+for low-speed devices.
+
+c. Both the device and the CPU can be accessing memory simultaneously. The
+memory controller provides access to the memory bus in a fair manner to these
+two entities. A CPU might therefore be unable to issue memory operations at
+peak speeds since it has to compete with the device in order to obtain access
+to the memory bus.

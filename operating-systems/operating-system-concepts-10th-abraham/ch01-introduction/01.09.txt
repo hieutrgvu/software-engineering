@@ -1,0 +1,12 @@
+1.9 Timers could be used to compute the current time. Provide a short
+description of how this could be accomplished.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+It can based on the number of timer interrupts and the period between two
+interrupts. A timer can be set to interrupt the computer after a period, which
+can be either fixed or variable. A variable timer is generally implemented by a
+fixed-rate clock and a counter. Therefore, the interval between two interrupts
+is a specific number.

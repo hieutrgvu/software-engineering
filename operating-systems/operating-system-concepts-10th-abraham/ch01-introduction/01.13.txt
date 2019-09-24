@@ -1,0 +1,22 @@
+1.13 Consider a computing cluster consisting of two nodes running a database.
+Describe two ways in which the cluster software can manage access to the data
+on the disk. Discuss the benefits and disadvantages of each.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Clustering can be structured asymmetrically or symmetrically.
+
++ In asymmetric clustering, one machine is in hot-standby mode while the other
+is running the applications. The hot-standby host machine does nothing but
+monitor the active server. If that server fails, the hot-standby host becomes
+the active server. This is appropriate for providing redundancy.However, it does
+not utilize the potential processing power of both hosts.
+
++ In symmetric clustering, two or more hosts are running applications and are
+monitoring each other. This structure is obviously more efficient, as it uses
+all of the available hardware. However, it does require that more than one
+application be available to run. The difficulty implementing parallel clusters
+is providing some form of distributed locking mechanism for files on the
+shared disk.

@@ -1,0 +1,14 @@
+1.24 Describe some of the challenges of designing operating systems for mobile
+devices compared with designing operating systems for traditional PCs.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Compared to desktop and laptop computers, mobile systems gave up screen size,
+memory capacity, and overall functionality in return for handheld mobile access
+to services such as e-mail and web browsing. The memory capacity and processing
+speed of mobile devices are more limited than those of PCs. Because power
+consumption is such a concern, mobile devices often use processors that are
+smaller, are slower, and offer fewer processing cores than processors found on
+traditional desktop and laptop computers.

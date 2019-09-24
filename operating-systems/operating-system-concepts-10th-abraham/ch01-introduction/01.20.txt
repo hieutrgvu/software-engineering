@@ -1,0 +1,11 @@
+1.20 Consider an SMP system similar to the one shown in Figure 1.8. Illustrate
+with an example how data residing in memory could in fact have a different value
+in each of the local caches.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Both processor 1 and 2 load A with the value 10 from main memory into their
+local caches. Then, processor 1 increases A by 5. However, since A resides in
+local cache of processor 1, the update does not occur in that of processor 2.

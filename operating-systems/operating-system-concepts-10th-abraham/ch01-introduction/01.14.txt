@@ -1,0 +1,16 @@
+1.14 What is the purpose of interrupts? How does an interrupt differ from a
+trap? Can traps be generated intentionally by a user program? If so, for what
+purpose?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ An interrupt is a hardware-generated. A hardware device triggers an
+interrupt by sending a signal to the CPU to alert the CPU that some event
+requires attention. The interrupt is managed by the interrupt handler.
+
++ A trap is a software-generated interrupt caused either by an error (for
+example, division by zero or invalid memory access) or by a specific request
+from a user program that an operating-system service be performed by executing
+a special operation called a system call.

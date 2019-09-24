@@ -1,0 +1,11 @@
+1.2 We have stressed the need for an operating system to make efficient use
+of the computing hardware. When is it appropriate for the operating system to
+forsake this principle and to "waste" resources? Why is such a system not
+really wasteful?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Single-user systems should maximize use of the system for the user. A GUI might
+"waste" CPU cycles, but it optimizes the user's interaction with the system.

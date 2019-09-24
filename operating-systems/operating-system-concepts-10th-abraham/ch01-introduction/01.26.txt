@@ -1,0 +1,12 @@
+1.26 Describe some distributed applications that would be appropriate for a
+peer-to-peer system.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+One of the distributed application is file sharing, for example: BitTorrent. A
+file is devided into blocks. A downloader, a peer, will specify which ones
+need to be pull and find them on other peers. Each peer can be a client or a
+server, so the bandwidth is used efficiently. There are no bottle neck like the
+client-server model.

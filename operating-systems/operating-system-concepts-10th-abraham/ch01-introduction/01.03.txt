@@ -1,0 +1,12 @@
+1.3 What is the main difficulty that a programmer must overcome in writing an
+operating system for a real-time environment?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The main difficulty is that a real-time system has well-defined, fixed time
+constraints. Processing must be done within the defined constraints, or the
+system will fail. Therefore, when writing an operating system for a real-time
+system, the writers must be sure that their scheduling schemes do not allow
+response time to exceed the time constraint.
