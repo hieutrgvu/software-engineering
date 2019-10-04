@@ -1,0 +1,13 @@
+5.6 What advantage is there in having different time-quantum sizes at different
+levels of a multilevel queueing system?
+
+********************************************************************************
+Resolved by: web.engr.oregonstate.edu
+********************************************************************************
+
+Processes which need more frequent servicing, such as interactive processes,
+can be in a queue with a small quantum.
+
+Processes that are computationally intensive can be in a queue with a larger
+quantum, requiring fewer context switches to complete the processing, making
+more efficient use of the CPU.

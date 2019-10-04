@@ -1,0 +1,12 @@
+5.8 Suppose that a CPU scheduling algorithm favors those processes that have
+used the least processor time in the recent past. Why will this algorithm favor
+I/O-bound programs and yet not permanently starve CPU-bound programs?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+I/O-bound programs have large amount of I/O burst but only have relative small
+CPU burst. Therefore, this CPU schduling algorithm favors these I/O-bound
+programs. Due to using a short time on CPU, these progroms spend almost time
+waiting I/O operations, and this does not starve CPU-bound programs.

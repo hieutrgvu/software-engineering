@@ -1,0 +1,33 @@
+5.7 Many CPU-scheduling algorithms are parameterized. For example, the RR
+algorithm requires a parameter to indicate the time slice. Multilevel feedback
+queues require parameters to define the number of queues, the scheduling
+algorithms for each queue, the criteria used to move processes between queues,
+and so on.
+
+These algorithms are thus really sets of algorithms (for example, the set of RR
+algorithms for all time slices, and so on). One set of algorithms may include
+another (for example, the FCFS algorithm is the RR algorithm with an infinite
+time quantum). What (if any) relation holds between the following pairs of
+algorithm sets?
+
+a. Priority and SJF
+b. Multilevel feedback queues and FCFS
+c. Priority and FCFS
+d. RR and SJF
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. The SJF algorithm is a special case of the general priority-scheduling
+algorithm. The priority can be internal, e.g. time limits, memory and ratio
+between I/O burst versus CPU burst, or external, e.g. the importance of the
+process. An SJF algorithm is simply a priority algorithm where the priority is
+the inverse of the (predicted) next CPU burst.
+
+b. The lowest level of MLFQ is FCFS.
+
+c. FCFS gives the highest priority to the job having been in existence the
+longest.
+
+d. None.

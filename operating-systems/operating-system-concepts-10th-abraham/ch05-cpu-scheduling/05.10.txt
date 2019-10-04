@@ -1,0 +1,28 @@
+5.10 The traditional UNIX scheduler enforces an inverse relationship between
+priority numbers and priorities: the higher the number, the lower the priority.
+The scheduler recalculates process priorities once per second using the
+following function:
+
+        Priority = (recent CPU usage / 2) + base
+
+where base = 60 and recent CPU usage refers to a value indicating how often a
+process has used the CPU since priorities were last recalculated.
+
+Assume that recent CPU usage for process P1 is 40, for process P2 is 18, and for
+process P3 is 10. What will be the new priorities for these three processes when
+priorities are recalculated? Based on this information, does the traditional
+UNIX scheduler raise or lower the relative priority of a CPU-bound process?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+   | New priority
+---|-----------------
+P1 | 40 / 2 + 60 = 80
+P2 | 18 / 2 + 60 = 69
+P3 | 10 / 2 + 60 = 65
+
+The scheduler lowers the relative priority of CPU-bound processes. The recent
+CPU usage in priority eqution is devided by 2, which means the more CPU burst
+is, the larger amount of priority decreases.

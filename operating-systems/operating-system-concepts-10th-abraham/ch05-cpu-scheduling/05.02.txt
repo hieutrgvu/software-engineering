@@ -1,0 +1,14 @@
+5.2 Explain the difference between preemptive and nonpreemptive scheduling.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Under nonpreemptive scheduling, once the CPU has been allocated to a process,
+the process keeps the CPU until it releases it either by terminating or by
+switching to the waiting state.
+
+Preempty scheduling not only takes place when a task terminates or switches to
+waiting state, but also when a task switches from running or waiting to ready
+state. That means it will preempt if the priority of the newly arrived process
+is higher than the priority of the currently running process.

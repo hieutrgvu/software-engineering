@@ -1,0 +1,11 @@
+5.1 A CPU-scheduling algorithm determines an order for the execution of its
+scheduled processes. Given n processes to be scheduled on one processor, how
+many different schedules are possible? Give a formula in terms of n.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The CPU scheduler can choose 1 process among n, n-1, n-2, ..., 1 processe(s) in
+the first, second, third, etc. and the last time. So the different schedules
+are n! (n factorial = n x (n-1) x (n-2) x ... x 1).

@@ -1,0 +1,72 @@
+5.5 The following processes are being scheduled using a preemptive, round-robin
+scheduling algorithm.
+
+        Process         Priority        Burst         Arrival
+        -------         --------        -----         -------
+          P1               40            20               0
+          P2               30            25              25
+          P3               30            25              30
+          P4               35            15              60
+          P5                5            10             100
+          P6               10            10             105
+
+Each process is assigned a numerical priority, with a higher number indicating
+a higher relative priority. In addition to the processes listed below, the
+system also has an indle task (which consumes no CPU resources and is identified
+as P_idle). This task has priority 0 and is scheduled whenever the system has
+no other available processes to run. The length of a time quantum is 10 units.
+If a process is preempted by a higher-priority process, the preempted process
+is placed at the end of the queue.
+
+a. Show the scheduling order of the processes using a Gantt chart.
+b. What is the turnaround time for each process?
+c. What is the waiting time for each process?
+d. What is the CPU utilization rate?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. (P_idle == Pi)
+
+0     10    20 25    35    45    55 60    70 75 80    90   100 105  115 120
++-----+-----+--+-----+-----+-----+--+-----+--+--+-----+-----+--+-----+--+
+  P1    P1   Pi  P2    P3    P2   P3  P4   P4 P2  P3    Pi   P5  P6   P5
+
+
+Notation for the below table: Queue is the list of items which have the format
+<process>:<priority>,<remaining burst>
+
+Time  | 0        | 20       | 25       | 35       | 45       | 55       |
+------|----------|----------|----------|----------|----------|----------|
+Queue | P1:40,20 | P_idle   | P2:30,25 | P3:30,25 | P2:30,15 | P3:30,15 |
+      | P_idle   |          |          | P2:30,15 | P3:30,15 | P2:30,5  |
+
+Time  | 60       | 75       | 80       | 90       | 100      | 105      |
+------|----------|----------|----------|----------|----------|----------|
+Queue | P4:35,15 | P2:30,5  | P3:30,10 | P_idle   | P5:5,10  | P6:10,10 |
+      | P2:30,5  | P3:30,10 |          |          |          | P5:5,5   |
+      | P3:30,10 |          |          |          |          |          |
+
+Time  | 115      | 120      |
+------|----------|----------|
+Queue | P5:5,5   | P_idle   |
+
+b. Turnaround time = end time - arrival time
+P1: 20  -   0 = 20
+P2: 80  -  25 = 55
+P3: 90  -  30 = 60
+P4: 75  -  60 = 15
+P5: 120 - 100 = 20
+P6: 115 - 105 = 10
+
+c. Waiting time = turnaround time - burst
+P1: 20 - 20 =  0
+P2: 55 - 25 = 30
+P3: 60 - 25 = 35
+P4: 15 - 15 =  0
+P5: 20 - 10 = 10
+P6: 10 - 10 =  0
+
+d. CPU ultilization rate = 1 - t_P_idle / total_time
+(1 - 15 / 120) = 87.5%
