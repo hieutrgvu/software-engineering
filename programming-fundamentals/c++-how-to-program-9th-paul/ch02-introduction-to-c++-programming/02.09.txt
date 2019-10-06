@@ -1,0 +1,17 @@
+2.9 Write a single C++ statement or line that accomplishes each of the
+following:
+a) Print the message "Enter two numbers".
+b) Assign the product of variables b and c to variable a.
+c) State that a program performs a payroll calculation (i.e., use text that
+helps to document a program).
+d) Input three integer values from the keyboard into integer variables a, b
+and c.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) std::cout << "Enter two numbers";
+b) a = b * c;
+c) // Payroll calculation program
+d) std::cin >> a >> b >> c;

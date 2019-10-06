@@ -1,0 +1,14 @@
+2.15 (Order of Evalution) State the order of evaluation of the operators in each
+of the following C++ statements and show the value of x after each statement is
+performed.
+a) x = 7 + 3 * 6 / 2 - 1;
+b) x = 2 % 2 + 2 * 2 - 2 / 2;
+c) x = ( 3 * 9 * ( 3 + ( 9 * 3 / ( 3 ) ) ) );
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) *, /, +, -, =, 15.
+b) %, *, /, +, -, =, 3.
+c) *, /, +, *, *, =, 324.

@@ -1,0 +1,15 @@
+2.7 Discuss the meaning of each of the following objects:
+a) std::cin
+b) std::cout
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) The input stream object std::cin — normally connected to the keyboard — is
+used to input data. Multiple data items can be input by concatenating stream
+extraction (>>) operators.
+
+b) The output stream object std::cout — normally connected to the screen — is
+used to output data. Multiple data items can be output by concatenating stream
+insertion (<<) operators.

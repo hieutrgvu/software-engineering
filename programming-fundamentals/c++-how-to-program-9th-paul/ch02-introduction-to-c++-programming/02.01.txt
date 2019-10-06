@@ -1,0 +1,17 @@
+2.1 Fill in the blanks in each of the following.
+a) Every C++ program begins execution at the function ___.
+b) A(n) ___ begins the body of every function and a(n) ___ ends the body.
+c) Every C++ statement ends with a(n) ___.
+d) The escape sequence \n represents the ___ character, which causes the cursor
+to position to the beginning of the next line on the screen.
+e) The ___ statement is used to make decisions.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) main.
+b) left brace ({), right brace (}).
+c) semicolon (;).
+d) newline.
+e) if.

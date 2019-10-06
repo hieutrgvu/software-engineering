@@ -1,0 +1,12 @@
+2.13 Which of the following C++ statements contain variables whose values are
+replaced?
+a) cin >> b >> c >> d >> e >> f;
+b) p = i + j + k + 7;
+c) cout << "variables whose values are replaced";
+d) cout << "a = 5";
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) and b)

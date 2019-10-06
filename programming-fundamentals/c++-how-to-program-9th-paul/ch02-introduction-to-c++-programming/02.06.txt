@@ -1,0 +1,22 @@
+2.6 Identify and correct the errors in each of the following statements (assume
+that the statement using std::cout; is used):
+a)  if(c<7);
+      cout << "c is less than 7\n";
+b)  if ( c => 7 )
+      cout << "c is equal to or greater than 7\n";
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a)
+Logical error: Semicolon after the right parenthesis of the condition in the
+if statement.
+Correction: Remove the semicolon after the right parenthesis.
+Note: The semicolon after the right parenthesis is a null (or empty) statement
+that does nothing. The output statement executes whether or not the condition in
+the if statement is true.
+
+b)
+Syntax error: =>
+Correction: Replace => by >=

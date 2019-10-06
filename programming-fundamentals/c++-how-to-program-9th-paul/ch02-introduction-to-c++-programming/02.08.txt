@@ -1,0 +1,16 @@
+2.8 Fill in the blanks in each of the following:
+a) ___ are used to document a program and improve its readability.
+b) The object used to print information on the screen is ___.
+c) A C++ statement that makes a decision is ___.
+d) Most calculations are normally performed by ___ statements.
+e) The ___ object inputs values from the keyboard.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) Comments.
+b) std::cout.
+c) if.
+d) assignment.
+e) std::cin.
