@@ -32,7 +32,7 @@ sub-folder    │        └── python-crash-course-2nd-eric
 The answers for exercises are located at their **chapter folders**, which
 belongs to a specific **sub-folder**. There are 3 answer types:
 + `.txt` contains only text.
-+ `.{source-type}` is a single source file, e.g. `.c`, `.cpp`, `.py`, etc.
++ `.{source-type}` is a single source file, e.g. `.c`, `.cc`, `.py`, etc.
 + `folder` contains multiple files to solve an exercise.
 
 The **chapter folder** are named as `ch{xx}-{title}`. The name of an **answer
@@ -47,9 +47,9 @@ data-strutures-and-algorithm-analysis-3rd-clifford
 │   ├── 01.01.txt
 │   ├── 01.02
 │   │   ├── header.h
-│   │   └── source.cpp
+│   │   └── source.cc
 │   ├── 01.03.c
-│   └── 01.04.cpp
+│   └── 01.04.cc
 │
 ├── ch02-mathematical-preliminaries
 └── ch03-algorithm-analysis
@@ -119,7 +119,7 @@ programmers." (GeeksforGeeks)
 For text file, maximum line length should be 80 characters. The source files
 will follow a coding standard if they belong to one of the below guidelines:
 
-| Language | Guideline |
-| --- | --- |
-| C++ | <https://google.github.io/styleguide/cppguide.html> |
-| Python | <https://google.github.io/styleguide/pyguide.html> |
+| Language | Guideline                                           |
+| -------- | --------------------------------------------------- |
+| C++      | <https://google.github.io/styleguide/cppguide.html> |
+| Python   | <https://google.github.io/styleguide/pyguide.html>  |
