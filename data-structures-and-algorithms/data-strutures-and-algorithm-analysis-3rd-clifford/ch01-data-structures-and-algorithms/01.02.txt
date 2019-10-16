@@ -1,0 +1,25 @@
+1.2 Most programming languages have a built-in integer data type. Normally
+this representation has a fixed size, thus placing a limit on how large a value
+can be stored in an integer variable. Describe a representation for integers
+that has no size restriction (other than the limits of the computer's variable
+main memory), and thus no practical limit on how large an integer can be stored.
+Briefly show how your representation can be used to implement the operations of
+addition, multiplication, and exponentiation.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The equation of an integer in base-10 with a[i] from 0 to 9
+    x = a[0]*10^0 + a[1]*10^1 + ... + a[n]*10^n
+
+The no limit integer data type can be defined as a list of nodes a[i]*10^i.
+If the current number of nodes cannot contain the value, adds more nodes.
+
+For addition operation, it will add the 1st, 2nd, ... of the first variable with
+1st, 2nd, ... of the second variable corresponding. If the value of a node is
+larger than 9, it will turn back from 0 and add 1 to the next node. If the next
+node does not exist, create a new node.
+
+Multiplication operation can be performed by repeated addition operation, and
+exponentiation can be performed by repeated multiplication.

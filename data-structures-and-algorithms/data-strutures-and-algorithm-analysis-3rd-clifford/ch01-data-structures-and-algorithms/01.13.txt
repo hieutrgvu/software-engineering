@@ -1,0 +1,13 @@
+1.13 Imagine that you are given an array of records that is sorted with respect
+to some key field contained in each record. Give two different algorithms for
+searching the array to find the record with a specified key value. Which one do
+you consider "better" and why?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Two different algorithms can be used is sequential or binary search. In many
+cases, the binary search may better than sequential search. After a no-match
+comparison, the binary search will eliminate a half of search list. Meanwhile,
+the sequential only eliminate one element of search list.

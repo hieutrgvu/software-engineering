@@ -1,0 +1,17 @@
+1.20 An unsorted list allows for constant-time insert by adding a new element at
+the end of the list. Unfortunately, searching for the element with key value X
+requires a sequential search through the unsorted list until X is found, which
+on average requires looking at half the list element. On the other hand, a
+sorted array-based list of n elements can be searched in log(n) time with a
+binary search. Unfortunately, inserting a new element requires a lot of time
+because many elements might be shifted in the array if we want to keep it
+sorted. How might data be organized to support both insertion and search in
+log(n) time?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+It should be organized as a binary tree, in which each node can contains two
+sub-node (children). It is also a sorted tree, so that searching can be log(n)
+time. For insertion, it just modifies some node pointers, not all the array.

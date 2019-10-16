@@ -1,0 +1,26 @@
+1.6 Define an ADT for a two-dimensional array of integers. Specify precisely
+the basic operations that can be performed on such arrays. Next, imagine
+an application that stores an array with 1000 rows and 1000 columns, where
+less than 10.000 of the array values are non-zero. Describe two different
+implementations for such arrays that would be more space efficient than a
+standard two-dimensional array implementation requiring one million positions.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+A two-dimensional array of integers should have the following functionalities:
++ Insert an integer at 2D-index
++ Delete an integer at 2D-index
++ Get an integer at 2D-index
++ Find the first position of an number
++ Count the occurrence of an number
+
+One efficient implementation of the 1000 by 1000 array would be to allocate
+memory to the member integers based on their value, i.e., before adding a number
+to the array, check whether it's non-zero or zero. If it's zero, assign a single
+bit to it within the array, otherwise assign the standard integer bit-size for
+the number. That way we save space.
+
+Another implementation is to assume all undefined array members as 0 and only
+the assigned members are stored in memory.

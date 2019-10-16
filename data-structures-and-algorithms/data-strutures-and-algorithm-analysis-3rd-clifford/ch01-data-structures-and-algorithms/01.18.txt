@@ -1,0 +1,16 @@
+1.18 How would you sort an array of about 1000 integers from lowest value to
+highest value? Write down at least five approaches to sorting the array. Do not
+write algorithms in C++ or pseudocode. Just write a sentence or two for each
+approach to describe how it would work.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+1. Selection sort: Choose the min number, the next min number, ...
+2. Bubble sort: Start from the first invoice, if its number is larger than the
+next invoice's number, swap them.
+3. Insertion sort: Pick array[0], [1], ... and place each of them into the
+new array but in correct order.
+4. Shellsort
+5. Quicksort

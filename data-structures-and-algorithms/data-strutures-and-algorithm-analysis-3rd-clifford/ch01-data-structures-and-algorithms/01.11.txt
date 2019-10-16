@@ -1,0 +1,20 @@
+1.11 Consider the design for a spelling checker program meant to run on a home
+computer. The spelling checker should be able to handle quickly a document of
+less than twenty pages. Assume that the spelling checker comes with a dictionary
+of about 20.000 words. What primitive operations must be implemented on the
+dictionary, and what is a reasonable time constraint for each operation?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The primitive operation that must be implemented is search function:
+    // Return 0 if found, otherwise -1
+    int Search (string str) { }
+
+Assume a page has 500 words, so 20 pages have 10.000 words. The maximum number
+of comparison with sequential search is 10.000 * 20.000 = 200.000.000.
+
+Assume a comparison take 1us, so the total time is 200s. This is unacceptable.
+The time constraint should be less than 3s. This can be achieved by reducing
+comparison time and comparison number.

@@ -1,0 +1,11 @@
+1.10 Does every algorithm have a C++ program?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+If the algorithm is composed of concrete steps that can be performed by a
+computer, it can be expressed in C++ program. In particular, if an algorithm
+can be expressed in any other computer programming language, then it can be
+expressed in Java, since all computer programming languages compute the same
+set of functions.

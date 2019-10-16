@@ -1,0 +1,25 @@
+1.5 Briefly describe how integer variables are typically represented on a
+computer. (Look up one's complement and two's complement arithmetic in an
+introductory computer science textbook if you are not familiar with these.)
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Integers are typically stored as an array of bits in a computer's memory. The
+signed integers (i.e., the ones which have positive or negative values) have
+their "leftmost" bit as the sign bit - when it's 0 - the integer is positive,
+otherwise negative. The unsigned integers don't have this sign bit, so for the
+same allocated space, an unsigned representation can store a "bigger" value
+than a signed one.
+
+For the Binary number (base-2) system, there are two types of complements:
++ 1's complement - simply invert the given number.
++ 2's complement - calculate 1's complement and add 1 to the LSB.
+
+Signed numbers generally use 2's complement representation. Positive values are
+stored as it is and negative values are stored in their 2's complement form.
+
+This representation for integers qualifies as a data structure because it's
+implementing an ADT of integers - in terms of a type and a set of operations on
+that type.

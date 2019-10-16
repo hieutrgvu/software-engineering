@@ -1,0 +1,11 @@
+1.1 Think of a program you have used that is unacceptably slow. Identify the
+specific operations that make the program slow. Identify other basic operations
+that the program performs quickly enough.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+I use "Preview" application on macOS frequently. Each time I edit a large file
+with hundreds of pages, the program runs very slow or even hangs. However,
+text search tool works wonderful for a single word or a group of word searching.

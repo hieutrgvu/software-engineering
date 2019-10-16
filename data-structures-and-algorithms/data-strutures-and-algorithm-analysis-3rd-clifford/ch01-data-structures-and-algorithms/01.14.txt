@@ -1,0 +1,21 @@
+1.14 How would you go about comparing two proposed algorithms for sorting an
+array of integers? In particular,
+(a) What would be appropriate measures of cost to use as a basis for comparing
+the two sorting algorithms?
+(b) What tests or analysis would you conduct to determine how the two
+algorithms perform under these cost measures?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The cost of a solution is the amount of resources that the solution consumes.
+A solution is said to be efficient if it solves the problem within the required
+resource constraints. A solution is sometimes said to be efficient if it
+requires fewer resources than known alternatives, regardless of whether it
+meets any particular requirements.
+
+(a) space and time
+(b) Given a set of data:
++ Space: Calculate how many memory is used.
++ Time: Choose the operations taking major jobs and calculate their iteration.

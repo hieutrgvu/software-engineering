@@ -1,0 +1,23 @@
+1.16 A graph consists of a set of objects (called vertices) and a set of edges,
+where each edge connects two vertices. Any given pair of vertices can be
+connected by only one edge. Describe at least two different ways to represent
+the connections defined by the vertices and edges of a graph.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+1. Establish a square matrix (2-dimensional array), in which the number of rows
+and columns are equal to the number of vertices. If Matrix[i,j] = 1, i and j are
+connected by one edge. For example, there are three vertices A, B, C, and one
+edge AC:
+              | A | B | C
+            A | 0 | 0 | 1
+            B | 0 | 0 | 0
+            C | 1 | 0 | 0
+
+2. Make list of connected vertices for each vertex. For example, there are three
+vertices A, B, C and two edges AB, AC:
+            A: B, C
+            B: A
+            C: A

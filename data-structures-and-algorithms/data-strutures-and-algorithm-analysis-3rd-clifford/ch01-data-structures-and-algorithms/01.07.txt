@@ -1,0 +1,15 @@
+1.7 Imagine that you have been assigned to implement a sorting program. The goal
+is to make this program general purpose, in that you don't want to define in
+advance what record or key types are used. Describe ways to generalize a simple
+sorting algorithm (such as insertion sort, or any other sort you are familiar
+with) to support this generalization.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+All sorting functions require the objects to compare and the comparing operator
+for this object type. In C++, we can use template to represent an undetermined
+type (or class), and implement a comparing function for 2 objects. The sorting
+functions do not need to know how two objects are compared. They just need to
+know which object is "larger".

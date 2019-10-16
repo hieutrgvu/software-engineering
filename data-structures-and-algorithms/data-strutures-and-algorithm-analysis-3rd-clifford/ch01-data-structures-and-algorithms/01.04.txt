@@ -1,0 +1,28 @@
+1.4 Define an ADT for a list of integers. First, decide what functionality
+your ADT should provide. Example 1.4 should give you some ideas. Then, specify
+your ADT in C++ in the form of an abstract class declaration, showing the
+functions, their parameters, and their return types.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+An ADT for a list of integers might specify the following operations:
++ Insert a new integer at a particular position in the list.
++ Reinitialize the list.
++ Find a number and return it's position (-1 if not found).
++ Return true if the list is empty.
++ Return the number of integers currently in the list.
++ Delete the integer at a particular position in the list.
+
+class IntList {
+  public:
+    void Insert(int num, int pos) { }
+    void Reinitialize(void) { }
+    int Find(int num) { }
+    bool IsEmpty(void) { }
+    int Size(void) { }
+    void Delete(int pos) { }
+
+    IntList(void) { }
+}

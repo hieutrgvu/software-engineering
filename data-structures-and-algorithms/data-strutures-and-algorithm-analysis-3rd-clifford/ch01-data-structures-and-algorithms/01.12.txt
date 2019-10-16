@@ -1,0 +1,11 @@
+1.12 Imagine that you have been hired to design a database service containing
+information about cities and towns in the United States, as described in
+Example 1.2. Suggest two possible implementations for the database.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+It depends on what operations will be performed on this database. If it supports
+range queries, B+ tree or R+ tree can be used. If it only supports exact-match
+queries, hash table can be used.

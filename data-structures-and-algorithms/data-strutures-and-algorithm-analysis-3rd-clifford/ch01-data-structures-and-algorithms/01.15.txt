@@ -1,0 +1,51 @@
+1.15 A common problem for compilers and text editors is to determine if the
+parentheses (or other brackets) in a string are balanced and properly nested.
+For example, the string “((())())()” contains properly nested pairs of
+parentheses, but the string “)()(” does not; and the string “())” does not
+contain properly matching parentheses.
+(a) Give an algorithm that returns true if a string contains properly nested and
+balanced parentheses, and false if otherwise. Hint: At no time while scanning a
+legal string from left to right will you have encountered more right parentheses
+than left parentheses.
+(b) Give an algorithm that returns the position in the string of the first
+offending parenthesis if the string is not properly nested and balanced. That
+is, if an excess right parenthesis is found, return its position; if there are
+too many left parentheses, return the position of the first excess left
+parenthesis. Return −1 if the string is properly balanced and nested.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+(a)
+Algorithm IsNestedParentheses(string str)
+Return: true if the input string contains nested parentheses, otherwise false
+
+sum = 0
+for each character c of str
+    if c == '(' then sum = sum + 1
+    if c == ')' then sum = sum - 1
+    if sum < 0 then break
+
+if sum != 0 then return true
+else return false
+
+(b)
+Algorithm FindFirstOffendingParenthesis(string str)
+Return: if an excess right parenthesis is found, return its position; if there
+are too many left parentheses, return the position of the first excess left
+parenthesis. Return −1 if the string is properly balanced and nested.
+
+create an empty stack
+
+for each character c of str
+    if c == '(' then push the current index to stack
+    if c == ')' then
+        if stack is empty then return the current index
+        else pop stack
+
+if stack is empty then return 0
+else
+    pop stack
+    delete stack
+    return the value popped from stack

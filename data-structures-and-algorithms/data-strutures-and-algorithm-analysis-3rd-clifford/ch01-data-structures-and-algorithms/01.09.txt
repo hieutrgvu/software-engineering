@@ -1,0 +1,12 @@
+1.9 Does every problem have an algorithm?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+No, not every problem has an algorithm.
+
+An algorithm is a recipe for solving a problem whose steps are concrete and
+unambiguous. Algorithms must be correct, of finite length, and must terminate
+for all inputs. This means that not all computer programs (or problems) meet the
+technical definition of an algorithm. The operating system is one such program.

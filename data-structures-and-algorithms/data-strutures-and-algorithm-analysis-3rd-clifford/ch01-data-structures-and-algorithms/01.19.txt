@@ -1,0 +1,28 @@
+1.19 Think of an algorithm to find the maximum value in an (unsorted) array.
+Now, think of an algorithm to find the second largest value in the array. Which
+is harder to implement? Which takes more time to run (as measured by the number
+of comparisons performed)? Now, think of an algorithm to find the third largest
+value. Finally, think of an algorithm to find the middle value. Which is the
+most difficult of these problems to solve?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ For the maximum value, assign the first value to max variable, then compare to
+the others. If max is less than a number, assign this number to max
+
++ For the second largest value, use two variables max and cache, then use the
+algorithm above, but when max is changed, assign max to cache. The desired value
+is cache.
+
++ Both algorithms above is simple and have the same the number of comparisons
+performed.
+
++ For the third largest value, just use another variable to cache, e.g. cache_2.
+
++ To find the middle value, the best way is to sort whole the array and pick
+the element at (index / 2).
+
++ May be finding the middle value is the most difficult of these problems to
+solve.

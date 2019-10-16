@@ -1,0 +1,15 @@
+1.17 Imagine that you are a shipping clerk for a large company. You have just
+been handed about 1000 invoices, each of which is a single sheet of paper with
+a large number in the upper right corner. The invoices must be sorted by this
+number, in order from lowest to highest. Write down as many different approaches
+to sorting the invoices as you can think of.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+1. Selection sort: Choose the max number, the next max number, ...
+2. Bubble sort: Start from the first invoice, if its number is larger than the
+next invoice's number, swap them.
+3. Insertion sort: Pick 1st, 2nd, ... invoice and place each of them into the
+new place but in correct order.
