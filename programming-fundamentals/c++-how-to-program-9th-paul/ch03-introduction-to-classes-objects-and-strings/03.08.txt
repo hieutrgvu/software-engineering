@@ -1,0 +1,16 @@
+3.8 (Header and Source-Code Files) What's a header? What's a source-code file?
+Discuss the purpose of each.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ When building an object-oriented C++ program, it is customary to define
+reusable source code (such as a class) in a file that by convention has a .h
+filename extension - known as a header. Programs use #include preprocessor
+directives to include headers and take advantage of reusable software
+components.
+
++ Source-code files can have .cpp, .cc, etc. filename extension. They usually
+contains function definition and can be used to hide implementation from
+clients.

@@ -1,0 +1,33 @@
+3.1 Fill in the blanks in each of the following:
+a) Every class definition contains the keyword ___ followed immediately by the
+class's name.
+b) A class definition is typically stored in a file with the ___ filename
+extension.
+c) Each parameter in a function header specifies both a(n) ___ and a(n) ___.
+d) When each object of a class maintains its own copy of an attribute, the
+variable that represents the attribute is also known as a(n) ___.
+e) Keyword public is a(n) ___.
+f) Return type ___ indicates that a function will perform a task but will not
+return any information when it completes its task.
+g) Function ___ from the <string> library reads characters until a newline
+character is encountered, then copies those characters into the specified
+string.
+h) When a member function is defined outside the class definition, the function
+header must include the class name and the ___, followed by the function name to
+"tie" the member function to the class definition.
+i) The source-code file and any other files that use a class can include the
+class's header via a(n) ___ preprocessor directive.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) class.
+b) .h.
+c) type, name.
+d) data member.
+e) access specifier.
+f) void.
+g) getline.
+h) binary scope resolution operator (::).
+i) #include.

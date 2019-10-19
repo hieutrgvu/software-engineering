@@ -1,0 +1,12 @@
+3.4 Explain the purpose of a function parameter. What's the difference between
+a parameter and an argument?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ A function can require on or more parameters that represent additional data
+it needs to perform its task. A parameter list may contain any number of
+parameters. A function call supplies an argument for each function parameter.
+
++ Basically, arguments are values, and parameters like interface.

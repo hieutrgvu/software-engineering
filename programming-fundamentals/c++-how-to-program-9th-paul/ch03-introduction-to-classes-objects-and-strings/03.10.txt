@@ -1,0 +1,13 @@
+3.10 (Set and Get Functions) Explain why a class might provide a set function
+and a get function for a data member.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Data members normally are private, so "outer" functions or not-friend classes
+cannot access them directly. A set and get function provide the access for a
+particular data member.
+
++ Get functions can also combine a group of data member to export the intended
+value. Set functions can be used to validate input and preserve data integrity.

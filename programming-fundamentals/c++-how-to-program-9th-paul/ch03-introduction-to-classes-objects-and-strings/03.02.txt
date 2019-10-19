@@ -1,0 +1,29 @@
+3.2 State whether each of the following is true or false. If false, explain why.
+a) By convention, function names begin with a capital letter and all subsequent
+words in the name begin with a capital letter.
+b) Empty parentheses following a function name in a function prototype indicate
+that the function does not require any parameters to perform its task.
+c) Data members or member functions declared with access specifier private are
+accessible to member functions of the class in which they're declared.
+d) Variables declared in the body of a particular member function are known as
+data members and can be used in all member functions of the class.
+e) Every function's body is delimited by left and right braces ({ and }).
+f) Any source-code file that contains int main() can be used to execute a
+program.
+g) The types of arguments in a function call must be consistent with the types
+of the corresponding parameters in the function prototype's parameter list.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) False. Function names begin with a lowercase letter and all subsequent
+words in the name begin with a capital letter.
+b) True.
+c) True.
+d) False. This variables are known as local variables and can be used only from
+the line of their declaration in the function to closing right brace (}) of the
+block in which they are defined.
+e) True.
+f) True.
+g) True.

@@ -1,0 +1,14 @@
+3.5 (Function Prototypes and Definitions) Explain the difference between a
+function prototype and a function definition.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ A function prototype tells the compiler the name of a function and the type of
+data returned by the function. A prototype also describes any additional data
+required by the function to perform its task.
+
++ A function definition contains the actual code that executes to perform the
+function's specified task when the functions is called. Parameter names are
+required in the function definition and optional in the function prototype.

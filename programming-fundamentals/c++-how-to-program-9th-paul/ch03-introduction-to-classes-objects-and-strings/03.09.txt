@@ -1,0 +1,10 @@
+3.9 (Using a Class Without a using Directive) Explain how a program could use
+class string without inserting a using directive.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ A program could create string variables without a using declaration if each
+occurrence of the work string were prefixed by the namespace std and the binary
+scope resolution operator (::), as in std::string.

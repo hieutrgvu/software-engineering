@@ -1,0 +1,13 @@
+3.7 (Data Members) Explain the purpose of a data member.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ A class normally consists of member functions that manipulate the attributes
+that belong to a particular object of the class. Attributes are represented as
+data member in a class definition.
+
++ For example, a class called Account that represents a bank account provides a
+data member to represent the balance of the account. Each account object
+maintains its own balance but does not know the balances of other accounts.
