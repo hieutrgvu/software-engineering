@@ -1,0 +1,21 @@
+4.9 Identify and correct the errors in each of the following:
+a)  while(c<=5)
+    {
+      product *= c; ++c;
+b)  cin << value;
+c)  if(gender==1)
+      cout << "Woman" << endl;
+    else;
+      cout << "Man" << endl;
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) Error: Missing the closing right brace of the while body.
+Correction: Add closing right brace after the statement c++;
+b) Error: Used stream insertion instead of stream extraction.
+Correction: Change << to >>.
+c) Error: Semicolon after else results in a logic error. The second output
+statement will always be executed.
+Correction: Remove the semicolon after else.

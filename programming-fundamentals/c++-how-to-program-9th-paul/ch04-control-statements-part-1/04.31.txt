@@ -1,0 +1,14 @@
+4.31 What's wrong with the following statement? Provide the correct statement
+to accomplish what the programmer was probably trying to do.
+    cout << ++( x + y );
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Attempting to use the increment or decrement operator on an expression other
+than a modifiable variable name or reference, e.g., writing ++(x + 1), is a
+syntax error.
+
+Correction:
+cout << x + y + 1;

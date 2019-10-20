@@ -1,0 +1,33 @@
+4.21 (What Does this Program Do?) What does the following program print?
+
+1   // Exercise 4.21: ex04_21.cpp
+2   // What does this program print?
+3   #include <iostream>
+4   using namespace std;
+5
+6   int main()
+7   {
+8     int count = 1; // initialize count
+9
+10    while ( count <= 10 ) // loop 10 times
+11    {
+12      // output line of text
+13      cout << ( count % 2 ? "****" : "++++++++" ) << endl;
+14      ++count; // increment count
+15    } // end while
+16  } // end main
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+****
+++++++++
+****
+++++++++
+****
+++++++++
+****
+++++++++
+****
+++++++++

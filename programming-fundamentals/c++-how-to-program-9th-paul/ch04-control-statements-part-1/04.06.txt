@@ -1,0 +1,12 @@
+4.6 State the values of each of these int variables after the calculation is
+performed. Assume that, when each statement begins executing, all variables
+have the integer value 5.
+a) product *= x++;
+b) quotient /= ++x;
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) product = 25, x = 6.
+b) quotient = 0, x = 6.

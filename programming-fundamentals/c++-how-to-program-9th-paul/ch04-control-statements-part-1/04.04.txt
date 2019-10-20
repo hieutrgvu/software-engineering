@@ -1,0 +1,16 @@
+4.4 Write C++ statements to accomplish each of the following tasks.
+a) Declare variables sum and x to be of type int.
+b) Set variable x to 1.
+c) Set variable sum to 0.
+d) Add variable x to variable sum and assign the result to variable sum.
+e) Print "The sum is: " followed by the value of variable sum.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) int sum, x;
+b) x = 1;
+c) sum = 0;
+d) sum += x;
+e) std::cout << "The sum is: " << sum << std::endl;

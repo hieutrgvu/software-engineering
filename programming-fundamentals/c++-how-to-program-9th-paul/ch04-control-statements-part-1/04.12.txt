@@ -1,0 +1,29 @@
+4.12 (What Does this Program Do?) What does the following program print?
+
+1   // Exercise 4.12: ex04_12.cpp
+2   // What does this program print?
+3   #include <iostream>
+4   using namespace std;
+5
+6   int main()
+7   {
+8     int y; // declare y
+9     int x = 1; // initialize x
+10    int total = 0; // initialize total
+11
+12    while ( x <= 10 ) // loop 10 times
+13    {
+14      y = x * x; // perform calculation
+15      cout << y << endl; // output result
+16      total += y; // add y to total
+17      x++; // increment counter x
+18    } // end while
+19
+20    cout << "Total is " << total << endl; // display result
+21  } // end main
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Calculate the sum of: 1^2 + 2^2 + ... + 10^2

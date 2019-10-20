@@ -1,0 +1,41 @@
+4.22 (What Does this Program Do?) What does the following program print?
+
+1   // Exercise 4.22: ex04_22.cpp
+2   // What does this program print?
+3   #include <iostream>
+4   using namespace std;
+5
+6   int main()
+7   {
+8     int row = 10; // initialize row
+9     int column; // declare column
+10
+11    while( row >= 1 ) //loopuntilrow<1
+12    {
+13      column = 1; // set column to 1 as iteration begins
+14
+15      while ( column <= 10 ) // loop 10 times
+16      {
+17        cout << ( row % 2 ? "<" : ">" ); // output
+18        ++column; // increment column
+19      } // end inner while
+20
+21      --row; // decrement row
+22      cout << endl; // begin new output line
+23    } // end outer while
+24  } // end main
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<
+>>>>>>>>>>
+<<<<<<<<<<

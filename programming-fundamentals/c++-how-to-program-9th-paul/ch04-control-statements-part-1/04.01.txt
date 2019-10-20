@@ -1,0 +1,18 @@
+4.1 Answer each of the following questions.
+a) All programs can be written in terms of three types of control structures:
+___, ___ and ___.
+b) The ___ selection statement is used to execute one action when a condition
+is true or a different action when that condition is false.
+c) Repeating a set of instructions a specific number of times is called ___
+repetition.
+d) When it isn't known in advance how many times a set of statements will be
+repeated, a(n) ___ value can be used to terminate the repetition.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) Sequence, selection, repetition.
+b) if...else.
+c) counter-controlled.
+d) sentinel.

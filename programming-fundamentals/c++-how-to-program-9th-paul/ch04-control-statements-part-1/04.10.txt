@@ -1,0 +1,9 @@
+4.10 What's wrong with the following while repetition statement?
+      while ( z >= 0 )
+        sum += z;
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+If z is greater than or equal zero, an infinite loop is created.

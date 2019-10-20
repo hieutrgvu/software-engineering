@@ -1,0 +1,14 @@
+4.20 (Validating User Input) The examination-results program of Fig. 4.16
+assumes that any value input by the user that's not a 1 must be a 2. Modify
+the application to validate its inputs. On any input, if the value entered is
+other than 1 or 2, keep looping until the user enters a correct value.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+In Fig. 4.16, put lines from 21 to 28 under if statement:
+  if ((result == 1) || (result == 2))
+  {
+    // Lines from 21 to 28
+  }

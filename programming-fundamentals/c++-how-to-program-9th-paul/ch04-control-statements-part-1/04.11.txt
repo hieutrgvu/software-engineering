@@ -1,0 +1,39 @@
+4.11 (Correct the Code Errors) Identify and correct the error(s) in each of the
+following:
+
+a)  if( age >= 65 );
+      cout << "Age is greater than or equal to 65" << endl;
+    else
+      cout << "Age is less than 65 << endl";
+
+b)  if ( age >= 65 )
+      cout << "Age is greater than or equal to 65" << endl;
+    else;
+      cout << "Age is less than 65 << endl";
+
+c)  int x = 1, total;
+    while ( x <= 10 )
+    {
+      total += x;
+      ++x;
+    }
+
+d)  While ( x <= 100 )
+      total += x;
+      ++x;
+
+e)  while( y > 0 )
+    {
+      cout << y << endl;
+      ++y;
+    }
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) Remove ";" after if.
+b) Remove ";" after else.
+c) total variable is not initialized.
+d) The last statement is outside the while loop. Add "{" and "}".
+e) Infinite loop! Replace "++" by "--".

@@ -1,0 +1,22 @@
+4.7 Write single C++ statements or portions of statements that do the following:
+a) Input integer variable x with cin and >>.
+b) Input integer variable y with cin and >>.
+c) Set integer variable i to 1.
+d) Set integer variable power to 1.
+e) Multiply variable power by x and assign the result to power.
+f) Preincrement variable i by 1.
+g) Determine whether i is less than or equal to y.
+h) Output integer variable power with cout and <<.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) std::cin >> x;
+b) std::cin >> y;
+c) i = 1;
+d) power = 1;
+e) power *= x;
+f) ++i;
+g) if (i <= y)
+h) std::cout << power << std::endl;
