@@ -1,0 +1,51 @@
+5.2 Find the errors in each of the following code segments and explain how to
+correct them.
+a)
+x = 1;
+while ( x <= 10 );
+  ++x;
+}
+
+b)
+for ( y = .1; y != 1.0; y += .1 )
+  cout << y << endl;
+
+c)
+switch ( n )
+{
+  case 1:
+    cout << "The number is 1" << endl;
+  case 2:
+    cout << "The number is 2" << endl;
+    break;
+  default:
+    cout << "The number is not 1 or 2" << endl;
+    break;
+}
+
+d) The following code should print the values 1 to 10.
+n = 1;
+while ( n < 10 )
+   cout << n++ << endl;
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a)
+Syntax error: Missing brace "{".
+Logic error: ";" after while header.
+Correction: Replace ";" by "{", or remote both ";" and "}".
+
+b)
+Logic error: Equality comparison for float or double type may not result as
+expected due to appropriate represent.
+Correction: Replace "!=" by "<=".
+
+c)
+Logical error: Missing break statement in the first case.
+Correction: Add break statement at the and of the first case.
+
+d)
+Off-by-one-error.
+Correction: Replace "<" by "<=".

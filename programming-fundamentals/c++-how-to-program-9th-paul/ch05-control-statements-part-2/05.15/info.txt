@@ -1,0 +1,7 @@
+5.15 (GradeBook Modification) Modify the GradeBook program of Fig. 5.9–Fig. 5.11
+to calculate the grade-point average. A grade of A is worth 4 points, B is worth
+3 points, and so on.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************

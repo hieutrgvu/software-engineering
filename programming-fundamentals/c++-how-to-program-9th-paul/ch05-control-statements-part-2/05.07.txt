@@ -1,0 +1,30 @@
+5.7 (What Does This Program Do?) What does the following program do?
+
+1   // Exercise 5.7: ex05_07.cpp
+2   // What does this program print?
+3   #include <iostream>
+4   using namespace std;
+5
+6   int main()
+7   {
+8     int x; // declare x
+9     int y; // declare y
+10
+11    // prompt user for input
+12    cout << "Enter two integers in the range 1-20: ";
+13    cin >> x >> y; // read values for x and y
+14
+15    for ( int i = 1; i <= y; ++i ) // count from 1 to y
+16    {
+17      for ( int j = 1; j <= x; ++j ) // count from 1 to x
+18      cout << '@'; // output @
+19
+20      cout << endl; // begin new line
+21    } // end outer for
+22  } // end main
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+It prints a matrix of "@" character with y rows and x columns.

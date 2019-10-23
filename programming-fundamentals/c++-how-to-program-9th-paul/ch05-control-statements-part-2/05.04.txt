@@ -1,0 +1,41 @@
+5.4 (Find the Code Errors) Find the error(s), if any, in each of the following:
+a)
+For ( x = 100, x >= 1, ++x )
+  cout << x << endl;
+
+b) The following code should print whether integer value is odd or even:
+switch ( value % 2 ) {
+  case 0:
+    cout << "Even integer" << endl;
+  case 1:
+    cout << "Odd integer" << endl;
+}
+
+c The following code should output the odd integers from 19 to 1:
+for ( x = 19; x >= 1; x += 2 )
+  cout << x << endl;
+
+d The following code should output the even integers from 2 to 100:
+counter = 2;
+do
+{
+  cout << counter << endl;
+  counter += 2;
+} While ( counter < 100 );
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a)
+Syntax error: for, not For.
+Syntax error: ";" instead of ",".
+
+b)
+Missing break statement in the first case.
+
+c)
+Logical error: "-=" instead of "+=".
+
+d)
+Off-by-one error: "<=" instead of "<".

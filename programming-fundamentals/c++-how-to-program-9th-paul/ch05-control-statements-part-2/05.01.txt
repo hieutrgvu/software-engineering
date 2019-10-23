@@ -1,0 +1,21 @@
+5.1 State whether the following are true or false. If the answer is false,
+explain why.
+a) The default case is required in the switch selection statement.
+b) The break statement is required in the default case of a switch selection
+statement to exit the switch properly.
+c) The expression ( x > y && a < b ) is true if either the expression x > y is
+true or the expression a < b is true.
+d) An expression containing the || operator is true if either or both of its
+operands are true.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) False. Cases not explicitly tested in a switch statement without a default
+case are ignored, so default case is not required.
+b) False. It depends on the position of default case. If it is the last case,
+no break statements are required.
+c) False. The expression ( x > y && a < b ) is true if both inside expressions
+are true.
+d) True.
