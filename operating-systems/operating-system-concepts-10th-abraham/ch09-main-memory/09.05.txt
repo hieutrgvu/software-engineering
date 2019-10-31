@@ -1,0 +1,15 @@
+9.5 What is the effect of allowing two entries in a page table to point to
+the same page frame in memory? Explain how this effect could be used to
+decrease the amount of time needed to copy a large amount of memory from one
+place to another. What effect would updating some byte on one page have on the
+other page?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+By allowing two entries in a page table to point to the same page frame in
+memory, users can share code and data. This can apply for reentrant code such
+as editor, compiler, linker, etc. When copying a large amount of memory from
+one place to another, just copy the reentrant code once and make the entries
+in page table point to it. This can save a lot of time.

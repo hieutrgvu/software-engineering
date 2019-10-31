@@ -1,0 +1,26 @@
+9.20 Program binaries in many systems are typically structured as follows. Code
+is stored starting with a small, fixed virtual address, such as 0. The code
+segment is followed by the data segment, which is used for storing the program
+variables. When the program starts executing, the stack is allocated at the
+other end of the virtual address space and is allowed to grow toward lower
+virtual addresses. What is the significance of this structure for the following
+schemes?
+a. Contiguous memory allocation
+b. Paging
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. Contiguous-memory allocation requires the OS to allocate the entire extent
+of the virtual address space to the program when it starts executing. This could
+be much larger than the actual memory requirements of the process. For the
+segments like code or stack, it can be pre-calculate in compiler stage. However,
+there is no way to know the size of heap segments in advance. If, the process
+requires more space for heap, it requires the relocation for entire program.
+
+b. Paging does not require the OS to allocate the maximum extent of the virtual
+address space to a process at startup time, but it still requires the OS to
+allocate a large page table spanning all of the program's virtual address space.
+When a program needs to extend the stack or the heap, it needs to allocate
+a new page but the corresponding page table entry is preallocated.

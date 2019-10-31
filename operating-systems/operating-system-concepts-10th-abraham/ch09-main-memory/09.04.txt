@@ -1,0 +1,15 @@
+9.4 Consider a logical address space of 64 pages of 1,024 words each, mapped
+onto a physical memory of 32 frames.
+a. How many bits are there in the logical address?
+b. How many bits are there in the physical address?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+64 pages --> 6 bits for page number
+1024 words for each page --> 10 bits for offset
+32 frames --> 5 bits for frame number
+
+a. 6 bits for page number + 10 bits for offset = 16 bits
+b. 5 bits for frame number + 10 bits for offset = 15 bits

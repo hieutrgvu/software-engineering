@@ -1,0 +1,17 @@
+9.2 Why are page sizes always powers of 2?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Paging is implemented by breaking up an address into a page number and offset.
+
+  page number   page offset
++-------------+-------------+
+|      p      |      d      |
++-------------+-------------+
+
+It is most efficient to break the address into p page number bits and d offset
+bits, rather than perform arithmetic on the address to calculate the page number
+and offset. The page sizes the capacity represented by page offset (2^d), so
+it is always powers of 2.

@@ -1,0 +1,16 @@
+9.23 Consider a logical address space of 2048 pages with a 4-KB page size,
+mapped onto a physical memory of 512 frames.
+a. How many bits are required in the logical address?
+b. How many bits are required in the physical address?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+4KB page size --> 12 bits for offset
+
+a. 2048 pages --> 11 bits for page number
+--> 11 + 12 = 23 bits for logical address
+
+b. 512 frames --> 9 bits for frame number
+--> 9 + 12 = 21 bits for physical address

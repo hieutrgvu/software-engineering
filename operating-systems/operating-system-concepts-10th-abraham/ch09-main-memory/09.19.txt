@@ -1,0 +1,18 @@
+9.19 Explain why address-space identifiers (ASIDs) are used in TLBs.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+An ASID uniquely identifies each process and is used to provide address-space
+protection for that process. When the TLB attempts to resolve virtual page
+numbers, it ensures that the ASID for the currently running process matches the
+ASID associated with the virtual page. If the ASIDs do not match, the attempt is
+treated as a TLB miss. In addition to providing address-space protection, an
+ASID allows the TLB to contain entries for several different processes
+simultaneously. If the TLB does not support separate ASIDs, then every time a
+new page table is selected (for instance, with each context switch), the TLB
+must be flush to ensure that the next executing process does not use the
+wrong translation information. Otherwise, the TLB could include old entries that
+contain valid virtual addresses but have incorrect or invalid physical addresses
+left over from the previous process.

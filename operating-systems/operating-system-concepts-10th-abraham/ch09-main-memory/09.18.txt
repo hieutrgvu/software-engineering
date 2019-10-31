@@ -1,0 +1,12 @@
+9.18 Although Android does not support swapping on its boot disk, it is possible
+to set up a swap space using a separate SD nonvolatile memory card. Why would
+Android disallow swapping on its boot disk yet allow it on a secondary disk?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Android disallows swapping on its boot disk for the reasons outlined in question
+9.17. However it does support swapping on a secondary disk if the users provide
+their own SD card. Because SD cards have the great capacity and can be replaced
+easily when they are damage or reach the limited number of writes.

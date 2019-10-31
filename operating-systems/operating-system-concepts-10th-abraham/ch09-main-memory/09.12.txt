@@ -1,0 +1,19 @@
+9.12 Consider the following process for generating binaries. A compiler is used
+to generate the object code for individual modules, and a linker is used to
+combine multiple object modules into a single program binary. How does the
+linker change the binding of instructions and data to memory addresses? What
+information needs to be passed from the compiler to the linker to facilitate
+the memory-binding tasks of the linker?
+
+********************************************************************************
+Resolved by: Internet
+********************************************************************************
+
+The linker has to replace unresolved symbolic addresses with the actual
+addresses associated with the variables in the final program binary. In order
+to perform this, the modules should keep track of instructions that refer to
+unresolved symbols. During linking, each module is assigned a sequence of
+addresses in the overall program binary and when this has been performed,
+unresolved references to symbols exported by this binary could be patched in
+other modules since every other module would contain the list of instructions
+that need to be patched.

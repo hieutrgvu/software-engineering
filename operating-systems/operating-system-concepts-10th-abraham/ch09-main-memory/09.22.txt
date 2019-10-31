@@ -1,0 +1,21 @@
+9.22 The MPV operating system is designed for embedded systems and has a 24-bit
+virtual address, a 20-bit physical address, and a 4-KB page size. How many
+entries are there in each of the following?
+a. A conventional, single-level page table
+b. An inverted page table
+
+What is the maximum amount of physical memory in the MPV operating system?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+4KB page size --> 12 bits for offset
+
+a. 24 bits for virtual address - 12 bits for offset = 12 bits for page number
+--> 2^12 = 4KB entries
+
+b. 20 bits for physical address - 12 bits for offset = 8 bits for frame number
+--> 2^8 = 256 entries
+
+The maximum amount of physical memory in the MPV OS is 2^20 (1MB).

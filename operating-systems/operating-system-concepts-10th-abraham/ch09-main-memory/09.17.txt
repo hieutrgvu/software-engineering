@@ -1,0 +1,13 @@
+9.17 Explain why mobile operating systems such as iOS and Android do not support
+swapping.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Mobile systems typically do not support swapping in any form. Mobile devices
+generally use flash memory rather than more spacious hard disks for nonvolatile
+storage. The resulting space constraint is one reason why mobile OS designers
+avoid swapping. Other reasons include the limited number of writes that flash
+memory can tolerate before it becomes unreliable and the poor throughput
+between main memory and flash memory in these devices.

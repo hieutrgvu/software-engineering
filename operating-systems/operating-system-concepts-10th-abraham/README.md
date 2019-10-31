@@ -35,7 +35,7 @@ abbreviation for **O**perating **S**ystem **C**oncepts and the chapter number.
 It is encouraged to provide informative messages. The "Signed-off-by" must be
 included at the end of the commit message. For example:
 ```
-c++htp: ch02: Provide all answers for c++ intro exercises
+osc: ch01: Provide all answers for intro exercises
 
 This commit provides solutions for exercises from 1.1 to 1.27. The
 chapter 1 introduces some basic concepts and small topics related to
@@ -53,3 +53,9 @@ Signed-off-by: Hieu Vu <hieutrgvu@gmail.com>
 
 ## How to check the answers
 + `.txt` file: use any editor or reader programs to view the content
++ For a single `.c` file, compile and run it to check its result:
+```
+$ gcc -o {name}.c {name}.out
+$ ./{name}.out
+```
+

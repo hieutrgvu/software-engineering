@@ -1,0 +1,16 @@
+9.24 Consider a computer system with a 32-bit logical address and 8-KB page
+size. The system supports up to 1 GB of physical memory. How many entries are
+there in each of the following?
+a. A conventional, single-level page table
+b. An inverted page table
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+8KB page size --> 13 bits for offset
+
+a. 32 bits for virtual address - 13 bits for offset = 19 bits for page number
+--> 2^19 = 512K entries
+
+b. 1GB / 8KB = 1024*1024KB / 8KB = 128*1024 = 128K entries

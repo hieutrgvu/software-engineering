@@ -1,0 +1,17 @@
+9.25 Consider a paging system with the page table stored in memory.
+a. If a memory reference takes 50 nanoseconds, how long does a paged memory
+reference take?
+b. If we add TLBs, and if 75 percent of all page-table references are found in
+the TLBs, what is the effective memory reference time? (Assume that finding a
+page-table entry in the TLBs takes 2 nanoseconds, if the entry is present.)
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. 50ns access page table + 50ns access intended physical address = 100ns
+
+b. 75% * (2ns search TLBs + 50ns access intended physical address) +
+   25% * (50ns access page table + 50ns access intended physical address)
+   = 64ns
+--> The effective memory reference time is 100ns/64ns = 1.5625

@@ -1,0 +1,17 @@
+9.14 Most systems allow a program to allocate more memory to its address space
+during execution. Allocation of data in the heap segments of programs is an
+example of such allocated memory. What is required to support dynamic memory
+allocation in the following schemes?
+a. Contiguous memory allocation
+b. Paging
+
+********************************************************************************
+Resolved by: Internet
+********************************************************************************
+
+a. contiguous-memory allocation: might require relocation of the entire
+program since there is not enough space for the program to grow its allocated
+memory space.
+
+b. paging: incremental allocation of new pages is possible in this scheme
+without requiring relocation of the program's address space.

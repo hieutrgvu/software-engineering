@@ -1,0 +1,14 @@
+9.26 What is the purpose of paging the page tables?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Most modern computer systems support a large logical address space (2^32 to
+2^64). In such an environment, the page table itself becomes excessively large.
+For example, with 32-bit logical address space, 4-KB page size, and 4 bytes
+per each entries, then a page table may consist of over 1 million entries, and
+each process may need up to 4 MB of physical address space for the page table
+alone. Clearly, we would not want to allocate the page table contiguously in
+main memory. One simple solution is to divide the page table into smaller
+pieces - paging the page tables.

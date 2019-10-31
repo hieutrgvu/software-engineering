@@ -1,0 +1,18 @@
+9.10 Consider a computer system with a 32-bit logical address and 4-KB page
+size. The system supports up to 512 MB of physical memory. How many entries
+are there in each of the following?
+a. A conventional, single-level page table
+b. An inverted page table
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+4-KB page size --> 12 bits for offset
+
+a. 32-bit logical address - 12 bits for offset = 20 bits for page number
+--> 2^20 entries
+
+b. 512MB --> 29 bits for physical address
+29 bits for physical address - 12 bits for offset = 17 bits for frame number
+--> 2^17 (128KB) entries

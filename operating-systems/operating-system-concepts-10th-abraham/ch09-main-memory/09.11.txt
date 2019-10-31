@@ -1,0 +1,15 @@
+9.11 Explain the difference between internal and external fragmentation.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ External fragmentation exists when there is enough total memory space to
+satisfy a request but the available space are not contiguous: storage is
+fragmented into a large number of small holes as processes are loaded and
+removed.
+
++ With the fixed-sized physical memory block, the memory allocated to a process
+may be larger than the requested memory. The difference between these two
+numbers is internal fragmentation - unused memory that is internal to a
+partition.

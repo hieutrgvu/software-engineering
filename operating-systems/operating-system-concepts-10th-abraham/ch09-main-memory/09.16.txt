@@ -1,0 +1,24 @@
+9.16 On a system with paging, a process cannot access memory that it does not
+own. Why? How could the operating system allow access to additional memory? Why
+should it or should it not?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ The physical address is obtained by frame number, which is found by logical
+page number in page table, and offset. The OS controls the contents of this
+table, so it can limit a process to accessing only those physical frames
+allocated to the process. A process cannot refer to a page it does not own
+because the page will not be in the page table.
+
++ To allow such access, OS may allow entries for non-process memory to be added
+to the process's page table. Two or more processes' page tables can have the
+entries point to a physical frame.
+
++ This is useful when two or more processes need to exchange data - they just
+read and write to the same physical addresses, which may be at varying logical
+addresses.
+
++ This also causes the process synchronization problems, e.g. a process writes
+data when another process is reading.

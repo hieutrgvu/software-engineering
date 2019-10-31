@@ -1,0 +1,17 @@
+9.15 Compare the memory organization schemes of contiguous memory allocation
+and paging with respect to the following issues:
+a. External fragmentation
+b. Internal fragmentation
+c. Ability to share code across processes
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. Contiguous memory allocation solves the internal fragmentation but causes
+internal fragmentation.
+
+b. Paging  memory allocation solves the external fragmentation but causes
+internal fragmentation.
+
+c. Paging supports share code better than contiguous memory allocation does.

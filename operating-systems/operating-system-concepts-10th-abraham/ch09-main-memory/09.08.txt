@@ -1,0 +1,20 @@
+9.8 The BTV operating system has a 21-bit virtual address, yet on certain
+embedded devices, it has only a 16-bit physical address. It also has a 2-KB
+page size. How many entries are there in each of the following?
+a. A conventional, single-level page table
+b. An inverted page table
+What is the maximum amount of physical memory in the BTV operating system?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+2-KB page size --> 11 bits for offset
+
+a. 21-bit virtual address - 11 bits for offset = 10 bits for page number
+--> 2^10 = 1024 entries
+
+b. 16-bit physical address - 11 bits for offset = 5 bits for frame number
+--> 2^5 = 32 entries
+
+The maximum amount of physical memory in the BTH OS is 2^16 = 65536 (or 64KB)

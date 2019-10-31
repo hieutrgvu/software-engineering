@@ -1,0 +1,26 @@
+9.27 Consider the IA-32 address-translation scheme shown in Figure 9.22.
+a. Describe all the steps taken by the IA-32 in translating a logical address
+into a physical address.
+b. What are the advantages to the operating system of hardware that provides
+such complicated memory translation?
+c. Are there any disadvantages to this address-translation system? If so, what
+are they? If not, why is this scheme not used by every manufacturer?
+
+********************************************************************************
+Resolved by: Internet
+********************************************************************************
+
+a. The selector is an index into the segment descriptor table. The segment
+descriptor result plus the original offset is used to produce a linear address
+with a dir, page, and offset. The dir is an index into a page directory. The
+entry from the page directory selects the page table, and the page field is an
+index into the page table. The entry from the page table, plus the offset, is
+the physical address.
+
+b. Such a page-translation mechanism offers the flexibility to allow most
+operating systems to implement their memory scheme in hardware, instead of
+having to implement some parts in hardware and some in software. Because it can
+be done in hardware, it is more efficient (and the kernel is simpler).
+
+c. Address translation can take longer due to the multiple table lookups it can
+invoke. Caches help, but there will still be cache misses.
