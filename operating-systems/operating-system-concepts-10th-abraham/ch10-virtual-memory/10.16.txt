@@ -1,0 +1,33 @@
+10.16 A simplified view of thread states is ready, running, and blocked, where
+a thread is either ready and waiting to be scheduled, is running on the
+processor, or is blocked (for example, waiting for I/O).
+
+                                +---------+
+                         +----->|  ready  |------+
+                         |      |         |      |
+                         |      +---------+      |
+                         |           ^           v
+                    +---------+      |      +---------+
+                    | blocked |      +------| running |
+                    |         |<------------|         |
+                    +---------+             +---------+
+
+Assuming a thread is in the running state, answer the following questions, and
+explain your answers:
+a. Will the thread change state if it incurs a page fault? If so, to what state
+will it change?
+b. Will the thread change state if it generates a TLB miss that is resolved in
+the page table? If so, to what state will it change?
+c. Will the thread change state if an address reference is resolved in the page
+table? If so, to what state will it change?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. Thread will change state to blocked as bringing the new page into memory
+requires I/O operation.
+b. Thread will continue running because the reference address is resolved in
+page table.
+c. Thread will continue running because the reference address is resolved in
+page table.

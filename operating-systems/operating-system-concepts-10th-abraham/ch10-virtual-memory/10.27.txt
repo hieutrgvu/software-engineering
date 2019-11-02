@@ -1,0 +1,16 @@
+10.27 Discuss situations in which the most frequently used (MFU) page-
+replacement algorithm generates fewer page faults than the least recently used
+(LRU) page-replacement algorithm. Also discuss under what circumstances the
+opposite holds.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ MFU algorithm generates fewer page faults than LRU algorithm when the most
+frequently used pages are not referenced in the future but referenced in near
+pass. E.g. When a page is used heavily during the initial phase of a process
+but then is never used again.
+
++ On the other hand, MFU algorithm is worse than LRU algorithm when the most
+frequently used pages are referenced in the future.

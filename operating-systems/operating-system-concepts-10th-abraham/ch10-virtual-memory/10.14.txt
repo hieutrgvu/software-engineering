@@ -1,0 +1,14 @@
+10.14 We have an operating system for a machine that uses base and limit
+registers, but we have modified the machine to provide a page table. Can the
+page table be set up to simulate base and limit registers? How can it be, or
+why can it not be?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The page table can be used to simulate base and limit registers. The first
+page in page table can be treated as base registers, and valid bits of the
+following pages in page table indicate the allocated memory size which is
+interpreted as limit registers. There are some problems with internal
+fragmentation.

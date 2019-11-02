@@ -1,0 +1,19 @@
+10.37 What is the cause of thrashing? How does the system detect thrashing?
+Once it detects thrashing, what can the system do to eliminate this problem?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ When page replacement occurs too much, the CPU utilization decreases. Due to
+CPU utilization decrement, OS introduces new process to increase the degree
+of multiprogramming. The new process tries to get started by taking frames from
+running processes, causing more page faults and a longer queue for the paging
+device. As a result, CPU utilization drops even further, and the CPU scheduler
+tries to increase the degree of multiprogramming even more.
+
++ The system can detect thrashing by evaluating the level of CPU utilization as
+compared to the level of multiprogramming, e.g. CPU utilization is low, but
+the level of multiprogramming is high.
+
++ It can be eliminated by reducing the level of multiprogramming.

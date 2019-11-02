@@ -1,0 +1,17 @@
+10.25 Assume that you are monitoring the rate at which the pointer in the clock
+algorithm moves. (The pointer indicates the candidate page for replacement.)
+What can you say about the system if you notice the following behavior:
+a. Pointer is moving fast.
+b. Pointer is moving slow.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. If the pointer is moving fast, then the program is accessing a large number
+of pages simultaneously, or searching for a victim when all of reference bit are
+set.
+
+b. If the pointer is moving slow, then the virtual memory system is finding
+candidate pages for replacement extremely efficiently, indicating that many of
+the resident pages are not being accessed.

@@ -1,0 +1,21 @@
+10.17 Consider a system that uses pure demand paging.
+a. When a process first starts execution, how would you characterize
+the page-fault rate?
+b. Once the working set for a process is loaded into memory, how would you
+characterize the page-fault rate?
+c. Assume that a process changes its locality and the size of the new working
+set is too large to be stored in available free memory. Identify some options
+system designers could choose from to handle this situation.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. The page-fault rate will be quite high initially because no pages are loaded
+into memory.
+b. The page-fault rate will be quite low as all necessary pages are loaded
+into memory.
+c.
++ Terminate process.
++ Get more physical memory.
++ Reclaim pages more aggressively.

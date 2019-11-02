@@ -1,0 +1,17 @@
+10.23 When a page fault occurs, the process requesting the page must block
+while waiting for the page to be brought from disk into physical memory. Assume
+that there exists a process with five user-level threads and that the mapping of
+user threads to kernel threads is many to one. If one user thread incurs a page
+fault while accessing its stack, would the other user threads belonging to the
+same process also be affected by the page fault—that is, would they also have to
+wait for the faulting page to be brought into memory? Explain.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Because the mapping of user threads to kernel threads is many to one, the kernel
+will treat all threads belonging to a process as one process. Therefore, if
+a user thread incurs a page fault, the other user threads belongings to the
+same process also be affected and have to wait for the faulting page to be
+brought into memory.

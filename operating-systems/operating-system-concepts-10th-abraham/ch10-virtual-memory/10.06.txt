@@ -1,0 +1,10 @@
+10.6 Discuss the hardware functions required to support demand paging.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Every memory access, OS checks the page table to verify if the accessed page
+is valid, invalid, or not resident yet --> Valid/Invalid bit in page table.
++ Need to speed up address translation --> TLB.
++ Hardware should also support read/write privilege checking.

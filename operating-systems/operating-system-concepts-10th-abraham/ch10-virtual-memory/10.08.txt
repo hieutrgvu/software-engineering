@@ -1,0 +1,21 @@
+10.8 Consider the following page reference string:
+1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6.
+How many page faults would occur for the following replacement algorithms,
+assuming one, two, three, four, five, six, and seven frames? Remember that all
+frames are initially empty, so your first unique pages will cost one fault each.
+• LRU replacement
+• FIFO replacement
+• Optimal replacement
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Number of frames    LRU     FIFO    OPTIMAL
+       1             20      20       20
+       2             18      18       15
+       3             15      16       11
+       4             10      14        8
+       5              8      10        7
+       6              7      10        7
+       7              7       7        7

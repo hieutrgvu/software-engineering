@@ -1,0 +1,18 @@
+10.36 Consider a demand-paging system with a paging disk that has an average
+access and transfer time of 20 milliseconds. Addresses are translated through a
+page table in main memory, with an access time of 1 microsecond per memory
+access. Thus, each memory reference through the page table takes two accesses.
+To improve this time, we have added an associative memory that reduces access
+time to one memory reference if the page-table entry is in the associative
+memory.
+
+Assume that 80 percent of the accesses are in the associative memory and that,
+of those remaining, 10 percent (or 2 percent of the total) cause page faults.
+What is the effective memory access time?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Effective memory access time:
+0.8*1 + 0.18*2 + 0.02*(20000+2) = 401.2us

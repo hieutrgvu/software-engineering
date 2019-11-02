@@ -1,0 +1,19 @@
+10.30 Explain why minor page faults take less time to resolve than major page
+faults.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ A major page fault occurs when a page is referenced and the page is not in
+memory. Servicing a major page fault requires reading the desired page from
+the backing store into a free frame and updating the page table. Demand paging
+typically generates an initially high rate of major page faults.
+
++ Minor page faults occur when a process does not have a logical mapping to a
+page, yet that page is in memory, e.g. reference to a shared library, or
+reclaimed but placed on the free frame list.
+
++ When this minor page fault occurs, the frame is removed from the free-frame
+list and reassigned to the process. As might be expected, resolving a minor page
+fault is typically much less time consuming than resolving a major page fault.

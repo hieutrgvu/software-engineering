@@ -1,0 +1,14 @@
+10.43 Consider a system that allocates pages of different sizes to its
+processes. What are the advantages of such a paging scheme? What modifications
+to the virtual memory system would be needed to provide this functionality?
+
+********************************************************************************
+Resolved by: https://www.academia.edu/
+********************************************************************************
+
+The program could have a large code segment or use large-sized arrays as data.
+These portions of the program could be allocated to larger pages, thereby
+decreasing the memory overheads associated with a page table. The virtual
+memory system would then have to maintain multiple free lists of pages for the
+different sizes and also needs to have more complex code for address translation
+to take into account different page sizes

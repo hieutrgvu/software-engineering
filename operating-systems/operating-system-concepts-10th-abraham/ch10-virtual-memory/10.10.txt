@@ -1,0 +1,15 @@
+10.10 Suppose that you want to use a paging algorithm that requires a reference
+bit (such as second-chance replacement or working-set model), but the hardware
+does not provide one. Sketch how you could simulate a reference bit even if one
+were not provided by the hardware, or explain why it is not possible to do so.
+If it is possible, calculate what the cost would be.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ We can simulate the reference bit as a software bit. Each time the page is
+referenced, it will cause a trap, and OS will update the software reference bit.
+
++ The cost is high because each reference will need to access memory one more
+time to update the reference bit.

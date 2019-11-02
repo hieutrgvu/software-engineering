@@ -1,0 +1,14 @@
+10.42 The slab-allocation algorithm uses a separate cache for each different
+object type. Assuming there is one cache per object type, explain why this
+scheme doesn't scale well with multiple CPUs. What could be done to address
+this scalability issue?
+
+********************************************************************************
+Resolved by: https://www.academia.edu/
+********************************************************************************
+
+This has long been a problem with the slab allocator — poor scalability with
+multiple CPUs. The issue comes from having to lock the global cache when it is
+being access. This has the effect of serializing cache accesses on
+multiprocessor systems. Solaris has addressed this by introducing a per-CPU
+cache, rather than a single global cache. Linux has addressed this by SLUB.

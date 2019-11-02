@@ -1,0 +1,27 @@
+10.20 A certain computer provides its users with a virtual memory space of 2^32
+bytes. The computer has 2^22 bytes of physical memory. The virtual memory is
+implemented by paging, and the page size is 4,096 bytes. A user process
+generates the virtual address 11123456. Explain how the system establishes the
+corresponding physical location. Distinguish between software and hardware
+operations.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The virtual address in binary form is
+    0001 0001 0001 0010 0011 0100 0101 0110
+
+Since the page size is 2^12 (4096), the page table size is 2^20 (32 - 12 = 20
+bits for page number). Therefore, the low-order 12 bits (0100 0101 0110)
+are used as the displacement into the page, while the remaining 20 bits
+(0001 0001 0001 0010 0011) are used as the displacement in the page table.
+The offset bits are then  concatenated to the resulting physical page number
+(from the page table), to form the final address.
+
+Consider the operations that are needed for dynamic address translation (DAT),
+and (b) for page fault servicing. All the DAT operations are carried out in
+hardware. But of the list of operations for page faults, on pp. 397-398, at
+least steps 2, 4, 5, 6, 8, 10, and 12 involve software operations.
+
+Reference: https://web.engr.oregonstate.edu

@@ -1,0 +1,112 @@
+10.40 In a 1,024-KB segment, memory is allocated using the buddy system. Using
+Figure 10.26 as a guide, draw a tree illustrating how the following memory
+requests are allocated:
++ Request 5 KB.
++ Request 135 KB.
++ Request 14 KB.
++ Request 3 KB.
++ Request 12 KB.
+
+Next, modify the tree for the following releases of memory. Perform
+coalescing whenever possible:
++ Release 3 KB.
++ Release 5 KB.
++ Release 14 KB.
++ Release 12 KB.
+
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Request:
+                                      1024
+                                    /      \
+                                512        512
+                             /       \
+                         256         *256*
+                       /     \         |
+                    128      128       |
+                  /     \              |
+               64        64            |
+            /      \                   |
+        32           32                |
+      /    \       /    \              |
+    16    *16*   *16*   16             |
+  /   \     |      |                   |
+*8*    8    |      |                   |
+ |   /   \  |      |                   |
+ | *4*    4 |      |                   |
+ |  |       |      |                   |
+ |  |       |      |                   |
+ 5  3      14     12                  135
+
+
+Release 3 KB:
+                                     1024
+                                    /      \
+                                512        512
+                             /       \
+                         256         *256*
+                       /     \         |
+                    128      128       |
+                  /     \              |
+               64        64            |
+            /      \                   |
+        32           32                |
+      /    \       /    \              |
+    16    *16*   *16*   16             |
+  /   \     |      |                   |
+*8*    8    |      |                   |
+ |          |      |                   |
+ |          |      |                   |
+ 5         14     12                  135
+
+
+Release 5 KB:
+                                     1024
+                                    /      \
+                                512        512
+                             /       \
+                         256         *256*
+                       /     \         |
+                    128      128       |
+                  /     \              |
+               64        64            |
+            /      \                   |
+        32           32                |
+      /    \       /    \              |
+    16    *16*   *16*   16             |
+            |      |                   |
+            |      |                   |
+           14     12                  135
+
+
+Release 14 KB:
+                                     1024
+                                    /      \
+                                512        512
+                             /       \
+                         256         *256*
+                       /     \         |
+                    128      128       |
+                  /     \              |
+               64        64            |
+            /      \                   |
+        32           32                |
+                   /    \              |
+                 *16*   16             |
+                   |                   |
+                   |                   |
+                  12                  135
+
+
+Release 12 KB:
+                                     1024
+                                    /      \
+                                512        512
+                             /       \
+                         256         *256*
+                                       |
+                                       |
+                                      135

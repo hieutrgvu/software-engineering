@@ -1,0 +1,16 @@
+10.38 Is it possible for a process to have two working sets, one representing
+data and another representing code? Explain.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+[Internet] Yes, in fact many processors provide two TLBs for this very reason.
+As an example, the code being accessed by a process may retain the same working
+set for a long period of time. However, the data the code accesses may change,
+thus reflecting a change in the working set for data accesses.
+
+We can make 2 lists, one for instruction fetching and one for data access and
+use one or 2 window to monitor the working sets. The instruction working set
+will only contain the pages in which the instruction is fetched, and vice versa
+for data working set.

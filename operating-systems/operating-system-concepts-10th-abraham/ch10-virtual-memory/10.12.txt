@@ -1,0 +1,24 @@
+10.12 Segmentation is similar to paging but uses variable-sized “pages.”
+Define two segment-replacement algorithms, one based on the FIFO page-
+replacement scheme and the other on the LRU page-replacement scheme.
+Remember that since segments are not the same size, the segment that is chosen
+for replacement may be too small to leave enough consecutive locations for the
+needed segment. Consider strategies for systems where segments cannot be
+relocated and strategies for systems where they can.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ FIFO: Find the oldest segment large enough to satisfy the incoming segment.
+If no segment is large enough, select a group of contiguous segments which are
+closest to the oldest of the list and satisfy the new segment in case of no
+relocation, or rearrange a group of N oldest segments which is large enough to
+a contiguous memory in case of relocation. Add any leftover space to the free-
+space list in both cases.
+
++ LRU: Select the least recent used (LRU) segment that is large enough. If no
+segment satisfies, select a group of contiguous segments which are closest to
+the LRU of the list in case of no relocation, or rearrange a group of N LRU
+segments to a contiguous memory in case of relocation. Add any leftover space to
+the free-space list in both cases.

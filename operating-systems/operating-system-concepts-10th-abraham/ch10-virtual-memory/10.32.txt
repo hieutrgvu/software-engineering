@@ -1,0 +1,17 @@
+10.32 Suppose that a machine provides instructions that can access memory
+locations using the one-level indirect addressing scheme. What sequence of page
+faults is incurred when all of the pages of a program are currently nonresident
+and the first instruction of the program is an indirect memory-load operation?
+What happens when the operating system is using a per-process frame allocation
+technique and only two pages are allocated to this process?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ In the worse case, there are 3 page faults, one for the first instruction, one
+for the base address and one for the target memory, whose address is specified
+by the offset and base address.
+
++ If there are only 2 pages are allocated to this process, the first instruction
+cannot be completed if it need to be re-fetched.

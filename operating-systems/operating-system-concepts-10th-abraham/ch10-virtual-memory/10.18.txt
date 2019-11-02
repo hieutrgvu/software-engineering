@@ -1,0 +1,36 @@
+10.18 The following is a page table for a system with 12-bit virtual and
+physical addresses and 256-byte pages. Free page frames are to be allocated in
+the order 9, F, D. A dash for a page frame indicates that the page is not in
+memory.
+
+                         Page          Page Frame
+                          0               0x4
+                          1               0xB
+                          2               0xA
+                          3                –
+                          4                –
+                          5               0x2
+                          6                –
+                          7               0x0
+                          8               0xC
+                          9               0x1
+
+Convert the following virtual addresses to their equivalent physical addresses
+in hexadecimal. All numbers are given in hexadecimal. In the case of a page
+fault, you must use one of the free frames to update the page table and resolve
+the logical address to its corresponding physical address.
++ 0x2A1
++ 0x4E6
++ 0x94A
++ 0x316
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+256-byte pages --> 8 bits for offset
+
++ 0x2A1 --> 0xAA1
++ 0x4E6 --> 0x9E6 (The list of free page frames has F, D)
++ 0x94A --> 0x14A
++ 0x316 --> 0xF16 (The list of free page frames has D)

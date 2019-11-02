@@ -1,0 +1,13 @@
+10.31 Explain why compressed memory is used in operating systems for mobile
+devices.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Rather than paging out modified frames to swap space, memory compression
+compresses several frames into a single frame, enabling the system to reduce
+memory usage without resorting to swapping pages. As mobile systems have the
+limit of space and speed of secondary storage, it generally do not support
+either swapping. Thus, memory compression is an integral part of the memory-
+management strategy for most mobile operating systems,

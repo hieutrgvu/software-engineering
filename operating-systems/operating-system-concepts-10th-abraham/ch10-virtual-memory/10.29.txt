@@ -1,0 +1,33 @@
+10.29 Consider a demand-paging system with the following time-measured
+utilizations:
+
+CPU utilization 20%
+Paging disk 97.7%
+Other I/O devices 5%
+
+For each of the following, indicate whether it will (or is likely to) improve
+CPU utilization. Explain your answers.
+
+a. Install a faster CPU.
+b. Install a bigger paging disk.
+c. Increase the degree of multiprogramming.
+d. Decrease the degree of multiprogramming.
+e. Install more main memory.
+f. Install a faster hard disk or multiple controllers with multiple hard disks.
+g. Add prepaging to the page-fetch algorithms.
+h. Increase the page size.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. No, because thrashing occurs.
+b. No, because process are waiting for I/O. It needs speed not capacity.
+c. No, because thrashing occurs.
+d. Yes, more free pages for running processes.
+e. Yes, amore pages can remain resident and not require paging to or from the
+disks.
+f. Yes, because IO speed is the bottleneck.
+g. Yes, the CPU get more data faster.
+h. Not certain. If sequential data is accessed, it will improve. However, random
+data is accessed, it will make the situation worse.

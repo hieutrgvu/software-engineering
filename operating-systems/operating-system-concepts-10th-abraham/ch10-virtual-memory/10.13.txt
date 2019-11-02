@@ -1,0 +1,20 @@
+10.13 Consider a demand-paged computer system where the degree of multi-
+programming is currently fixed at four. The system was recently measured to
+determine utilization of the CPU and the paging disk. Three alternative results
+are shown below. For each case, what is happening? Can the degree of multi-
+programming be increased to increase the CPU utilization? Is the paging helping?
+a. CPU utilization 13 percent; disk utilization 97 percent
+b. CPU utilization 87 percent; disk utilization 3 percent
+c. CPU utilization 13 percent; disk utilization 3 percent
+
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. Thrashing; Cannot increase the degree of multiprogramming, and paging is not
+helping.
+b. CPU utilization is high, but increasing the degree of multiprogramming may
+cause thrashing.
+c. CPU utilization is low, and the system has light workload. The degree of
+multiprogramming can be increased to achieve better CPU utilization.

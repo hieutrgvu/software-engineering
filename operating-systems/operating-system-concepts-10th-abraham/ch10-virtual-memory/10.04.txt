@@ -1,0 +1,25 @@
+10.4 An operating system supports a paged virtual memory. The central processor
+has a cycle time of 1 microsecond. It costs an additional 1 microsecond to
+access a page other than the current one. Pages have 1,000 words, and the paging
+device is a drum that rotates at 3,000 revolutions per minute and transfers 1
+million words per second. The following statistical measurements were obtained
+from the system:
++ One percent of all instructions executed accessed a page other than the
+current page.
++ Of the instructions that accessed another page, 80 percent accessed a page
+already in memory.
++ When a new page was required, the replaced page was modified 50 percent of
+the time.
+
+Calculate the effective instruction time on this system, assuming that the
+system is running one process only and that the processor is idle during drum
+transfers.
+
+********************************************************************************
+Resolved by: Internet
+********************************************************************************
+
+Effective instruction time:
+0.99 × (1 sec + 0.008 × (2 sec) + 0.002 × (10,000 sec + 1,000 sec)
++ 0.001 × (10,000 sec + 1,000 sec)
+= (0.99 + 0.016 + 22.0 + 11.0) sec = 34.0 sec

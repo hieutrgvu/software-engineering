@@ -1,0 +1,17 @@
+10.11 You have devised a new page-replacement algorithm that you think may be
+optimal. In some contorted test cases, Belady's anomaly occurs. Is the new
+algorithm optimal? Explain your answer.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+[Internet] No. An optimal algorithm will not suffer from Belady's anomaly
+because —by definition—an optimal algorithm replaces the page that will not be
+used for the longest time. Belady's anomaly occurs when a page - replacement
+algorithm evicts a page that will be needed in the immediate future. An optimal
+algorithm would not have selected such a page.
+
+[Hieu Vu] Belady's anomaly occurs when the number of frames increases but the
+fault rate also increases. The optimal approach should work better if the number
+of frames increases.

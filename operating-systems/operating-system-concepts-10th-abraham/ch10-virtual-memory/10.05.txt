@@ -1,0 +1,37 @@
+10.5 Consider the page table for a system with 12-bit virtual and physical
+addresses and 256-byte pages.
+
+       Page     Page Frame
+        0           –
+        1           2
+        2           C
+        3           A
+        4           –
+        5           4
+        6           3
+        7           –
+        8           B
+        9           0
+
+The list of free page frames is D, E, F (that is, D is at the head of the list,
+E is second, and F is last). A dash for a page frame indicates that the page is
+not in memory.
+
+Convert the following virtual addresses to their equivalent physical addresses
+in hexadecimal. All numbers are given in hexadecimal.
+
++ 9EF
++ 111
++ 700
++ 0FF
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+256-byte pages --> 8 bits for offset
+
++ 9EF --> 0EF
++ 111 --> 211
++ 700 --> D00 (Move page 7 from storage to frame D)
++ 0FF --> EFF (Move page 0 from storage to frame E)

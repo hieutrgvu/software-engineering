@@ -1,0 +1,19 @@
+10.15 Assume that a program has just referenced an address in virtual memory.
+Describe a scenario in which each of the following can occur. (If no such
+scenario can occur, explain why.)
++ TLB miss with no page fault
++ TLB miss with page fault
++ TLB hit with no page fault
++ TLB hit with page fault
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ TLB miss with no page fault: The page is loaded into main memory but not
+cached in TLB.
++ TLB miss with page fault: The page is not loaded into main memory, thus it is
+not cached.
++ TLB hit with no page fault: Most likely a recent reference.
++ TLB hit with page fault: No such scenario, if page is not loaded into memory,
+it cannot be in TLB.

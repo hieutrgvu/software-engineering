@@ -1,0 +1,16 @@
+10.34 Suppose that your replacement policy (in a paged system) is to examine
+each page regularly and to discard that page if it has not been used since the
+last examination. What would you gain and what would you lose by using this
+policy rather than LRU or second-chance replacement?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+This algorithm can be implemented by a reference bit. Each examination cycle,
+all reference is clear and only set if its page is referenced. The pages have
+the reference bit 0 will be selected arbitrarily to replace.
+
+The advantage of this algorithm is simplicity. However, the disadvantage is
+that it ignores the locality by using only a short time frame for selecting
+the victim.

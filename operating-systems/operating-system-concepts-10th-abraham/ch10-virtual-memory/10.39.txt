@@ -1,0 +1,16 @@
+10.39 Consider the parameter Δ used to define the working-set window in the
+working-set model. When Δ is set to a low value, what is the effect on the
+page-fault frequency and the number of active (nonsuspended) processes currently
+executing in the system? What is the effect when Δ is set to a very high value?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ When Δ is set to small value, the working set may be small too. This causes
+a large number of page fault, and the number of active processes may decreases
+due to thrashing.
+
++ When Δ is set to large value, the working set may contains a lot of page
+numbers including unnecessary pages. This reduce the number of page faults but
+also reduce the degree of multiprogramming.

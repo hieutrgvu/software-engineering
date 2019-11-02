@@ -1,0 +1,16 @@
+10.1 Under what circumstances do page faults occur? Describe the actions taken
+by the operating system when a page fault occurs.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ A page fault occurs when an access to a valid page which is currently in
+secondary storage (not been brought into memory).
+
++ In this case: the OS verifies if this is a valid or an invalid memory access.
+If the reference was invalid, it terminates the process. Otherwise, it finds a
+free frame and schedules a secondary storage operation to read the desired page
+into the newly allocated frame. When the storage read is complete, process table
+and page table are updated. Then, it restarts the instruction interrupted by
+the trap.

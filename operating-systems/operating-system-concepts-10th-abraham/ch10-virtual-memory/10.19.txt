@@ -1,0 +1,18 @@
+10.19 What is the copy-on-write feature, and under what circumstances is its
+use beneficial? What hardware support is required to implement this feature?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Copy-on-write allows multiple processes to share the same address space, e.g.
+code segment. If either one of them writes (modifies) a page, a copy of the page
+is made so that these processes individually access the different copies without
+interfering with each other. Its use is beneficial in many case, e.g. when a
+process are created from the process's parent using folk(). This can save the
+memory and avoid copying if no necessary.
+
++ The hardware support required to implement is simply the following: on each
+memory access, the page table needs to be consulted to check whether the page
+is write protected. If it is indeed write protected, a trap would occur and the
+OS could resolve the issue by coping.

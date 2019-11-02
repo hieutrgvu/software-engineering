@@ -1,0 +1,55 @@
+10.22 Consider the page table for a system with 16-bit virtual and physical
+addresses and 4,096-byte pages.
+
+              Page         Page Frame        Reference Bit
+               0               9                   0
+               1               –                   0
+               2               10                  0
+               3               15                  0
+               4               6                   0
+               5               13                  0
+               6               8                   0
+               7               12                  0
+               8               7                   0
+               9               –                   0
+               10              5                   0
+               11              4                   0
+               12              1                   0
+               13              0                   0
+               14              –                   0
+               15              2                   0
+
+The reference bit for a page is set to 1 when the page has been referenced.
+Periodically, a thread zeroes out all values of the reference bit. A dash for
+a page frame indicates that the page is not in memory. The page-replacement
+algorithm is localized LRU, and all numbers are provided in decimal.
+
+a. Convert the following virtual addresses (in hexadecimal) to the equivalent
+physical addresses. You may provide answers in either hexadecimal or decimal.
+Also set the reference bit for the appropriate entry in the page table.
++ 0x621C
++ 0xF0A3
++ 0xBC1A
++ 0x5BAA
++ 0x0BA1
+b. Using the above addresses as a guide, provide an example of a logical address
+(in hexadecimal) that results in a page fault.
+c. From what set of page frames will the LRU page-replacement algorithm choose
+in resolving a page fault?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+4096-byte pages --> 12 bits for offset
+
+a.
++ 0x621C --> 0x821C; ref bit of page 6  - 1
++ 0xF0A3 --> 0x20A3; ref bit of page 15 - 1
++ 0xBC1A --> 0x4C1A; ref bit of page 11 - 1
++ 0x5BAA --> 0xDBAA; ref bit of page 5  - 1
++ 0x0BA1 --> 0x9BA1; ref bit of page 0  - 1
+
+b. Accessing 0x19BC will cause a page fault.
+
+c. The page table entries have the reference bit 0: {10, 15, 6, 12, 7, 5, 1, 0}

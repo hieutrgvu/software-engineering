@@ -1,0 +1,13 @@
+10.41 A system provides support for user-level and kernel-level threads.
+The mapping in this system is one to one (there is a corresponding kernel
+thread for each user thread). Does a multithreaded process consist of (a) a
+working set for the entire process or (b) a working set for each thread?
+Explain.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+(b) A working set for each thread. The mapping user to kernel thread is one to
+one, so each thread has its own execution sequence. This generating its unique
+sequence of addresses.
