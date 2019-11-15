@@ -1,0 +1,59 @@
+6.7 Find the error(s) in each of the following program segments, and explain
+how the error(s) can be corrected (see also Exercise 6.48):
+a)  int g()
+    {
+      cout << "Inside function g" << endl;
+      int h()
+      {
+        cout << "Inside function h" << endl;
+      }
+    }
+
+b)  int sum( int x, int y )
+    {
+      int result;
+
+      result = x + y;
+    }
+
+c)  int sum( int n )
+    {
+      if ( n == 0 )
+        return 0;
+      else
+        n + sum( n - 1 );
+    }
+
+d)  void f( double a );
+    {
+      float a;
+      cout << a << endl;
+    }
+
+e)  void product()
+    {
+      int a;
+      int b;
+      int c;
+      int result;
+      cout << "Enter three integers: ";
+      cin >> a >> b >> c;
+      result = a * b * c;
+      cout << "Result is " << result;
+      return result;
+    }
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) Error: Cannot define function h inside function g.
+   Correction: Move function h out of the definition of g.
+b) Error: Missing result return.
+   Correction: Add return result; to the last line of sum function.
+c) Error: Missing result return.
+   Correction: Change statement in else to return n + sum(n - 1);
+d) Error: Redundant ;
+   Correction: Remove ; after function header.
+e) Error: Redundant return statement.
+   Correction: re move return statement.

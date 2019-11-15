@@ -1,0 +1,20 @@
+6.4 Give the function header for each of the following functions:
+a) Function hypotenuse that takes two double-precision, floating-point
+arguments, side1 and side2, and returns a double-precision, floating-point
+result.
+b) Function smallest that takes three integers, x, y and z, and returns
+an integer.
+c) Function instructions that does not receive any arguments and does not
+return a value. [Note: Such functions are commonly used to display instructions
+to a user.]
+d) Function intToDouble that takes an integer argument, number, and returns a
+double-precision, floating-point result.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) double hypotenuse(double side1, double side2)
+b) int smallest(int x, int y, int z)
+c) void instructions()
+d) double intToDouble(int number)

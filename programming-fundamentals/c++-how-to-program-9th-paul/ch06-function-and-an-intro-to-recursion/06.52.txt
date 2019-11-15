@@ -1,0 +1,8 @@
+6.52 What’s the purpose of the unary scope resolution operator?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+One of the purpose of the unary scope resolution operator is to access the
+global variable.

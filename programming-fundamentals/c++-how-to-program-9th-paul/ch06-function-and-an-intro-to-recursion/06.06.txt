@@ -1,0 +1,11 @@
+6.6 Write a declaration for each of the following:
+a) Integer count that should be maintained in a register. Initialize count to 0.
+b) Double-precision, floating-point variable lastVal that is to retain its
+value between calls to the function in which it’s defined.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) register int count = 0;
+b) static double lastVal;

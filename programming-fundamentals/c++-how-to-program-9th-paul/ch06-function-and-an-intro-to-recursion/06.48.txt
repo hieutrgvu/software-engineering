@@ -1,0 +1,55 @@
+6.48 (Find the Error) Find the error in each of the following program segments
+and explain how to correct it:
+
+a)  float cube( float ); // function prototype
+
+    cube( float number ) // function definition
+    {
+      return number * number * number;
+    }
+
+b)  register auto int x = 7;
+
+c)  int randomNumber = srand();
+
+d)  float y = 123.45678;
+    int x;
+
+    x = y;
+    cout << static_cast< float >( x ) << endl;
+
+e)  double square( double number )
+    {
+      double number;
+      return number * number;
+    }
+
+f)  int sum( int n )
+    {
+      if ( n == 0 )
+        return 0;
+      else
+        return n + sum( n );
+    }
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a)  Compilation Error: Missing return type of Function definition.
+    Correction: float cube( float number )
+
+b)  Compilation Error: Cannot combine register and auto.
+    Correction: Remove register or auto.
+
+c)  Compilation Error: srand() is the seed function and has void return type.
+    Correction: int randomNumber = rand();
+
+d)  Logic Error: static cast has no meaning. The value is truncated by x = y;
+    Correction: Change type of x to float and remove static cast
+
+e)  Compilation Error: There are two local number variables.
+    Correction: Remove double number;
+
+f)  Logic Error: The recursive will execute forever until out of memory.
+    Correction: Assume that n > 0, change to return n + sum( n - 1 );

@@ -1,0 +1,9 @@
+6.8 Why would a function prototype contain a parameter type declaration such
+as double &?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+This creates a reference parameter of type "reference to double". This help
+the function can modify the original variable in the caller.

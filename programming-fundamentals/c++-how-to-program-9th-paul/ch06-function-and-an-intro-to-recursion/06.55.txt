@@ -1,0 +1,39 @@
+6.55 (Find the Error) Determine whether the following program segments contain
+errors. For each error, explain how it can be corrected. [Note: For a particular
+program segment, it’s possible that no errors are present in the segment.]
+
+a)  template < class A >
+    int sum( int num1, int num2, int num3 )
+    {
+      return num1 + num2 + num3;
+    }
+
+b)  void printResults( int x, int y )
+    {
+      cout << "The sum is " << x + y << '\n';
+      return x + y;
+    }
+
+c)  template < A >
+    A product( A num1, A num2, A num3 )
+    {
+      return num1 * num2 * num3;
+    }
+
+d)  double cube( int );
+    int cube( int );
+
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) No Errors.
+
+b) Compilation Error: Return expression in function of void return type.
+   Correction: Remove return or change the return type to int.
+
+c) No Errors.
+
+d) Compilation Error: Two prototypes have the same signature.
+   Correction: Remove one of those, or change the signature.

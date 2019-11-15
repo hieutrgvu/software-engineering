@@ -1,0 +1,7 @@
+6.9 (True/False) All arguments to function calls in C++ are passed by value.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+False. C++ supports pass-by-reference by using & or pointer.

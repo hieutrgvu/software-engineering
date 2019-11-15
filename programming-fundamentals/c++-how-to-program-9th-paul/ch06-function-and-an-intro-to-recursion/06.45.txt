@@ -1,0 +1,34 @@
+6.45 What does the following program do?
+
+1   // Exercise 6.45: ex06_45.cpp
+2   // What does this program do?
+3   #include <iostream>
+4   using namespace std;
+5
+6   int mystery( int, int ); // function prototype
+7
+8   int main()
+9   {
+10    int x, y;
+11  
+12    cout << "Enter two integers: ";
+13    cin >> x >> y;
+14    cout << "The result is " << mystery( x, y ) << endl;
+15  } // end main
+16  
+17  // Parameter b must be a positive integer to prevent infinite recursion
+18  int mystery( int a, int b )
+19  {
+20    if ( b == 1 ) // base case
+21      return a;
+22    else // recursion step
+23      return a + mystery( a, b - 1 );
+24  } // end function mystery
+
+
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Calculate the product of a and b

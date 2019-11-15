@@ -1,0 +1,25 @@
+6.44 What’s wrong with the following program?
+
+1   // Exercise 6.44: ex06_44.cpp
+2   // What is wrong with this program?
+3   #include <iostream>
+4   using namespace std;
+5
+6   int main()
+7   {
+8     int c;
+9
+10    if ( ( c = cin.get() ) != EOF )
+11    {
+12      main();
+13      cout << c;
+14    } // end if
+15  } // end main
+
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+This program is not wrong. It will be terminated if getting an EOF. However,
+it prints the decimal of ASCII of every input characters including end of line.

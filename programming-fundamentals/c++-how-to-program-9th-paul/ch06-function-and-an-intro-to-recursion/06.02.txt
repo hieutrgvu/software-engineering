@@ -1,0 +1,41 @@
+6.2 For the program in Fig. 6.34, state the scope (either function scope,
+global namespace scope, local scope or function-prototype scope) of each of
+the following elements:
+a) The variable x in main.
+b) The variable y in cube.
+c) The function cube.
+d) The function main.
+e) The function prototype for cube.
+f) The identifier y in the function prototype for cube.
+
+
+ 1  // Exercise 6.2: Ex06_02.cpp
+ 2  #include <iostream>
+ 3  using namespace std;
+ 4
+ 5  int cube( int y ); // function prototype 6
+ 7  int main()
+ 8  {
+ 9    int x;
+10
+11    for * x = 1; x <= 10; x++ ) // loop 10 times
+12      cout << cube( x ) << endl; // calculate cube of x and output results
+13  } // end main
+14
+15  // definition of function cube
+16  int cube( int y )
+17  {
+18    return y * y * y;
+19  } // end function cube
+Fig. 6.34 | Program for Exercise 6.2
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) local scope.
+b) local scope.
+c) global namespace scope.
+d) global namespace scope.
+e) global namespace scope.
+f) function-prototype scope.
