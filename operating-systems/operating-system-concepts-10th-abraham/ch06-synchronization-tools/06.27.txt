@@ -1,0 +1,13 @@
+6.27 Suppose the signal() statement can appear only as the last statement in a
+monitor function. Suggest how the implementation described in Section 6.7 can be
+simplified in this situation.
+
+********************************************************************************
+Resolved by: Intructor's Manual
+********************************************************************************
+
+If the signal operation were the last statement, then the lock could be
+transferred from the signalling process to the process that is the recipient of
+the signal. Otherwise, the signalling process would have to explicitly release
+the lock and the recipient of the signal would have to compete with all other
+processes to obtain the lock to make progress.

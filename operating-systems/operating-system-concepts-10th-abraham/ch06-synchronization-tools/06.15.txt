@@ -1,0 +1,12 @@
+6.15 Explain why implementing synchronization primitives by disabling interrupts
+is not appropriate in a single-processor system if the synchronization
+primitives are to be used in user-level programs.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+If a user-level program have the abitily to disabling interrupts, it can
+stop the context switching by disabling timer interrupt. Therefore, it occupies
+the processor in the system which has only one processor, and it does not give
+another processes any chance to execute.

@@ -1,0 +1,41 @@
+6.7 The pseudocode of Figure 6.15 illustrates the basic push() and pop()
+operations of an array-based stack. Assuming that this algorithm could be used
+in a concurrent environment, answer the following questions:
+a. What data have a race condition?
+b. How could the race condition be fixed?
+
+
+push(item) {
+  if (top < SIZE) {
+    stack[top] = item;
+    top++;
+  }
+  else
+    ERROR
+}
+
+pop() {
+  if (!is empty()) {
+    top--;
+    return stack[top];
+  }
+  else
+    ERROR
+}
+
+is empty() {
+  if (top == 0)
+    return true;
+  else
+    return false;
+}
+
+Figure 6.15 Array-based stack for Exercise 6.7
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. The data have a race condition: top (if not atomic) and stack[].
+b. Using mutex: Add wait(mutex) and signal(mutex) to the beginning and ending of
+both functions push and pop.

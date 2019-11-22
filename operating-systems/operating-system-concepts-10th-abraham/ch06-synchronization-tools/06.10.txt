@@ -1,0 +1,48 @@
+6.10 The compare_and_swap() instruction can be used to design lock-free data
+structures such as stacks, queues, and lists. The program example shown in
+Figure 6.17 presents a possible solution to a lock-free stack using CAS
+instructions, where the stack is represented as a linked list of Node elements
+with top representing the top of the stack. Is this implementation free from
+race conditions?
+
+
+typedef struct node {
+  value_t data;
+  struct node *next;
+} Node;
+
+Node *top; // top of stack
+
+void push(value t item) {
+  Node *old_node;
+  Node *new_node;
+  new_node = malloc(sizeof(Node));
+  new_node->data = item;
+
+  do {
+    old_node = top;
+    new_node->next = old_node;
+  } while (compare_and_swap(top, old_node, new_node) != old_node);
+}
+
+value_t pop() {
+  Node *old_node;
+  Node *new_node;
+
+  do {
+    old_node = top;
+    if (old_node == NULL)
+      return NULL;
+    new_node = old_node->next;
+  } while (compare_and_swap(top, old_node, new_node) != old_node);
+
+  return old_node->data;
+}
+
+Figure 6.17 Lock-free stack for Exercise 6.10.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Yes, this implementation is free from race condition.

@@ -1,0 +1,15 @@
+6.17 Explain why interrupts are not appropriate for implementing
+synchronization primitives in multiprocessor systems.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Disabling interrupt of a processor only stop the context switching for this
+procssor. This does not limit other processors running another processes, so
+the mutual exclusion is not guaranteed.
+
++ Disabling interrupts for all processors can be time consuming, since the
+message is passed to all the processors. THis message passing delays entry into
+each critical section, and system efficiency decreases. Also consider the
+effect on a system's clock if the clock is kept updated by interrupts.

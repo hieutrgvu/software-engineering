@@ -1,0 +1,14 @@
+6.1 In Section 6.4, we mentioned that disabling interrupts frequently can
+affect the system's clock. Explain why this can occur and how such effects can
+be minimized.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ The system's clock is kept updated at every clock interrupt. If disabling
+interrupts lasts a long period, the system's clock will miss some clocks and
+lose the correct time.
+
++ The above effect can be minimized by disabling interrupts for very short
+periods.

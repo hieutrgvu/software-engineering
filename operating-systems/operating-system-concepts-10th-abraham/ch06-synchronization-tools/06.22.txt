@@ -1,0 +1,71 @@
+6.22 Consider the code example for allocating and releasing processes shown in
+Figure 6.20.
+
+a. Identify the race condition(s).
+
+b. Assume you have a mutex lock named mutex with the operations acquire() and
+release(). Indicate where the locking needs to be placed to prevent the race
+condition(s).
+
+c. Could we replace the integer variable
+  int number_of_processes = 0
+with the atomic integer
+  atomic t number_of_processes = 0
+to prevent the race condition(s)?
+
+
+#define MAX PROCESSES 255
+int number_of_processes = 0;
+
+/* the implementation of fork() calls this function */
+int allocate process() {
+  int new pid;
+
+  if (number_of_processes == MAX PROCESSES)
+    return -1;
+  else {
+    /* allocate necessary process resources */
+    ++number_of_processes;
+
+    return new pid;
+  }
+}
+
+/* the implementation of exit() calls this function */
+void release process() {
+  /* release process resources */
+  --number_of_processes;
+}
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. The race condition on variable number_of_processes.
+
+b.
+int allocate process() {
+  int new pid;
+  acquire(mutex);
+  if (number_of_processes == MAX PROCESSES)
+    return -1;
+  else {
+    /* allocate necessary process resources */
+    ++number_of_processes;
+
+    return new pid;
+  }
+  release(mutex);
+}
+
+void release process() {
+  acquire(mutex);
+  /* release process resources */
+  --number_of_processes;
+  release(mutex);
+}
+
+c. No,  because the statement 'if (number_of_processes == MAX PROCESSES)' in
+allocate() function still suffers the race condition. This comparison can lead
+to the situation that a lot of processes are allocated when there is only one
+available slot.

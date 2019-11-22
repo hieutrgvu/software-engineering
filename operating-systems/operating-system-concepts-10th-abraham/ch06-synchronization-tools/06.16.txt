@@ -1,0 +1,31 @@
+6.16 Consider how to implement a mutex lock using the compare_and_swap()
+instruction. Assume that the following structure defining the mutex lock is
+available:
+
+typedef struct {
+  int available;
+} lock;
+
+The value (available == 0) indicates that the lock is available, and a value of
+1 indicates that the lock is unavailable. Using this struct, illustrate how the
+following functions can be implemented using the compare_and_swap() instruction:
+
+void acquire(lock *mutex)
+void release(lock *mutex)
+
+Be sure to include any initialization that may be necessary.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+lock mutex = { 0 };
+
+void acquire(lock *mutex) {
+  while(compare_and_swap(mutex->lock, 0, 1))
+    ; // Busy waiting
+}
+
+void release(lock *mutex) {
+  mutex->lock = 0;
+}

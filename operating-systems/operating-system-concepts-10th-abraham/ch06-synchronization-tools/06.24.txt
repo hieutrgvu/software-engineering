@@ -1,0 +1,17 @@
+6.24 In Section 6.7, we use the following illustration as an incorrect use of
+semaphores to solve the critical-section problem:
+
+wait(mutex);
+...
+critical section
+...
+wait(mutex);
+
+Explain why this is an example of a liveness failure.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+In this case, the process will permanently block on the second call to
+wait(), as the semaphore is now unavailable.

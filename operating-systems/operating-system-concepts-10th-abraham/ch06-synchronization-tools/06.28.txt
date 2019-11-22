@@ -1,0 +1,37 @@
+6.28 Consider a system consisting of processes P1 , P2 , ..., Pn , each of which
+has a unique priority number. Write a monitor that allocates three identical
+printers to these processes, using the priority numbers for deciding the order
+of allocation.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The pseudo code as below:
+
+monitor Printers {
+  int available_printer = 3;
+  list waiting_list;
+  condition c;
+
+  void RequestPrinter(int process_number) {
+    if (available_printer > 0) {
+      available_printer--;
+      return;
+    }
+
+    waiting_list.Add(process_number);
+    waiting_list.Sort();
+
+    while(waiting_list.head != process_number)
+      c.wait();
+
+    available_printer--;
+    waiting_list.RemoveHead();
+  }
+
+  void ReleasePrinter() {
+    available_printer++;
+    c.signal();
+  }
+}

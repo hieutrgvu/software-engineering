@@ -1,0 +1,17 @@
+6.23 Servers can be designed to limit the number of open connections. For
+example, a server may wish to have only N socket connections at any point in
+time. As soon as N connections are made, the server will not accept another
+incoming connection until an existing connection is released. Illustrate how
+semaphores can be used by a server to limit the number of concurrent
+connections.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+A semaphore is initialized to the number of allowed socket connection, e.g. N.
+When there are a requesting connection, acquire() will be invoked. If acquire()
+succeeds (the semaphore is greater than zero before acquire), the server will
+accept the connection, otherwise it can reject the connection. When a connection
+is released, release() method will be invoked to increase the semaphore
+variable by 1.

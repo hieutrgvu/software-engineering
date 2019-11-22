@@ -1,0 +1,27 @@
+6.19 Assume that a system has multiple processing cores. For each of the
+following scenarios, describe which is a better locking mechanism — a spinlock
+or a mutex lock where waiting processes sleep while waiting for the lock to
+become available:
+
++ The lock is to be held for a short duration.
++ The lock is to be held for a long duration.
++ A thread may be put to sleep while holding the lock.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ The lock is to be held for a short duration. -> spinlock
+Spinlock is useful when process only wait for short duration which is less than
+the context switching time. No context switch is required when a process must
+wait on a lock so that one thread can "spin" on one processing core while
+another thread performs its critical section on another core.
+
++ The lock is to be held for a long duration. -> mutex
+There are no reason for a process wasting CPU time for a long duration. It can
+sleep so that another process can ultilize the processor.
+
++ A thread may be put to sleep while holding the lock. -> mutex
+Because the thread holding lock is put to blocked state, the lock is never
+released until this thread is awaked and release lock. Therefore, the other
+processes will wasting CPU time to wait the lock if using spinlock.

@@ -1,0 +1,95 @@
+6.9 The following program example can be used to sum the array values of size N
+elements in parallel on a system containing N computing cores (there is a
+separate processor for each array element):
+
+for j = 1 to log_2(N) {
+  for k = 1 to N {
+    if ((k + 1) % pow(2,j) == 0) {
+      values[k] += values[k - pow(2,(j-1))]
+    }
+  }
+}
+
+This has the effect of summing the elements in the array as a series of partial
+sums, as shown in Figure 6.16. After the code has executed, the sum of all
+elements in the array is stored in the last array location. Are there any race
+conditions in the above code example? If so, identify where they occur and
+illustrate with an example. If not, demonstrate why this algorithm is free
+from race conditions.
+
+
+  | 5  | 10 | 15 | 20 | 25 | 30 | 35 | 40 |
+  +----+----+----+----+----+----+----+----+
+    0    1    2    3    4    5    6    7
+     \   |     \   |     \   |     \   |
+      \  |      \  |      \  |      \  |
+       \ |       \ |       \ |       \ |
+        \|        \|        \|        \|
+         +         +         +         +
+  | 5  | 15 | 15 | 35 | 25 | 55 | 35 | 75 |
+  +----+----+----+----+----+----+----+----+
+    0    1    2    3    4    5    6    7
+           \       |           \       |
+            -----  |            -----  |
+                 \ |                 \ |
+                  \|                  \|
+                   +                   +
+  | 5  | 10 | 15 | 50 | 25 | 30 | 35 | 130 |
+  +----+----+----+----+----+----+----+-----+
+    0    1    2    3    4    5    6    7
+                     \                 |
+                      ---------------  |
+                                     \ |
+                                      \|
+                                       +
+  | 5  | 10 | 15 | 50 | 25 | 30 | 35 | 180 |
+  +----+----+----+----+----+----+----+-----+
+
+Figure 6.16 Summing an array as a series of partial sums for Exercise 6.9.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Race conditions can occurs. With the example of Figure 6.16, processors 1, 3, 5,
+7 calculate the partial sum for the next phase. However, if procssors 1 is not
+done phase 1 yet, processor 3 calculating the sum of the phase 2 will use the
+not-calculated value[1]. This will lead to an uncorrect result.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+6.21 A multithreaded web server wishes to keep track of the number of requests
+it services (known as hits). Consider the two following strategies to prevent a
+race condition on the variable hits. The first strategy is to use a basic mutex
+lock when updating hits:
+
+int hits;
+mutex lock hit_lock;
+hit_lock.acquire();
+hits++;
+hit_lock.release();
+
+A second strategy is to use an atomic integer:
+
+atomic t hits;
+atomic inc(&hits);
+
+Explain which of these two strategies is more efficient.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Atomic integer strategy will be more efficient than a mutex. Once it performs,
+no context switching occurs and there are no data race on a single variable
+while it is being updated.
+
++ In contrast, mutex may cost the system performance due to context switching.

@@ -1,0 +1,29 @@
+6.29 A file is to be shared among different processes, each of which has a
+unique number. The file can be accessed simultaneously by several processes,
+subject to the following constraint: the sum of all unique numbers associated
+with all the processes currently accessing the file must be less than n. Write a
+monitor to coordinate access to the file.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The pseudo code as below:
+
+monitor File {
+  const int upper_bound = n;
+  list process_list;
+  condition c;
+
+  void RequestAccess(int process_number) {
+    while(process_number + process_list.Sum() >= upper_bound)
+      c.wait();
+
+    process_list.Add(process_number);
+  }
+
+  void ReleaseAccess(int process_number) {
+    process_list.Remove(process_number);
+    c.signal();
+  }
+}

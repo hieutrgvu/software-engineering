@@ -1,0 +1,53 @@
+6.4 Show that, if the wait() and signal() semaphore operations are not executed
+atomically, then mutual exclusion may be violated.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Let remind the implementation of wait() and signal() on pages 274-275:
+
+1   wait(semaphore *S) {
+2     S->value--;
+3     if (S->value < 0) {
+4       add this process to S->list;
+5       sleep();
+6     }
+7   }
+
+1   signal(semaphore *S) {
+2     S->value++;
+3     if (S->value <= 0) {
+4       remove a process P from S->list;
+5       wakeup(P);
+6     }
+7   }
+
+
+Assume S->value is 1. If two (or more) processes are executing the lines 2-3
+of wait() (or signal()) function at the same time as below:
+
+Process_1     S->value--;
+Process_2     S->value--;
+Process_1     if (S->value < 0) {
+Process_2     if (S->value < 0) {
+
+No process can enter its critical section while the expectation is that the
+first process called wait() can enter -> Violate rules 2 (progress) and 3
+(bounded waiting).
+
+
++ For the 'busy waiting' implementation of wait() and signal() on page 273:
+
+1   wait(S) {
+2     while (S <= 0)
+3       ; // busy wait
+4     S--;
+5   }
+
+1   signal(S) {
+2     S++;
+3   }
+
+Two or more processes are waiting at while loop in wait() function can enter
+the critical section at the same time if a process invokes signal().

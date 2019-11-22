@@ -1,0 +1,50 @@
+6.13 The first known correct software solution to the critical-section problem
+for two processes was developed by Dekker. The two processes, P0 and P1, share
+the following variables:
+
+boolean flag[2]; /* initially false */
+int turn;
+
+The structure of process Pi (i == 0 or 1) is shown in Figure 6.18. The other
+process is Pj (j == 1 or 0). Prove that the algorithm satisfies all three
+requirements for the critical-section problem.
+
+
+while (true) {
+  flag[i] = true;
+  while (flag[j]) {
+    if (turn == j) {
+      flag[i] = false;
+      while (turn == j)
+        ; /* do nothing */
+      flag[i] = true;
+    }
+  }
+
+  /* critical section */
+
+  turn = j;
+  flag[i] = false;
+
+  /* remainder section */
+}
+
+Figure 6.19 The structure of process Pi in Dekker’s algorithm.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+1. Mutual exclusion is ensured by turn variable. The process Pi will give the
+access to critical section to Pj and wait its turn if the turn variable is j.
+Therefore, there is only 1 task in critical section.
+
+2. Progress is ensured by the two next statements after critical section. A
+process Pi will clear its flag for wishing entering critical section and give
+the turn to the process Pj.
+
+3. Bounded waiting: Suppose that two process wish to enter the critical section
+at the same time. The turn variable will determine which one will give the
+another the access by setting its flag to false. After waiting other process,
+it will take the control to the critical section. Therefore, the bounded
+waiting time is 1 waiting cycle.

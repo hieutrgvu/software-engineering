@@ -1,0 +1,19 @@
+6.5 Illustrate how a binary semaphore can be used to implement mutual exclusion
+among n processes.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ The value of a binary semaphore can range only between 0 and 1. Thus, binary
+semaphores behave similarly to mutex locks. In fact, on systems that do not
+provide mutex locks, binary semaphores can be used instead for providing mutual
+exclusion.
+
++ The n processes share a semaphore bin_sem which initialized to 1. Each process
+will be organized as below:
+
+wait(bin_sem);
+Critical Section
+signal(bin_sem);
+Remainder Section

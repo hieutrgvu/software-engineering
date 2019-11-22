@@ -1,0 +1,13 @@
+6.20 Assume that a context switch takes T time. Suggest an upper bound (in
+terms of T) for holding a spinlock. If the spinlock is held for any longer, a
+mutex lock (where waiting threads are put to sleep) is a better alternative.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Given that waiting on a lock requires two context switches — a context switch
+to move the thread to the waiting state and a second context switch to restore
+the waiting thread once the lock becomes available — the general rule is to use
+a spinlock if the lock will be held for a duration of less than two context
+switches - 2*T.

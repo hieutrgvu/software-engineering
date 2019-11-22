@@ -1,0 +1,34 @@
+6.8 Race conditions are possible in many computer systems. Consider an online
+auction system where the current highest bid for each item must be maintained.
+A person who wishes to bid on an item calls the bid(amount) function, which
+compares the amount being bid to the current highest bid. If the amount exceeds
+the current highest bid, the highest bid is set to the new amount. This is
+illustrated below:
+
+void bid(double amount) {
+  if (amount > highestBid)
+    highestBid = amount;
+}
+
+Describe how a race condition is possible in this situation and what might be
+done to prevent the race condition from occurring.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Race condition: if two or more people bid at the same time with the amount
+higher than the current highest bid, the last value to be saved is chosen
+arbitrarily among their bid. The desired value shall be the the highest value
+of these new bids.
+
++ Add the mutex as below:
+
+void bid(double amount) {
+  wait(mutex);
+
+  if (amount > highestBid)
+    highestBid = amount;
+
+  signal(mutex);
+}

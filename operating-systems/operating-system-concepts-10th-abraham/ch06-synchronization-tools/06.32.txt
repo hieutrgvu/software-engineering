@@ -1,0 +1,18 @@
+6.32 Discuss ways in which the priority inversion problem could be addressed in
+a real-time system. Also discuss whether the solutions could be implemented
+within the context of a proportional share scheduler.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Typically, priority inversion is avoided by implementing a priority-inheritance
+protocol. According to this protocol, all processes that are accessing resources
+needed by a higher-priority process inherit the higher priority until they are
+finished with the resources in question. When they are finished, their
+priorities revert to their original values. In the example above, a
+priority-inheritance protocol would allow process L to temporarily inherit the
+priority of process H, thereby preventing process M from preempting its
+execution. When process L had finished using resource S, it would relinquish its
+inherited priority from H and assume its original priority. Because resource S
+would now be available, process H — not M — would run next.

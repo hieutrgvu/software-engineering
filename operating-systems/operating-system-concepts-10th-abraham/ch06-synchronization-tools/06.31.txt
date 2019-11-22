@@ -1,0 +1,26 @@
+6.31 Design an algorithm for a monitor that implements an alarm clock that
+enables a calling program to delay itself for a specified number of time units
+(ticks). You may assume the existence of a real hardware clock that invokes a
+function tick() in your monitor at regular intervals.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+monitor Alarm {
+  condition c;
+
+  void Delay(int ticks) {
+    int start_time = GetClock();
+    while(start_time + tick > GetClock()) {
+      c.signal();
+      c.wait();
+    }
+
+    c.signal();
+  }
+
+  void HandleTickInt() {
+    c.signal();
+  }
+}

@@ -1,0 +1,20 @@
+6.12 Some semaphore implementations provide a function getValue() that returns
+the current value of a semaphore. This function may, for instance, be invoked
+prior to calling wait() so that a process will only call wait() if the value of
+the semaphore is > 0, thereby preventing blocking while waiting for the
+semaphore. For example:
+
+if (getValue(&sem) > 0)
+  wait(&sem);
+
+Many developers argue against such a function and discourage its use. Describe
+a potential problem that could occur when using the function getValue() in this
+scenario.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The processes waiting for a semaphore are added to a list. Depending on the
+policy, e.g. FIFO, OS will wake a process when the semaphore is released. Thus,
+using getValue() before call wait() may lead to starvation in high contention.

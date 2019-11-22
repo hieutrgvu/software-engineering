@@ -1,0 +1,17 @@
+6.2 What is the meaning of the term busy waiting? What other kinds of waiting
+are there in an operating system? Can busy waiting be avoided altogether?
+Explain your answer.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Busy waiting means that a process/thread are looping to wait for a condition
+to be satisfied without releasing the processor.
+
++ Another kind of waiting in OS is that process/thread will release the
+processor and wait to be awakened in the future when the condition is satisfied.
+
++ Busy waiting can be avoided but switching context can have huge impact on
+the system. It may not be avoided completely because the software uses atomic
+hardware instructions, which usually requires busy waiting.

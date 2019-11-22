@@ -1,0 +1,17 @@
+6.3 Explain why spinlocks are not appropriate for single-processor systems yet
+are often used in multiprocessor systems.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ The spinlock requires busy waiting. Therefore, in a real multiprogramming
+system, where a single CPU core is shared among many processes, it wastes CPU
+cycles that some other process might be able to use productively.
+
++ Spinlocks do have an advantage in that no context switch is required when a
+process must wait on a lock, and a context switch may take considerable time.
+In multicore/multiprocessor systems, spinlocks are the preferable choice for
+locking. If a lock is to be held for a short duration, one thread can "spin" on
+one processing core while another thread performs its critical section on
+another core.

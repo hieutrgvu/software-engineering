@@ -1,0 +1,17 @@
+6.18 The implementation of mutex locks provided in Section 6.5 suffers from
+busy waiting. Describe what changes would be necessary so that a process
+waiting to acquire a mutex lock would be blocked and placed into a waiting
+queue until the lock became available.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+To overcome the busy waiting problem, we can modify the definition of the
+acquire() and release() operations as follows: When a process executes the
+acquire() operation and finds that the mutex value is not true, it must wait.
+However, rather than engaging in busy waiting, the process can suspend itself.
+The suspend operation places a process into a waiting queue associated with the
+mutex, and the state of the process is switched to the waiting state. Then
+control is transferred to the CPU scheduler, which selects another process to
+execute.

@@ -1,0 +1,34 @@
+6.6 Race conditions are possible in many computer systems. Consider a banking
+system that maintains an account balance with two functions: deposit(amount)
+and withdraw(amount). These two functions are passed the amount that is to be
+deposited or withdrawn from the bank account balance. Assume that a husband and
+wife share a bank account. Concurrently, the husband calls the withdraw()
+function, and the wife calls deposit(). Describe how a race condition is
+possible and what might be done to prevent the race condition from occurring.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+deposit(amount) {
+  after_deposit = current + amount;
+  save(after_deposit);
+}
+
+withdraw(amount) {
+  after_withdraw = current - amount;
+  save(after_withdraw);
+}
+
+If the husband withdraw and the wife deposite at the same time, the possible
+sequence can happen as below:
+
+withdraw()    after_withdraw = current - amount;
+deposit()     after_deposit = current + amount;
+withdraw()    save(after_withdraw);
+deposit()     save(after_deposit);
+
+So the final balance is (current + amount). It like the withdraw never happens.
+
+To solve this problem, add mutex or binary semaphore so that deposit can only
+performed when another deposit() or withdraw() actions are done and vice versa.

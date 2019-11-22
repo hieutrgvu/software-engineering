@@ -1,0 +1,35 @@
+6.25 Demonstrate that monitors and semaphores are equivalent to the degree that
+they can be used to implement solutions to the same types of synchronization
+problems.
+
+********************************************************************************
+Resolved by: Intructor's Manual
+********************************************************************************
+
++ A semaphore can be implemented using the following monitor code:
+
+monitor semaphore {
+  int value = 0;
+  condition c;
+
+  semaphore_increment() {
+    value++;
+    c.signal();
+  }
+
+  semaphore_decrement() {
+    while (value == 0)
+      c.wait();
+    value--;
+  }
+}
+
++ A monitor could be implemented using a semaphore in the following manner.
+Each condition variable is represented by a queue of threads waiting for the
+condition. Each thread has a semaphore associated with its queue entry. When a
+thread performs a wait operation, it creates a new semaphore (initialized to
+zero), appends the semaphore to the queue associated with the condition
+variable, and performs a blocking semaphore decrement operation on the newly
+created semaphore. When a thread performs a signal on a condition variable, the
+first process in the queue is awakened by performing an increment on the
+corresponding semaphore.
