@@ -1,0 +1,25 @@
+7.1 (Fill in the Blanks) Answer each of the following:
+a) Lists and tables of values can be stored in ___ or ___.
+b) The elements of an array are related by the fact that they have the same ___
+and ___.
+c) The number used to refer to a particular element of an array is called its
+___.
+d) A(n) ___ should be used to declare the size of an array, because it makes
+the program more scalable.
+e) The process of placing the elements of an array in order is called ___ the
+array.
+f) The process of determining if an array contains a particular key value is
+called ___ the array.
+g) An array that uses two subscripts is referred to as a(n) ___ array.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) array, vector.
+b) type, array type.
+c) subscript/index.
+d) constant variable.
+e) sorting.
+f) searching.
+g) two-dimensional.

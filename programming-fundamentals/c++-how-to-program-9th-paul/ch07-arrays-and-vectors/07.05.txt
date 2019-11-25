@@ -1,0 +1,30 @@
+7.5 (Find the Error) Find the error in each of the following program segments
+and correct the error:
+
+a) #include <iostream>;
+
+b) arraySize = 10; // arraySize was declared const
+
+c) Assume that int b[ 10 ] = {};
+for ( int i = 0; i <= 10; ++i )
+  b[i]= 1;
+
+d) Assume that int a[ 2 ][ 2 ] = { { 1, 2 }, { 3, 4 } };
+a[ 1, 1 ] = 5;
+
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) Compilation error: No ';' after include.
+Correction: #include <iostream>
+
+b) Compilation error: Cannot treat arraySize as an lvalue.
+Correction: Initialize arraySize to 10 when declaring
+
+c) Runtime error: Out of bound.
+Correction: Replace "<=" by "<".
+
+d) Compilation error: wrong subscript.
+Correction: a[1][1] = 5;

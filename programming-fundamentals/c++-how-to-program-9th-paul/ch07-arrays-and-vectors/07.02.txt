@@ -1,0 +1,22 @@
+7.2 (True or False) State whether the following are true or false. If the
+answer is false, explain why.
+a) An array can store many different types of values.
+b) An array subscript should normally be of data type float.
+c) If there are fewer initializers in an initializer list than the number of
+elements in the array, the remaining elements are initialized to the last value
+in the initializer list.
+d) It's an error if an initializer list has more initializers than there are
+elements in the array.
+e) An individual array element that is passed to a function and modified in
+that function will contain the modified value when the called function
+completes execution.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) False. All elements in an array must have the same type.
+b) False. It should be an integer or integer expression.
+c) False. The remaining elements are initialized to zero.
+d) True.
+e) False. It is passed by value.

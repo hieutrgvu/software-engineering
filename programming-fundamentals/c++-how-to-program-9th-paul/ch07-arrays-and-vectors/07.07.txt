@@ -1,0 +1,23 @@
+7.7 (True or False) Determine whether each of the following is true or false.
+If false, explain why.
+a) To refer to a particular location or element within an array, we specify the
+name of the array and the value of the particular element.
+b) An array definition reserves space for an array.
+c) To indicate reserve 100 locations for integer array p, you write the
+declaration
+p[ 100 ];
+d) A for statement must be used to initialize the elements of a 15-element
+array to zero.
+e) Nested for statements must be used to total the elements of a
+two-dimensional array.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) False. Use the array name and element's subscript.
+b) False. The declaration of array reserve space, and the definition initializes
+the array.
+c) True.
+d) False. Using { } can initialize the elements of an array to zero.
+e) False. The while statement can be used.

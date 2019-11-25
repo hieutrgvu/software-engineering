@@ -1,0 +1,19 @@
+7.6 (Fill in the Blanks) Fill in the blanks in each of the following:
+a) The names of the four elements of array p (int p[4];) are ___, ___, ___,
+and ___.
+b) Naming an array, stating its type and specifying the number of elements in
+the array is called ___ the array.
+c) By convention, the first subscript in a two-dimensional array identifies an
+element's ___ and the second subscript identifies an element's ___.
+d) An m-by-n array contains ___ rows, ___ columns, and ___ elements.
+e) The name of the element in row 3 and column 5 of array d is ___.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) p[0], p[1], p[2], p[3].
+b) declaring.
+c) row, column
+d) m, n, m.n
+e) d[3][5]

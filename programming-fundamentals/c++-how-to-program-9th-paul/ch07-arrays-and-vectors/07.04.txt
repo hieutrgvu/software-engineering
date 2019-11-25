@@ -1,0 +1,36 @@
+7.4 (Double Array Questions) Answer the following questions regarding an array
+called table:
+a) Declare the array to be an integer array and to have 3 rows and 3 columns.
+Assume that the constant variable arraySize has been defined to be 3.
+b) How many elements does the array contain?
+c) Use a for statement to initialize each element of the array to the sum of
+its subscripts. Assume that the integer variables i and j are declared as
+control variables.
+d) Write a program segment to print the values of each element of array table
+in tabular format with 3 rows and 3 columns. Assume that the array was
+initialized with the declaration
+
+int table[ arraySize ][ arraySize ] = { { 1, 8 }, { 2, 4, 6 }, { 5 } };
+
+and the integer variables i and j are declared as control variables. Show the
+output.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) int arr[arraySize][arraySize];
+b) 9.
+
+c) for (int i = 0; i < arraySize; i++)
+     for (int j = 0; j < arraySize; j++) arr[i][j] = i + j;
+
+d) for (int i = 0; i < arraySize; i++) {
+     for (int j = 0; j < arraySize; j++) cout << arr[i][j];
+     cout << endl;
+   }
+
+Output:
+1 8 0
+2 4 6
+5 0 0

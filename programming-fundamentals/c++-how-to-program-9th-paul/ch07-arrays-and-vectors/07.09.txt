@@ -1,0 +1,55 @@
+7.9 (Double Array Questions) Consider a 2-by-3 integer array t.
+a) Write a declaration for t.
+b) How many rows does t have?
+c) How many columns does t have?
+d) How many elements does t have?
+e) Write the names of all the elements in row 1 of t.
+f) Write the names of all the elements in column 2 of t.
+g) Write a statement that sets the element of t in the first row and second
+column to zero.
+h) Write a series of statements that initialize each element of t to zero. Do
+not use aloop.
+i) Write a nested for statement that initializes each element of t to zero.
+j) Write a statement that inputs the values for the elements of t from the
+keyboard.
+k) Write a series of statements that determine and print the smallest value in
+array t.
+l) Write a statement that displays the elements in row 0 of t.
+m) Write a statement that totals the elements in column 3 of t.
+n) Write a series of statements that prints the array t in neat, tabular
+format. List the column subscripts as headings across the top and list the row
+subscripts at the left of each row.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) int t[2][3];
+b) 2.
+c) 3.
+d) 6.
+e) t[1][0], t[1][1], and t[1][2].
+f) t[0][2], and t[1][2].
+g) t[0][1] = 0;
+h) t[0][0] = 0; t[0][1] = 0; t[0][2] = 0;
+   t[1][0] = 0; t[1][1] = 0; t[1][2] = 0;
+i) for (int i = 0; i < 2; i++)
+     for (int j = 0; j < 3; j++)
+       t[i][j] = 0;
+j) for (int i = 0; i < 2; i++)
+     for (int j = 0; j < 3; j++)
+       cin >> t[i][j];
+k) int min = t[0][0];
+   for (int i = 0; i < 2; i++)
+     for (int j = 0; j < 3; j++)
+       if (min > t[i][j]) min = t[i][j];
+   cout << min;
+l) for (int j = 0; j < 3; j++) cout << t[0][j] << ' ';
+m) Out of bound
+n) cout << "     [0]  [1]  [2]" << endl;
+   for (int i = 0; i < 2; i++) {
+     cout << "[" << i << "]";
+     for (int j = 0; j < 3; j++)
+       cout << setw(5) << t[i][j];
+     cout << endl;
+   }

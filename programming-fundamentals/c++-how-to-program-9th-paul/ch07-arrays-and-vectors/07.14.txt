@@ -1,0 +1,18 @@
+7.14 (Find the Errors) Find the error(s) in each of the following statements:
+a) Assume that: int a[ 3 ];
+cout << a[ 1 ] << " " << a[ 2 ] << " " << a[ 3 ] << endl;
+b) double f[ 3 ] = { 1.1, 10.01, 100.001, 1000.0001 };
+c) Assume that: double d[ 2 ][ 10 ]; d[ 1, 9 ] = 2.345;
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) Error: Out of bound
+Correction: cout << a[ 0 ] << " " << a[ 1 ] << " " << a[ 2 ] << endl;
+
+b) Compilation error: Initializing 4 values to 3-element array.
+Correction: double f[ 4 ] = { 1.1, 10.01, 100.001, 1000.0001 };
+
+c) Compilation error: Wrong subscript format.
+Correction: d[ 1 ][ 9 ] = 2.345;

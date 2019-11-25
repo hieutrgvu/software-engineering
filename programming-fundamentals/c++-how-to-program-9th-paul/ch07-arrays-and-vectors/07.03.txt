@@ -1,0 +1,30 @@
+7.3 (Write C++ Statements) Write one or more statements that perform the
+following tasks for an array called fractions:
+a) Define a constant integer variable arraySize initialized to 10.
+b) Declare an array with arraySize elements of type double, and initialize the
+elements to 0.
+c) Name the fourth element of the array.
+d) Refer to array element 4.
+e) Assign the value 1.667 to array element 9.
+f) Assign the value 3.333 to the seventh element of the array.
+g) Print array elements 6 and 9 with two digits of precision to the right of
+the decimal point, and show the output that is actually displayed on the screen.
+h) Print all the array elements using a for statement. Define the integer
+variable i as a control variable for the loop. Show the output.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) const arraySize = 10;
+b) double arr[arraySize] = {};
+c) arr[3];
+d) arr[4];
+e) arr[9] = 1.667;
+f) arr[6] = 3.333;
+
+g) cout << fixed << setprecision(2) << arr[6] << ' ' << arr[9] << endl;
+Output: 3.33 1.67.
+
+h) for(int i = 0; i < arraySize; i++) cout << arr[i] << ' ';
+Output: 0.0 0.0 0.0 0.0 0.0 0.0 3.333 0.0 0.0 1.667
