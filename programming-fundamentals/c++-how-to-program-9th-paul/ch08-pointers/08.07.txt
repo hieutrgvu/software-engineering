@@ -1,0 +1,13 @@
+8.7 (True or False) State whether the following are true or false. If false,
+explain why.
+a) Two pointers that point to different arrays cannot be compared meaningfully.
+b) Because the name of an array is a pointer to the first element of the array,
+array names can be manipulated in precisely the same manner as pointers.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) True.
+b) False. Array names is the constant pointer so it cannot be applied the
+arithmetic operation like nonconstant pointer.

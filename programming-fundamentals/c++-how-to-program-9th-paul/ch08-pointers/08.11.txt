@@ -1,0 +1,37 @@
+8.11 (Find the Code Errors) Find the error in each of the following segments. If
+the error can be corrected, explain how.
+
+a) int *number;
+   cout << number << endl;
+
+b) double *realPtr;
+   long *integerPtr; integerPtr = realPtr;
+
+c) int *x, y;
+   x = y;
+
+d) char s[] = "this is a character array";
+   for ( ; *s != '\0'; ++s)
+   cout << *s << ' ';
+
+e) short *numPtr, result;
+   void *genericPtr = numPtr;
+   result = *genericPtr + 7;
+
+f) double x = 19.34;
+   double xPtr = &x;
+   cout << xPtr << endl;
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) No errors.
+b) Cannot assign pointer to double to pointer to long.
+c) Cannot assign an integer to a pointer to int.
+   Correction: int *x, *y;
+d) s is a constant pointer.
+   Using a char pointer array point to s: char *cPtr = s;
+e) Cannot dereference void pointer.
+f) Cannot assign an address to a non-pointer variable.
+   Correction: double *xPtr = &x;

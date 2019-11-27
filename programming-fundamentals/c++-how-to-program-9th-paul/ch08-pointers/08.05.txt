@@ -1,0 +1,27 @@
+8.5 Perform the task specified by each of the following statements:
+
+a) Write the function header for a function called exchange that takes two
+pointers to double-precision, floating-point numbers x and y as parameters and
+does not return a value.
+
+b) Write the function prototype for the function in part (a).
+
+c) Write the function header for a function called evaluate that returns an
+integer and that takes as parameters integer x and a pointer to function poly.
+Function poly takes an integer parameter and returns an integer.
+
+d) Write the function prototype for the function in part (c).
+
+e) Write two statements that each initialize character array vowel with the
+string of vowels, "AEIOU".
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) void exchange(double *x, double *y)
+b) void exchange(double *x, double *y);
+c) int evaluate(int x, int (*poly)(int))
+d) int evaluate(int x, int (*poly)(int));
+e) char arr[] = "AEIOU";
+   char arr[] = { 'A', 'E', 'I', 'O', 'U' };

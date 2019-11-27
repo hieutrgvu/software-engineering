@@ -1,0 +1,36 @@
+8.6 Find the error in each of the following program segments. Assume the
+following declarations and statements:
+
+int *zPtr; // zPtr will reference array z
+void *sPtr = 0;
+int number;
+int z[ 5 ] = { 1, 2, 3, 4, 5 };
+
+a) ++zPtr;
+b) // use pointer to get first value of array
+   number = zPtr;
+c) // assign array element 2 (the value 3) to number
+   number = *zPtr[ 2 ];
+d) // print entire array z
+   for ( int i = 0; i <= 5; ++i )
+     cout << zPtr[ i ] << endl;
+e) // assign the value pointed to by sPtr to number
+   number = *sPtr;
+f) ++z;
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) zPtr is not initialized.
+   Correction: zPtr = z;
+b) Cannot assign a pointer type int to variable type int.
+   Correction: number = *zPtr;
+c) Cannot dereferenced a variable type int.
+   Correction: number = zPtr[2];
+d) Out of bound.
+   Correction: change <= to <.
+e) Cannot dereference void pointer.
+   Correction: cast it to int *.
+f) Cannot modify an constant pointer.
+   Correction: Use zPtr instead.

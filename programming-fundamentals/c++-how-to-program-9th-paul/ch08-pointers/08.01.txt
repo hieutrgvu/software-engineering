@@ -1,0 +1,14 @@
+8.1 Answer each of the following:
+a) A pointer is a variable that contains as its value the ___ of another
+variable.
+b) The three values that can be used to initialize a pointer are ___, ___ and
+___.
+c) The only integer that can be assigned directly to a pointer is ___.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) address.
+b) 0, NULL, an address.
+c) 0.

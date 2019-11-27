@@ -1,0 +1,21 @@
+8.10 (Function Headers and Prototypes) Perform the task specified by each of
+the following statements:
+
+a) Write the function header for function zero that takes a long integer array
+parameter bigIntegers and does not return a value.
+
+b) Write the function prototype for the function in part(a).
+
+c) Write the function header for function add1AndSum that takes an integer
+array parameter oneTooSmall and returns an integer.
+
+d) Write the function prototype for the function described in part(c).
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) void zero(long bigInteger[])
+b) void zero(long bigInteger[]);
+c) int add1AndSum(int oneTooSmall[])
+d) int add1AndSum(int oneTooSmallp[]);

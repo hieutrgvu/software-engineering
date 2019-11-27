@@ -1,0 +1,35 @@
+8.13 (What Does This Code Do?) What does this program do?
+
+1   // Ex. 8.13: ex08_13.cpp
+2   // What does this program do?
+3   #include <iostream>
+4   using namespace std;
+5
+6   void mystery1( char *, const char * ); // prototype
+7
+8   int main()
+9   {
+10    char string1[ 80 ];
+11    char string2[ 80 ];
+12
+13    cout << "Enter two strings: ";
+14    cin >> string1 >> string2;
+15    mystery1( string1, string2 );
+16    cout << string1 << endl;
+17  } // end main
+18
+19  // What does this function do?
+20  void mystery1( char *s1, const char *s2 )
+21  {
+22    while ( *s1 != '\0' )
+23      ++s1;
+24
+25    for ( ; *s1 = *s2; ++s1, ++s2 )
+26      ; // empty statement
+27  } // end function mystery1
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Concatenate the second string input to the end of the first string input.
