@@ -1,0 +1,44 @@
+21.14 The following program uses function multiple to determine whether the
+integer entered from the keyboard is a multiple of some integer X. Examine
+function multiple, then determine the value of X.
+
+1   // Exercise 21.14: ex21_14.cpp
+2   // This program determines if a value is a multiple of X.
+3   #include <iostream>
+4   using namespace std;
+5
+6   bool multiple( int );
+7
+8   int main()
+9   {
+10    int y;
+11
+12    cout << "Enter an integer between 1 and 32000: ";
+13    cin >> y;
+14
+15    if ( multiple( y ) )
+16      cout << y << " is a multiple of X" << endl;
+17    else
+18      cout << y << " is not a multiple of X" << endl;
+19  } // end main
+20
+21  // determine if num is a multiple of X
+22  bool multiple( int num )
+23  {
+24    bool mult = true;
+25
+26    for ( int i = 0, mask = 1; i < 10; ++i, mask <<= 1)
+27      if ( ( num & mask ) != 0)
+28      {
+29        mult = false;
+30        break;
+31      } // end if
+32
+33    return mult;
+34  } // end function multiple
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+1024

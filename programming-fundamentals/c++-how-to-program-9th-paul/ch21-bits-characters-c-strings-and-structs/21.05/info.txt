@@ -1,0 +1,7 @@
+21.5 (Card Shufflling and Dealing) Modify Fig. 21.14 to shuffle the cards using
+a high-performance shuffle, as shown in Fig. 21.3. Print the resulting deck in
+two-column format. Precede each card with its color.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************

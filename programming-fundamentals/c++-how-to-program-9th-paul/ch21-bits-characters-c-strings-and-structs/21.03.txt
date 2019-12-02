@@ -1,0 +1,56 @@
+21.3 Write a single statement to accomplish each of the following. Assume that
+variables c (which stores a character), x, y and z are of type int; variables
+d, e and f are of type double; variable ptr is of type char * and arrays
+s1[ 100 ] and s2[ 100 ] are of type char.
+
+a) Convert the character stored in variable c to an uppercase letter. Assign
+the result to variable c.
+
+b) Determine if the value of variable c is a digit. Use the conditional
+operator as shownin Figs. 21.18–21.20 to print " is a " or " is not a " when
+the result is displayed.
+
+c) Convert the string "1234567" to long, and print the value.
+
+d) Determine whether the value of variable c is a control character. Use the
+conditional operator to print " is a " or " is not a " when the result is
+displayed.
+
+e) Assign to ptr the location of the last occurrence of c in s1.
+
+f) Convert the string "8.63582" to double, and print the value.
+
+g) Determine whether the value of c is a letter. Use the conditional operator
+to print " is a " or " is not a " when the result is displayed.
+
+h) Assign to ptr the location of the first occurrence of s2 in s1.
+
+i) Determine whether the value of variable c is a printing character. Use
+the conditional operator to print " is a " or " is not a " when the result is
+displayed.
+
+j) Assign to ptr the location of the first occurrence in s1 of any character
+from s2.
+
+k) Assign to ptr the location of the first occurrence of c in s1.
+
+l) Convert the string "-21" to int, and print the value.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) c = toupper(c);
+b) cout <<"\'" << c << "\'" << (isdigit(c) ? " is " : " is not ") << "a digit.";
+c) cout << atol("1234567");
+d) cout <<"\'" << c << "\'" << (iscntrl(c) ? " is " : " is not ")
+     << "a control character.";
+e) ptr = strrchr(s1, c);
+f) cout << atof("8.63582");
+g) cout <<"\'" << c << "\'" << (isalpha(c) ? " is " : " is not ") << "a letter";
+h) ptr = strstr(s1, s2);
+i) cout <<"\'" << c << "\'" << (isprint(c) ? " is " : " is not ")
+     << "a printing character.";
+j) ptr = strpbrk(s1, s2);
+k) ptr = strchr(s1, c);
+l) cout << atoi("-21");

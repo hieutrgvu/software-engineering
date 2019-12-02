@@ -1,0 +1,61 @@
+21.4 (Defining Structures) Provide the definition for each of the following
+structures:
+
+a) Structure Inventory, containing character array partName[ 30 ], integer
+partNumber, floating-point price, integer stock and integer reorder.
+
+b) A structure called Address that contains character arrays streetAddress[25],
+city[20], state[3] and zipCode[6].
+
+c) Structure Student, containing arrays firstName[ 15 ] and lastName[ 15 ] and
+variable homeAddress of type struct Address from part (b).
+
+d) Structure Test, containing 16 bit fields with widths of 1 bit. The names of
+the bit fields are the letters a to p.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a)
+struct Inventory {
+  char partName[30];
+  int partNumber;
+  float price;
+  int stock;
+  int reorder;
+};
+
+b)
+struct Address {
+  char streetAddress[25];
+  char city[20];
+  char state[3];
+  char zipCode[6];
+};
+
+c)
+struct Student {
+  char firstName[15];
+  char lastName[15];
+  Address homeAddress;
+};
+
+d) struct Test {
+  int a : 1;
+  int b : 1;
+  int c : 1;
+  int d : 1;
+  int e : 1;
+  int f : 1;
+  int g : 1;
+  int h : 1;
+  int i : 1;
+  int j : 1;
+  int k : 1;
+  int l : 1;
+  int m : 1;
+  int n : 1;
+  int o : 1;
+  int p : 1;
+};

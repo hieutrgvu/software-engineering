@@ -1,0 +1,38 @@
+21.15 What does the following program do?
+
+1   // Exercise 21.15: ex21_15.cpp
+2   #include <iostream>
+3   using namespace std;
+4
+5   bool mystery( unsigned );
+6
+7   int main()
+8   {
+9     unsigned x;
+10
+11    cout << "Enter an integer: ";
+12    cin >> x;
+13    cout << boolalpha
+14      << "The result is " << mystery( x ) << endl;
+15  } // end main
+16
+17  // What does this function do?
+18  bool mystery( unsigned bits )
+19  {
+20    const int SHIFT = 8 * sizeof( unsigned ) - 1;
+21    const unsigned MASK = 1 << SHIFT;
+22    unsigned total = 0;
+23
+24    for ( int i = 0; i < SHIFT + 1; ++i, bits <<= 1 )
+25      if ( ( bits & MASK ) == MASK )
+26        ++total;
+27
+28    return !( total % 2 );
+29  } // end function mystery
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+If the binary form of input number has an even number of "1", return true.
+Otherwise return false.

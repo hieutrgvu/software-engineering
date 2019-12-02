@@ -1,0 +1,27 @@
+21.1 Fill in the blanks in each of the following:
+a) The bits in the result of an expression using the ___ operator are set to
+one if the corresponding bits in each operand are set to one. Otherwise, the
+bits are set to zero.
+b) The bits in the result of an expression using the ___ operator are set to
+one if at least one of the corresponding bits in either operand is set to one.
+Otherwise, the bits are set to zero.
+c) Keyword ___ introduces a structure declaration.
+d) Keyword ___ is used to create asynonym for a previously defined data type.
+e) Each bit in the result of an expression using the ___ operator is set to one
+if exactly one of the corresponding bits in either operand is set to one.
+f) The bitwise AND operator & is often used to ___ bits (i.e., to select
+certain bits from a bit string while zeroing others).
+g) The ___ and ___ operators are used to shift the bits of a value to the left
+or to the right, respectively.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a) bitwise AND (&).
+b) bitwise inclusive OR (|).
+c) struct.
+d) typedef.
+e) bitwise exclusive OR (^).
+f) mask.
+g) <<, >>.

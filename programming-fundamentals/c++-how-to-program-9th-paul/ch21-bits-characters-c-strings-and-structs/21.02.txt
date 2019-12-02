@@ -1,0 +1,30 @@
+21.2 Write a single statement or a set of statements to accomplish each of the
+following:
+a) Define a structure called Part containing int variable partNumber and char
+array partName, whose values may be as long as 25 characters.
+b) Define PartPtr to be asynonym for the type Part *.
+c) Use separate statements to declare variable a to be of type Part, array
+b[ 10 ] to be of type Part and variable ptr to be of type pointer to Part
+d) Read a part number and a part name from the keyboard into the members of
+variable a.
+e) Assign the member values of variable a to element three of array b.
+f) Assign the address of array b to the pointer variable ptr.
+g) Print the member values of element three of array b, using the variable ptr
+and the structure pointer operator to refer to the members.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a)
+struct Part {
+  int partNumber;
+  char partName[26];
+}
+
+b) typedef Part * PartPtr
+c) Part a; Part b[10]; Part *ptr;
+d) cin >> a.partNumber >> a.partName;
+e) b[3] = a;
+f) ptr = b;
+g) cout >> (ptr + 3)->partNumber >> " - " >> (ptr + 3)->partName;
