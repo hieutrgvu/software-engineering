@@ -1,0 +1,8 @@
+11.12 Explain why NVM devices often use an FCFS disk-scheduling algorithm.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+SSDs have no moving parts. The reading operations always have the fixed time no
+matter what blocks are reading. Therefore, a simple FCFS will suffice.

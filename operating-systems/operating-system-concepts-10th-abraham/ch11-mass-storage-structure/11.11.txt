@@ -1,0 +1,29 @@
+11.11 None of the disk-scheduling disciplines, except FCFS, is truly fair
+(star- vation may occur).
+
+a. Explain why this assertion is true.
+b. Describe a way to modify algorithms such as SCAN to ensure fairness.
+c. Explain why fairness is an important goal in a multi-user systems.
+d. Give three or more examples of circumstances in which it is important that
+the operating system be unfair in serving I/O requests.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. Because disk scheduling will serve the request having higher priority, which
+depends on its policy. Therefore, the newer request may be served before older
+requets.
+
+b. All requests older than some predetermined age could be “forced” to the top
+of the queue, and an associated bit for each could be set to indicate that no
+new request could be moved ahead of these requests.
+
+c. Prevent long time responses.
+
+d. Paging and swapping should take priority over user requests. It may be
+desirable for other kernel-initiated I/O, such as the writing of file system
+metadata, to take precedence over user I/O. If the kernel supports real-time
+process priorities, the I/O requests of those processes should be favored.
+
+Reference: Instructor's manual

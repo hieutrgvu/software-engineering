@@ -1,0 +1,9 @@
+11.9 Give three reasons to use HDDs as secondary storage.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Cheap price.
++ Acceptable transfer rate.
++ Having large capacity.

@@ -1,0 +1,10 @@
+11.6 Is there any way to implement truly stable storage? Explain your answer.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Truly stable storage will never lose data. This kind of storage does not exist.
+The main idea for stable storage is to maintain multiple copies of the data.
+However, no matter how many copies, there is alway a chance that all of them
+are destroyed, such as terrible disaster.

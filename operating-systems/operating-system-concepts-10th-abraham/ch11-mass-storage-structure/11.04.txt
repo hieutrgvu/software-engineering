@@ -1,0 +1,12 @@
+11.4 Why is it important to balance file-system I/O among the disks and
+controllers on a system in a multitasking environment?
+
+********************************************************************************
+Resolved by: cs.grid.gsu.edu
+********************************************************************************
+
+A system can perform only at the speed of its slowest bottleneck. Disks or disk
+controllers are frequently the bottleneck in modern systems as their individual
+performance cannot keep up with that of the CPU and system bus. By balancing
+I/O among disks and controllers, neither an individual disk nor a controller
+is overwhelmed, so that bottleneck is avoided.

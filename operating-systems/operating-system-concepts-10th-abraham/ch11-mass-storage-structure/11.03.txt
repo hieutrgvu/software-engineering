@@ -1,0 +1,12 @@
+11.3 Why is rotational latency usually not considered in disk scheduling? How
+would you modify SSTF, SCAN, and C-SCAN to include latency optimization?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Most disks do not provide their rotational position to the host.
++ If they provide this infomation, disk scheduler may use the imprecision value
+due to time latency.
++ Disk request may be based on logical block address (LBA), and the mapping
+from LBA to physical locations is complex.

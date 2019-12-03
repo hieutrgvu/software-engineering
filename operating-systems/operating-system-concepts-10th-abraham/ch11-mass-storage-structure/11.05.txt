@@ -1,0 +1,13 @@
+11.5 What are the tradeoffs involved in rereading code pages from the file
+system versus using swap space to store them?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Rereading code pages will save a page write to swap space. These pages
+is read-only, OS can claims these page without writing to swap space and reload
+it from file system.
+
++ Using swap space may be faster because swap space allocation is tuned for
+faster performance than general file system allocation.

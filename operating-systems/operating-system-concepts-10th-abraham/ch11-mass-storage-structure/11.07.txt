@@ -1,0 +1,92 @@
+11.7 It is sometimes said that tape is a sequential-access medium, whereas a
+hard disk is a random-access medium. In fact, the suitability of a storage
+device for random access depends on the transfer size. The term streaming
+transfer rate denotes the rate for a data transfer that is underway, excluding
+the effect of access latency. In contrast, the effective transfer rate is the
+ratio of total bytes to total seconds, including overhead time such as access
+latency.
+
+Suppose we have a computer with the following characteristics: the level-2
+cache has an access latency of 8 nanoseconds and a streaming transfer rate of
+800 megabytes per second, the main memory has an access latency of 60
+nanoseconds and a streaming transfer rate of 80 megabytes per second, the hard
+disk has an access latency of 15 milliseconds and a streaming transfer rate of
+5 megabytes per second, and a tape drive has an access latency of 60 seconds
+and a streaming transfer rate of 2 megabytes per second.
+
+a. Random access causes the effective transfer rate of a device to decrease,
+because no data are transferred during the access time. For the disk described,
+what is the effective transfer rate if an average access is followed by a
+streaming transfer of (1) 512 bytes, (2) 8 kilobytes, (3) 1 megabyte, and
+(4) 16 megabytes?
+
+b. The utilization of a device is the ratio of effective transfer rate to
+streaming transfer rate. Calculate the utilization of the disk drive for each
+of the four transfer sizes given in part a.
+
+c. Suppose that a utilization of 25 percent (or higher) is considered
+acceptable. Using the performance figures given, compute the smallest transfer
+size for a disk that gives acceptable utilization.
+
+d. Complete the following sentence: A disk is a random-access device for
+transfers larger than ___ bytes and is a sequential-access device for
+smaller transfers.
+
+e. Compute the minimum transfer sizes that give acceptable utilization for cache, memory, and tape.
+
+f. When is a tape a random-access device, and when is it a sequential-access
+device?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a.
+512B: Transfer time = latency + transfer size (TS) / Transfer rate (STR)
+      = 15ms + 512B/5MB_per_sec = 15.0097ms.
+
+      Effective transfer rate (ETR) = Transfer size / Transfer time (TT)
+      = 512B/15.0097ms = 33.12KB/sec
+
+8KB:  ETR = 0.47MB/sec
+1MB:  ETR = 4.65MB/sec
+16MB: ETR = 4.98MB/sec
+
+b.
+512B: 33.12KB_per_sec / 5MB_per_sec = 0.46%
+8KB:  0.47MB_per_sec / 5MB_per_sec = 9.4%
+1MB:  4.65MB_per_sec / 5MB_per_sec = 93%
+16MB: 4.98MB_per_sec / 5MB_per_sec = 99.6%
+
+c.
+Min ETR = 25% * TR = 1.25MB_per_sec
+=> Min TS = 25KB
+
+d. K bytes which is greater than disk block size
+
+e.
+Calculate for cache:
+STR = 800MB, ETR = 200, latency = 8 * 10^−9.
+200 (XMB/800 + 8 X 10^−9) = XMB.
+.25XMB + 1600 * 10−9 = XMB.
+X = 2.24 bytes.
+
+Calculate for memory:
+STR = 80MB, ETR = 20, L = 60 * 10−9.
+20 (XMB/80 + 60 * 10−9) = XMB.
+.25XMB + 1200 * 10−9 = XMB.
+X = 1.68 bytes.
+
+Calculate for tape:
+STR = 2MB, ETR = .5, L = 60s.
+.5 (XMB/2 + 60) = XMB.
+.25XMB + 30 = XMB.
+X = 40MB.
+
+f. It depends upon how it is being used. Assume we are using the tape to
+restore a backup. In this instance, the tape acts as a sequential-access device
+where we are sequentially reading the contents of the tape. As another example,
+assume we are using the tape to access a variety of records stored on the tape.
+In this instance, access to the tape is arbitrary and hence considered random.
+
+Reference: quizlet.com

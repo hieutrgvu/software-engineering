@@ -1,0 +1,10 @@
+11.10 Give three reasons to use NVM devices as secondary storage.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Fast transfer rate.
++ Consume less power because they have no moving part.
++ Produce low heat.
++ Having high reliability.

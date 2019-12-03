@@ -1,0 +1,10 @@
+11.2 Explain why SSTF scheduling tends to favor middle cylinders over the
+innermost and outermost cylinders.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The center of the disk is the location having the smallest average distance
+to all other tracks. Thus the disk head tends to move a way from the edges of
+the disk.

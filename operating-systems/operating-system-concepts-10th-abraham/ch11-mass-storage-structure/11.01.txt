@@ -1,0 +1,10 @@
+11.1 Is disk scheduling, other than FCFS scheduling, useful in a single-user
+environment? Explain your answer.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Yes. Applications in single-user enviroment can request a lot of disk accesses.
+Dis scheduling other than FCFS such as SSTF, SCAN, C-SCAN, etc. can optimize
+the movement of read/write head.

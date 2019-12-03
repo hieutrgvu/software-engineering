@@ -1,0 +1,14 @@
+11.8 Could a RAID level 1 organization achieve better performance for read
+requests than a RAID level 0 organization (with nonredundant striping of data)?
+If so, how?
+
+********************************************************************************
+Resolved by: quizlet.com
+********************************************************************************
+
+Yes, a RAID Level 1 organization could achieve better performance for
+read requests. When a read operation is performed, a RAID Level 1
+system can decide which of the two copies of the block should be
+accessed to satisfy the request. This choice could be based on the current
+location of the disk head and could therefore result in performance
+optimizations by choosing a disk head that is closer to the target data.
