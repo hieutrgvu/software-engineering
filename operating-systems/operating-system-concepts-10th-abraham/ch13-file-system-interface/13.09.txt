@@ -1,0 +1,23 @@
+13.9 Consider a file system in which a file can be deleted and its disk space
+reclaimed while links to that file still exist. What problems may occur if a new
+file is created in the same storage area or with the same absolute path name?
+How can these problems be avoided?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The remaining file pointers contain actual disk addresses, and the space is
+subsequently reused for other files, these dangling pointers may point into the
+middle of other files. Some applications use this pointer as it's never deleted.
+So these applications receive wrong file or may modified the file deleted.
+Another problem is security, users think their files are gone along with
+sensitive information but actually this data still exists.
+
+If the file entry itself is deleted, the space for the file is deallocated,
+leaving the links dangling. We can search for these links and remove them as
+well, but unless a list of the associated links is kept with each file, this
+search can be expensive. Alternatively, we can leave the links until an attempt
+is made to use them. At that time, we can determine that the file of the name
+given by the link does not exist and can fail to resolve the link name; the
+access is treated just as with any other illegal file name.

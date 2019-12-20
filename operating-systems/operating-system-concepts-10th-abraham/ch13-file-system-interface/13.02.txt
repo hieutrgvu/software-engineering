@@ -1,0 +1,21 @@
+13.2 Why do some systems keep track of the type of a file, while still others
+leave it to the user and others simply do not implement multiple file types?
+Which system is “better”?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Some systems allow different file operations based on the type of the file,
+e.g. an ASCII file can be read as a stream while a database file can be read
+via an index to a block. Other systems leave such interpretation of a file's
+data to the process and provide no help in accessing the data. The method that
+is better depends on the needs of the processes on the system, and the demands
+the users place on the operating system. If a system runs mostly databased
+applications, it may be more efficient for the operating system to implement a
+database-type file and provide operations, rather than making each program
+implement the same thing (possibly in different ways). For general-purpose
+systems it may be better to only implement basic file types to keep the OS size
+smaller and allow maximum freedom to the processes on the system.
+
+Reference: https://www.coursehero.com

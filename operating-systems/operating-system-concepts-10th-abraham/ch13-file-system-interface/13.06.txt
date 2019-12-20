@@ -1,0 +1,15 @@
+13.6 In some systems, a subdirectory can be read and written by an authorized
+user, just as ordinary files can be.
+a. Describe the protection problems that could arise.
+b. Suggest a scheme for dealing with each of these protection problems.
+
+********************************************************************************
+Resolved by: https://www.coursehero.com/
+********************************************************************************
+
+a. One piece of information kept in a directory entry is file location.If a
+user could modify this location, then he could access otherfiles defeating the
+access-protection scheme.
+
+b.Do not allow the user to directly write onto the subdirectory. Rather, provide
+system operations to do so.

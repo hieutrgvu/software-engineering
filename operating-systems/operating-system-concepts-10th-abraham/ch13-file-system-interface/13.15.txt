@@ -1,0 +1,11 @@
+13.15 Give an example of an application that could benefit from operating-
+system support for random access to indexed files.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+One of the application benefiting from this is database. If the OS supports
+hash index or tree-based index. The search time can be reduce significantly.
+For example of employee database, users can get an arbitary employee by directly
+accessing the records rather than using sequential search.

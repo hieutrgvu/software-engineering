@@ -1,0 +1,14 @@
+13.1 Some systems automatically delete all user files when a user logs off or a
+job terminates, unless the user explicitly requests that they be kept. Other
+systems keep all files unless the user explicitly deletes them. Discuss the
+relative merits of each approach.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Deleting all user files when a user logs off or a job terminate by default has
+the avantage of saving memory and avoiding saving unwanted or dump files.
+
+Keeping all files by default is more secure and avoids losing important files
+which is forgotten to saved.

@@ -1,0 +1,11 @@
+13.12 Provide examples of applications that typically access files according to
+the following methods:
++ Sequential
++ Random
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Sequetial: PDF reader, video reader, music player
++ Random: Accessing an arbitary record in database, video editor, text editor.

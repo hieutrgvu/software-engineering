@@ -1,0 +1,12 @@
+13.14 If the operating system knew that a certain application was going to
+access file data in a sequential manner, how could it exploit this information
+to improve performance?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+When a block is accessed, the file system could prefetch the subsequent blocks
+for future requests. This prefetching would reduce the waiting time experienced
+by the process for future requests. The prefetching can be taken place while the
+program handle the current block.

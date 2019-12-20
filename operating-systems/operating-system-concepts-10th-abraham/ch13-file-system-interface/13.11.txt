@@ -1,0 +1,16 @@
+13.11 What are the advantages and disadvantages of providing mandatory locks
+instead of advisory locks whose use is left to users’ discretion?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Advantages: There will be less mistakes on using lock. Because there are a lot
+of programs want to access 1 file. Each program must guarentee it use the lock
+probably and not occupied the access for an unaccepted time.
+
+Disavantages: In many cases, separate programs might be willing to tolerate
+concurrent access to a file without requiring the need to obtain locks and
+thereby guaranteeing mutual exclusion to the files. In such situations, the
+mandatory locks would limit the flexibility in how files could be accessed and
+might also increase the overheads associated with accessing files.

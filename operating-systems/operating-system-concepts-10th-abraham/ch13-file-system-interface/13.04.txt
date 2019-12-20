@@ -1,0 +1,37 @@
+13.4 Could you simulate a multilevel directory structure with a single-level
+directory structure in which arbitrarily long names can be used? If your answer
+is yes, explain how you can do so, and contrast this scheme with the multilevel
+directory scheme. If your answer is no, explain what prevents your simulation’s
+success. How would your answer change if file names were limited to seven
+characters?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Yes. We can treat long names as file path in multilevel directory. The "level"
+in single-level directory can be separated by "/". For example, we can translate
+a multilevel directory like
+
+root
+├── andrew
+│   ├── doc
+│   ├── music
+│   └── study
+└── hieuvu
+    ├── misc
+    ├── study
+    └── test
+
+to a single-level directory like
+
+root/andrew/doc
+root/andrew/music
+root/andrew/study
+root/hieuvu/misc
+root/hieuvu/study
+root/hieuvu/test
+
+With 7-character filename, there is an limitation of numbers of files. So, we
+cannot simulate a multilevel directory structure with a single-level directory
+structure with this situation.

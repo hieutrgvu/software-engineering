@@ -1,0 +1,15 @@
+13.13 Some systems automatically open a file when it is referenced for the first
+time and close the file when the job terminates. Discuss the advantages and
+disadvantages of this scheme compared with the more traditional one, where the
+user has to open and close the file explicitly.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Advantages: Automatic opening and closing of files relieves the user from the
+invocation of these functions, and thus makes it more convenient to the user.
+Some user may foget to close the file after finishing.
+
+Disadvantages: Some operations such as searching, deleting do not required to
+open the file. Opening file by default will comsume the resource meaningless.

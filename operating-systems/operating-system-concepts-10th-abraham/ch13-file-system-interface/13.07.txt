@@ -1,0 +1,20 @@
+13.7 Consider a system that supports 5,000 users. Suppose that you want to
+allow 4,990 of these users to be able to access one file.
+a. How would you specify this protection scheme in UNIX?
+b. Can you suggest another protection scheme that can be used more effectively
+for this purpose than the scheme provided by UNIX?
+
+********************************************************************************
+Resolved by: https://www.coursehero.com/
+********************************************************************************
+
+a. There are two methods for achieving this
+i. Create an access control list with the names of all 4990 users.
+ii. Put these 4990 users in one group and set the group access accordingly. This
+scheme cannot always be implemented since user groups are restricted by the
+system.
+
+b. The universal access to files applies to all users unless their nameappears
+in the access-control list with different access permission. With this scheme
+you simply put the names of the remaining ten users in the access control list
+but with no access privileges allowed.

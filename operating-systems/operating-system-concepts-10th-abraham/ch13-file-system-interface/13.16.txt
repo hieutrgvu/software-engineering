@@ -1,0 +1,12 @@
+13.16 Some systems provide file sharing by maintaining a single copy of a file.
+Other systems maintain several copies, one for each of the users sharing the
+file. Discuss the relative merits of each approach.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ A single copy: Save the memory space but must have a policy to control the
+race condition.
++ Server copies: Allow several concurrent updates to a file but must have a
+protocol to preserve file integrity.

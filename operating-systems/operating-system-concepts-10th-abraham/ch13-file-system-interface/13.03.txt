@@ -1,0 +1,25 @@
+13.3 Similarly, some systems support many types of structures for a file’s
+data, while others simply support a stream of bytes. What are the advantages
+and disadvantages of each approach?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+An advantages of having the system support different file structures is that
+the support comes from the system; individual applications are not required to
+provide the support. This save a lot of memory when tons of applications using
+the same file structure. In addition, the OS can implement the support more
+efficiently than an application. The cons of having OS supporting this is that
+it increases the size of the OS. Moreover, applications that may require
+different file types other than what is provided by the system may not be able
+to run on such system.
+
+An alternative strategy is for the OS to difine no support for file structures
+and instead treat all files as a series of bytes. This is the approach taken by
+UNIX systems. The advantage of this approach is that it simplifies the OS
+support for file systems, as the system no longer has to provide the structure
+for different file types. Furthermore, it is flexible to allow applications to
+define their own file structures.
+
+Reference: https://www.coursehero.com

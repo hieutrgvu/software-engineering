@@ -1,0 +1,20 @@
+13.10 The open-file table is used to maintain information about files that are
+currently open. Should the operating system maintain a separate table for each
+user or maintain just one table that contains references to files that are
+currently being accessed by all users? If the same file is being accessed by two
+different programs or users, should there be separate entries in the open-file
+table? Explain.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The OS should maintain one table that contains references to files that are
+currently being accessed by all users. Because it is easy to specify what
+file are sharing and used among all users. It centralizes all information to one
+place so it will increase searching, manipulating file performance.
+
+If the same file is being accessed by two different programs or users, there
+should be 1 entry in the open-file table. Just maintain the user list in this
+entry. It increase the performance of access control (mutex, semaphore, etc.).
+The OS can close the file when there are no users open the file.

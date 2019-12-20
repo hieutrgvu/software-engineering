@@ -1,0 +1,14 @@
+13.8 Researchers have suggested that, instead of having an access-control list
+associated with each file (specifying which users can access the file, and how),
+we should have a user control list associated with each user (specifying which
+files a user can access, and how). Discuss the relative merits of these two
+schemes.
+
+********************************************************************************
+Resolved by: https://www.coursehero.com/
+********************************************************************************
+
++ File control list. Since the access control information is concentrated in
+one single place, it is easier to change access control information and this
+requires less space.
++ User control list. This requires less overhead when opening a file.
