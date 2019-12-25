@@ -1,0 +1,13 @@
+14.5 How do caches help improve performance? Why do systems not use more or
+larger caches if they are so useful?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+A part of lower memory can be resided temporarily in cache, which is a faster
+device. The aim of cache is keep frequently memory used by application so it
+can increase the system performance.
+
+Caches are usually more expensive than the lower memory device, so increasing
+the size of caches would increase system cost.

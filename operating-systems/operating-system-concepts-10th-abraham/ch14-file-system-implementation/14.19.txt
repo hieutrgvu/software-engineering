@@ -1,0 +1,16 @@
+14.19 Discuss the advantages and disadvantages of associating with remote file
+systems (stored on file servers) a set of failure semantics different from
+those associated with local file systems.
+
+********************************************************************************
+Resolved by: Instructor Manual
+********************************************************************************
+
+The advantage is that the application can deal with the failure condition in a
+more intelligent manner if it realizes that it incurred an error while accessing
+a file stored in a remote file system. For instance, a file open operation could
+simply fail instead of hanging when accessing a remote file on a failed server
+and the application could deal with the failure in the best possible manner; if
+the operation were simply to hang, then the entire application hangs, which is
+not desirable. The disadvantage however is the lack of uniformity in failure
+semantics and the resulting complexity in application code.

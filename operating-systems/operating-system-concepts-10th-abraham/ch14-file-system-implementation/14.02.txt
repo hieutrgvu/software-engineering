@@ -1,0 +1,9 @@
+14.2 Why must the bit map for file allocation be kept on mass storage, rather
+than in main memory?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The free-space list is cached in memory for fast accessing but it also must be
+kept on mass storage in case of system crash to remain consistent.

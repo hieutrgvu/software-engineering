@@ -1,0 +1,28 @@
+14.10 Consider a system where free space is kept in a free-space list.
+a. Suppose that the pointer to the free-space list is lost. Can the system
+reconstruct the free-space list? Explain your answer.
+b. Consider a file system similar to the one used by UNIX with indexed
+allocation. How many disk I/O operations might be required to read the contents
+of a small local file at /a/b/c? Assume that none of the disk blocks is
+currently being cached.
+c. Suggest a scheme to ensure that the pointer is never lost as a result of
+memory failure.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. In order to reconstruct the free list, it would be necessary to perform
+“garbage collection.” This would entail searching the entire directory
+structure to determine which pages are already allocated to jobs. Those
+remaining unallocated pages could be relinked as the free-space list.
+
+b. Reading each directory or file requires three disk block accesses: one to
+read the inode for the file or directory, one to read the index block pointed
+to by the inode, and then one to read the first data block of file or directory
+itself. So, it is needed 12 I/O for root, a, b, c.
+
+c. The free-space list pointer could be stored on the disk, perhaps in several
+places.
+
+Reference: Instructor Manual.

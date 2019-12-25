@@ -1,0 +1,22 @@
+14.7 Consider a file system that uses a modified contiguous-allocation scheme
+with support for extents. A file is a collection of extents, with each extent
+corresponding to a contiguous set of blocks. A key issue in such systems is the
+degree of variability in the size of the extents. What are the advantages and
+disadvantages of the following schemes?
+a. All extents are of the same size, and the size is predetermined.
+b. Extents can be of any size and are allocated dynamically.
+c. Extents can be of a few fixed sizes, and these sizes are predetermined.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. It simplifies the block allocation scheme. A simple bit map or free list for
+extents would suffice. However, it may increase internal fragmentation.
+
+b. More complex allocation schemes are required. It might be difficult to find
+an extent of the appropriate size and there might be external fragmentation.
+
+c. One would have to maintain a separate bitmap or free list for each possible
+size. This scheme is of intermediate complexity and of intermediate flexibility
+in comparison to the earlier schemes.

@@ -1,0 +1,12 @@
+14.12 Discuss how performance optimizations for file systems might result in
+difficulties in maintaining the consistency of the systems in the event of
+computer crashes.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+The performance optimizations can ultilize the delayd update, which is
+asynchronized write. However, if the system were to crash without having
+committed the delayed updates, then the consistency of the file system is
+not preserved.

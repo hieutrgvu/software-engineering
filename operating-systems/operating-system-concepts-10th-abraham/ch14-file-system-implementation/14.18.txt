@@ -1,0 +1,23 @@
+14.18 Consider the following backup scheme:
++ Day 1: Copy to a backup medium all files from the disk.
++ Day 2: Copy to an other medium all files changed since day 1.
++ Day 3: Copy to an other medium all files changed since day 1.
+This differs from the schedule given in Section 14.7.4 by having all subsequent
+backups copy all files modified since the first full backup. What are the
+benefits of this system over the one in Section 14.7.4? What are the drawbacks?
+Are restore operations made easier or more difficult? Explain your answer.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Advantage: More durable. If Day 2 data is corrupted, day 3 data can still used
+to recover all system.
+
+Disadvantage: Weak point in date 1 data. If date 1 data is corrupted, the
+subsequent date stored is useless. In addition, it creases size due to
+duplication backup.
+
+Restores are easier because last backup tape can be picked, rather than the
+full tape. No intermediate tapes need be read. More tape is used as more
+files change.

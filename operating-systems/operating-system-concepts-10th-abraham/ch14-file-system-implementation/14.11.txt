@@ -1,0 +1,19 @@
+14.11 Some file systems allow disk storage to be allocated at different levels
+of granularity. For instance, a file system could allocate 4 KB of disk space
+as a single 4-KB block or as eight 512-byte blocks. How could we take advantage
+of this flexibility to improve performance? What modifications would have to be
+made to the free-space management scheme in order to support this feature?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+This scheme decrease internal fragmentation. For example of 5.5KB, OS will
+allocate 1 4-KB block and 3 512-byte blocks. 
+
+In addition to maintaining a bitmap of free blocks, one would also have to
+maintain extra state regarding which of the subblocks are currently being used
+inside a block. The allocator can allocate subblocks and coallesce the
+subblocks to obtain the larger block when all of the subblocks become free.
+
+Reference: Instructor Manual.

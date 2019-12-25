@@ -1,0 +1,14 @@
+14.20 What are the implications of supporting UNIX consistency semantics for
+shared access to files stored on remote file systems?
+
+********************************************************************************
+Resolved by: Instructor Manual
+********************************************************************************
+
+UNIX consistency semantics requires updates to a file to be immediately
+available to other processes. Supporting such a semantics for shared files on
+remote file systems could result in the following inefficiencies: all updates
+by a client have to be immediately reported to the fileserver instead of being
+batched (or even ignored if the updates are to a temporary file), and updates
+have to be communicated by the fileserver to clients caching the data
+immediately again resulting in more communication.

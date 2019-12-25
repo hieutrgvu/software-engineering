@@ -1,0 +1,50 @@
+14.1 Consider a file currently consisting of 100 blocks. Assume that the
+file-control block (and the index block, in the case of indexed allocation) is
+already in memory. Calculate how many disk I/O operations are required for
+contiguous, linked, and indexed (single-level) allocation strategies, if, for
+one block, the following conditions hold. In the contiguous-allocation case,
+assume that there is no room to grow at the beginning but there is room to grow
+at the end. Also assume that the block information to be added is stored in
+memory.
+a. The block is added at the beginning.
+b. The block is added in the middle.
+c. The block is added at the end.
+d. The block is removed from the beginning.
+e. The block is removed from the middle.
+f. The block is removed from the end.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a.
++ Contiguous: Moving 100 blocks to the right then write the new one.
+--> 100 read + 101 write = 201 I/O.
++ Linked: 1 write.
++ Indexed: 1 write.
+
+b.
++ Contiguous: 50 read + 51 write = 101.
++ Linked: 50 read + 1 write [new block] + 1 write [update pointer] = 52.
++ Indexed: 1 write.
+
+c.
++ Contiguous: 1 write.
++ Linked: 1 write [new block] + 1 write [update pointer] = 2.
++ Indexed: 1 write.
+
+d.
++ Contiguous: 99 read + 99 write = 198.
++ Linked: 1.
++ Indexed: 0.
+
+e.
++ Contiguous: 49 read + 49 write = 98.
++ Linked: 52.
++ Indexed: 0.
+
+f.
++ Contiguous: 0.
++ Linked: 199 read + 1 write = 200.
++ Indexed: Only the index block has to be updated which is in memory so there
+are 0 I/O operations.

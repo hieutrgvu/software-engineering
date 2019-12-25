@@ -1,0 +1,12 @@
+14.6 Why is it advantageous to the user for an operating system to dynamically
+allocate its internal tables? What are the penalties to the operating system
+for doing so?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+This eliminates these artificial limits on system performance. Of course, the
+algorithms that manipulate these tables are more complicated, and the operating
+system is a little slower because it must dynamically allocate and deallocate
+table entries; but that price is the usual one for more general functionality.

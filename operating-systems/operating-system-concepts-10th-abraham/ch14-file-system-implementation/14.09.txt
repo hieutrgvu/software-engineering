@@ -1,0 +1,9 @@
+14.9 What are the advantages of the variant of linked allocation that uses a
+FAT to chain together the blocks of a file?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+It can boost the performance of random accessing. Because linked block infor
+is hold in FAT table, which is usually in a/few block(s) and cached.

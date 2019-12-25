@@ -1,0 +1,16 @@
+14.4 One problem with contiguous allocation is that the user must preallocate
+enough space for each file. If the file grows to be larger than the space
+allocated for it, special actions must be taken. One solution to this problem
+is to define a file structure consisting of an initial contiguous area of a
+specified size. If this area is filled, the operating system automatically
+defines an overflow area that is linked to the initial contiguous area. If the
+overflow area is filled, another overflow area is allocated. Compare this
+implementation of a file with the standard contiguous and linked
+implementations.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+This method requires more overhead than standard contiguous implementation but
+less overhead than linked implementation.

@@ -1,0 +1,11 @@
+14.15 Consider a file system that uses inodes to represent files. Disk blocks
+are 8 KB in size, and a pointer to a disk block requires 4 bytes. This file
+system has 12 direct disk blocks, as well as single, double, and triple
+indirect disk blocks. What is the maximum size of a file that can be stored in
+this file system?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+12*8KB + 8KB*8KB/4 + 8KB*(8KB/4)^2 + 8KB*(8KB/4)^3 = 64 terabytes

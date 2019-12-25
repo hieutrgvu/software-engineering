@@ -1,0 +1,26 @@
+14.8 Contrast the performance of the three techniques for allocating disk
+blocks (contiguous, linked, and indexed) for both sequential and random file
+access.
+
+********************************************************************************
+Resolved by: https://www.coursehero.com/
+********************************************************************************
+
+Contiguous
++ Sequential - Works very well as the file is stored contiguously. Sequential
+access will simply involves traversing the contiguous disk blocks.
++ Random - Works very well as you can easily determine the adjacent disk block
+containing the position you wish to seek to.
+
+Linked
++ Sequential - Satisfactory as you are simply following the links from one
+block to the next.
++ Random - Poor as it may require following the links to several disk blocks
+until you arrive at the intended seek point of the file.
+
+Indexed
++ Sequential - Works well as sequential access simply involves sequentially
+accessing each index.
++ Random - Works well as it is easy to determine the index associated with the
+disk block containing the position you wish to seek to
+

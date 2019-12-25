@@ -1,0 +1,35 @@
+14.14 Consider a file system on a disk that has both logical and physical block
+sizes of 512 bytes. Assume that the information about each file is already in
+memory. For each of the three allocation strategies (contiguous, linked, and
+indexed), answer these questions:
+a. How is the logical-to-physical address mapping accomplished in this system?
+(For the indexed allocation, assume that a file is always less than 512 blocks
+long.)
+b. If we are currently at logical block 10 (the last block accessed was block
+10) and want to access logical block 4, how many physical blocks must be read
+from the disk?
+
+********************************************************************************
+Resolved by: Instructor Manual
+********************************************************************************
+
+Let Z be the starting file address (block number).
+
+1. Contiguous. Divide the logical address by 512 with X and Y the resulting
+quotient and remainder respectively.
+a. Add X to Z to obtain the physical block number. Y is the displacement into
+that block.
+b. 1
+
+2. Linked. Divide the logical physical address by 511 with X and Y the
+resulting quotient and remainder respectively.
+a. Chase down the linked list (getting X + 1 blocks). Y + 1 is the displacement
+into the last physical block.
+b. 4
+
+3. Indexed. Divide the logical address by 512 with X and Y the resulting
+quotient and remainder respectively.
+a. Get the index block into memory. Physical block address is contained in the
+index block at location X. Y is the displacement into the desired physical
+block.
+b. 2

@@ -1,0 +1,16 @@
+14.16 Fragmentation on a storage device can be eliminated through compaction.
+Typical disk devices do not have relocation or base registers (such as those
+used when memory is to be compacted), so how can we relocate files? Give three
+reasons why compacting and relocating files are often avoided.
+
+********************************************************************************
+Resolved by: Instructor Manual
+********************************************************************************
+
+Relocation of files on secondary storage involves considerable overhead — data
+blocks would have to be read into main memory and written back out to their new
+locations. Furthermore, relocation registers apply only to sequential files,
+and many disk files are not sequential. For this same reason, many new files
+will not require contiguous disk space; even sequential files can be allocated
+noncontiguous blocks if links between logically sequential blocks are maintained
+by the disk system.

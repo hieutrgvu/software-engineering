@@ -1,0 +1,17 @@
+14.17 Explain why logging metadata updates ensures recovery of a file system
+after a file-system crash.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+If the system crashes, the log file will contain zero or more transactions. Any
+transactions it contains were not completed to the file system, even though they
+were committed by the operating system, so they must now be completed. The
+transactions can be executed from the pointer until the work is complete so that
+the file-system structures remain consistent. The only problem occurs when a
+transaction was aborted — that is, was not committed before the system crashed.
+Any changes from such a transaction that were applied to the file system must
+be undone, again preserving the consistency of the file system. This recovery
+is all that is needed after a crash, eliminating any problems with consistency
+checking.

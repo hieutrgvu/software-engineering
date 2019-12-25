@@ -1,0 +1,15 @@
+14.13 Discuss the advantages and disadvantages of supporting links to files
+that cross mount points (that is, the file link refers to a file that is stored
+in a different volume).
+
+********************************************************************************
+Resolved by: https://www.coursehero.com/
+********************************************************************************
+
+The advantage is that there is greater transparency in the sense that the user
+does not need to be aware of mount points and create links in all scenarios.
+The disadvantage however is that the file system containing the link might be
+mounted while the file system containing the target file might not be, and
+therefore one cannot provide transparent access to the file in such a scenario;
+the error condition would expose to the user that a link is a dead link and
+that the link does indeed cross file system boundaries.

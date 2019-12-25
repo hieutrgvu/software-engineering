@@ -1,0 +1,11 @@
+14.3 Consider a system that supports the strategies of contiguous, linked, and
+indexed allocation. What criteria should be used in deciding which strategy is
+best utilized for a particular file?
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Contiguous: if file is usually accessed sequentially and is relatively small.
++ Linked: if file is large, usually accessed sequentially or has growing size.
++ Indexed: if file is large, usually accessed randoml or has growing size.
