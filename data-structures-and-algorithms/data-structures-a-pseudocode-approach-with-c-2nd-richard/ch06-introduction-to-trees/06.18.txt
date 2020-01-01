@@ -1,0 +1,13 @@
+6.18 A binary tree has eight nodes. The postorder and inorder traversals of the
+tree are given below. Draw the tree.
+Postorder: FECHGDBA
+Inorder: FCEABHDG
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+       A
+   C       B
+ F   E       D
+            H G

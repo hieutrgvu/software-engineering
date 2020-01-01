@@ -1,0 +1,9 @@
+6.31 Supply the missing factor (the question mark) in the following recursive
+definition (Figure 6-28) of the maximum number of nodes based on the height of
+a binary tree.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+2^(H-1)

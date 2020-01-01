@@ -1,0 +1,11 @@
+6.20 A nearly complete binary tree has nine nodes. The breadth traversal of the tree is given below. Draw the tree.
+Breadth: JCBADEFIG
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+       J
+   C       B
+ A   D   E   F
+I G

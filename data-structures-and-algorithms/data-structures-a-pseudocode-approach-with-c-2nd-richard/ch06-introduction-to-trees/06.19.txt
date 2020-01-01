@@ -1,0 +1,14 @@
+6.19 A binary tree has seven nodes. The preorder and postorder traversals of
+the tree are given below. Can you draw the tree? If not, explain.
+Preorder: GFDABEC
+Postorder: ABDCEFG
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+There are serveral possible solution. Here are a example:
+       G
+           F
+         D   E
+        A B H C

@@ -1,0 +1,33 @@
+6.6 In Figure 6-25 show the indented list representation of the tree.
+
+     A
+    / \
+   /   \
+  B     F
+  |      \
+  C       G
+ / \     /|\
+D   E   / | \
+       H  I  J
+          |
+          K
+          |
+          L
+Figure 6-25 Tree for Exercises 2, 3, 4, 5, 6, and 7
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+A
+  B
+    C
+      D
+      E
+  F
+    G
+      H
+      I
+        K
+          L
+      J

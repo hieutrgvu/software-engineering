@@ -1,0 +1,13 @@
+6.17 A binary tree has 10 nodes. The preorder and inorder traversals of the
+tree are shown below. Draw the tree.
+Preorder: JCBADEFIGH
+Inorder: ABCEDFJGIH
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+       J
+   C       I
+ B   D   G   H
+A   E F

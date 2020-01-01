@@ -1,0 +1,16 @@
+6.29 Draw the expression tree and find the infix and prefix expressions for the
+following postfix expression:
+
+  AB × CD/+EF- ×
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+       x
+   +       -
+ x   /   E   F
+A B C D
+
+Infix:  (((A x B) + (C / D)) x (E - F))
+Prefix: x+xAB/CD-EF

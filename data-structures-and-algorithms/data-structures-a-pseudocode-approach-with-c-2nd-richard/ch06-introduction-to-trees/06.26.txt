@@ -1,0 +1,10 @@
+6.26 Find the infix, prefix, and postfix expressions in the expression tree of
+Figure 6-27.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+infix:   ((c x (a + b)) + (D x (F x (G + H))))
+prefix:  +xc+abxdxf+gh
+postfix: cab+xdfgh+xx+

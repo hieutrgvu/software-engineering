@@ -1,0 +1,11 @@
+6.10 In a binary tree, what is the maximum number of nodes that can be found in
+level 3? In level 4? In level 12?
+
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Level 3: 2^3 - 1 = 7
+Level 4: 2^4 - 1 = 15
+Level 12: 2^12 - 1 = 4095

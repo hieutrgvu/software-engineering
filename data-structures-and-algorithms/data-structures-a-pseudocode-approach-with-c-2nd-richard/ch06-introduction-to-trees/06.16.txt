@@ -1,0 +1,12 @@
+6.16 Find the root of each of the following binary trees:
+a. tree with postorder traversal: FCBDG
+b. tree with preorder traversal: IBCDFEN
+c. tree with inorder traversal: CBIDFGE
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+a. G
+b. I
+c. Unknown

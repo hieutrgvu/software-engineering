@@ -1,0 +1,15 @@
+6.8 Find a binary tree whose preorder and inorder traversals create the same
+result.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Preorder is NLR, and inorder is LNR. Therefore, a tree that do not have a left
+branch in all subtrees will have the same preorder and inorder. For example:
+
+A
+ \
+  B
+   \
+    C

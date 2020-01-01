@@ -1,0 +1,31 @@
+6.3 In Figure 6-25 find the:
+a. indegree of node F
+b. outdegree of node B
+c. siblings of H
+d. parent of K
+e. children of C
+
+     A
+    / \
+   /   \
+  B     F
+  |      \
+  C       G
+ / \     /|\
+D   E   / | \
+       H  I  J
+          |
+          K
+          |
+          L
+Figure 6-25 Tree for Exercises 2, 3, 4, 5, 6, and 7
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+a. 1
+b. 1
+c. I, J
+d. I
+e. D, E

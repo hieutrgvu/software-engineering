@@ -1,0 +1,16 @@
+6.27 Draw the expression tree and find the prefix and postfix expressions for
+the following infix expression:
+
+  (C + D + A × B) × (E + F)
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+       x
+   +       +
+ +   x   E   F
+C D A B
+
+Prefix:  x++CDxAB+EF
+Postfix: CD+ABx+EF+x

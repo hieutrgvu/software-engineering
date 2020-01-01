@@ -1,0 +1,10 @@
+6.30 Show the result of the recursive function in Algorithm 6-9 using the tree
+in Figure 6-26.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Null right is done Null K right is done Null J right is done Null I right is
+done right is done Null H G right is done Null F right is done Null right is
+done Null right is done Null E right is done Null right is done Null D C B A

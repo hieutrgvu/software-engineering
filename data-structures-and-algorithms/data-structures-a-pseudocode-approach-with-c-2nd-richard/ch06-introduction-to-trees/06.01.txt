@@ -1,0 +1,14 @@
+6.1 Show the tree representation of the following parenthetical notation:
+
+    a (b (c d) e f (g h))
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+      a
+    / | \
+   /  |  \
+  b   e   f
+ / \     / \
+c   d   g   h

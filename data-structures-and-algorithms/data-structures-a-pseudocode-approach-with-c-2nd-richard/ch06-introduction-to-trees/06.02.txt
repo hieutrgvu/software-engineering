@@ -1,0 +1,31 @@
+6.2 In Figure 6-25 find the:
+a. root
+b. leaves
+c. internal nodes
+d. ancestors of H
+e. descendents of F
+
+     A
+    / \
+   /   \
+  B     F
+  |      \
+  C       G
+ / \     /|\
+D   E   / | \
+       H  I  J
+          |
+          K
+          |
+          L
+Figure 6-25 Tree for Exercises 2, 3, 4, 5, 6, and 7
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+a. A
+b. D, E, H, L, J
+c. B, F, C, G, I, K
+d. G, F, A
+e. G, H, I, J, K, L

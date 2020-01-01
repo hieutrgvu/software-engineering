@@ -1,0 +1,8 @@
+6.9 What are the maximum and minimum heights of a tree with 28 nodes?
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Max height: 28
+Min height: floor(log(28)) + 1 = 5
