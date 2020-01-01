@@ -1,0 +1,10 @@
+7.8 Which one of the trees in Figure 7-17 is a valid binary search tree and
+which one is not? Explain your answer.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+The second one is a BST.
+The first one is not a BST. Node 20 is less than node 22, but node 20 is
+the right child of node 22.

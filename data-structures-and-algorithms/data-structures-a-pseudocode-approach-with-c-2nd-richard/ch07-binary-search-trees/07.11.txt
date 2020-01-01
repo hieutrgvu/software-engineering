@@ -1,0 +1,11 @@
+7.11 The binary search tree in Figure 7-20 was created by starting with a null
+tree and entering data from the keyboard. In what sequence were the data
+entered? If there is more than one possible sequence, identify the alternatives.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
++ 25 28 27 35 45
++ 25 28 35 45 27
++ 25 28 35 27 45
