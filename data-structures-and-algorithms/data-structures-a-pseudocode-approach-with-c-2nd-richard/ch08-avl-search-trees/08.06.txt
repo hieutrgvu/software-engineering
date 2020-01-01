@@ -1,0 +1,18 @@
+8.6 Create an AVL tree using the following data entered as a sequential set.
+Show the balance factors in the resulting tree: 14 23 7 10 33 56 80 66 70
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+            14
+            RH
+        /        \
+     7              66
+    RH              EH
+      \            /  \
+        10      33      80
+        EH      EH      LH
+               /  \    /
+              23  56  70
+              EH  EH  EH
