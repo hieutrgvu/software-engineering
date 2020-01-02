@@ -1,0 +1,14 @@
+10.2 Calculate the maximum number of data entries in a:
+a. B-tree of order 5 with a height of 3
+b. B-tree of order 5 with a height of 5
+c. B-tree of order 5 with a height of h
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+a. 5^3 - 1 = 124
+
+b. 5^5 - 1 = 3124
+
+c. 5^h - 1

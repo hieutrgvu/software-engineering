@@ -1,0 +1,25 @@
+10.5 Draw two B-trees of order 3 created by inserting data arriving in sequence
+from the two sets shown below. Compare the two B-trees to determine whether the
+order of data creates different B-trees.
+Sequence 1: 89 78 8 19 20 33 56 44
+Sequence 2: 44 56 33 20 19 8 78 89
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+The same data entered in different sequence will produce different trees.
+
+For Sequence 1:
+     ____33____
+    /          \
+  19            78
+ /  \          /  \
+8    20   44_56    89
+
+For Sequence 2:
+        __44__
+       /      \
+     20        78
+    /  \      /  \
+8_19    33  56    89
