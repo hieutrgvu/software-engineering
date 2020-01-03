@@ -1,0 +1,46 @@
+13.3 Using the modulo-division method and linear probing, store the keys shown
+below in an array with 19 elements. How many collisions occurred? What is the
+density of the list after all keys have been inserted?
+
+    224562    137456    214562
+    140145    214576    162145
+    144467    199645    234534
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
++ Hashing calculations
+224562 mod 19 = 1
+137456 mod 19 = 10
+214562 mod 19 = 14
+140145 mod 19 = 1   -> 2
+214576 mod 19 = 9
+162145 mod 19 = 18
+144467 mod 19 = 10  -> 11
+199645 mod 19 = 12
+234534 mod 19 = 17
+
++ Hashed list
+00:
+01: 224562
+02: 140145 (*)
+03:
+04:
+05:
+06:
+07:
+08:
+09: 214576
+10: 137456
+11: 144467 (*)
+12: 199645
+13:
+14: 214562
+15:
+16:
+17: 234534
+18: 162145
+
++ Collisions: 2
++ Density: 9/19 = 47.37%

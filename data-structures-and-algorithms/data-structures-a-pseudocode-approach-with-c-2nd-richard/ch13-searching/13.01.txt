@@ -1,0 +1,15 @@
+13.1 An array contains the elements shown below. Using the binary search
+algorithm, trace the steps followed to find 88. At each loop iteration,
+including the last, show the contents of first, last, and mid.
+     13 17 18 26 44 56 88 97
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Loop       First        Mid         Last        Compare
+ 0           0           3           7          88 > 26
+ 1           4           5           7          88 > 56
+ 2           6           6           7          88 = 88
+
+--> Location found: 6

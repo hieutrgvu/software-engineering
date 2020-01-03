@@ -1,0 +1,16 @@
+13.2 An array contains the elements shown below. Using the binary search
+algorithm, trace the steps followed to find 20. At each loop iteration,
+including the last, show the contents of first, last, and mid.
+     13 17 18 26 44 56 88 97
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Loop       First        Mid         Last        Compare
+ 0           0           3           7          20 < 26
+ 1           0           1           2          20 > 17
+ 2           2           2           2          20 > 18
+ 3           3                       2          End
+
+--> Not found
