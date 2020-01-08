@@ -1,0 +1,11 @@
+9.8 Show the left and right children of 32 and 27 in the heap in Figure 9-22.
+Also show the left children of 14 and 40.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Left child of 32: 20
+Right child of 27: 14
+Left child of 14: NULL
+Right child of 40: 32

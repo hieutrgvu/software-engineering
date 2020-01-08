@@ -1,0 +1,7 @@
+9.11 If a node is at index 37, what is the index of its parent?
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+If a node is at index 37, the index of its parent is (37 - 1) / 2 = 18.

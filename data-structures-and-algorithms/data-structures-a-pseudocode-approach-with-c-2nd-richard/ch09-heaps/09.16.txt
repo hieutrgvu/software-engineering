@@ -1,0 +1,15 @@
+9.16 Create a priority queue using the following data. The first number is the
+priority, and the letter is the data.
+    3-A 5-B 3-C 2-D 1-E 2-F 3-G 2-H 2-I 2-J
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+           ___5B___
+          /        \
+      __3A__        3C
+     /      \      /  \
+   2D        2J  2F    3G
+  /  \      /
+2H    2I  1E

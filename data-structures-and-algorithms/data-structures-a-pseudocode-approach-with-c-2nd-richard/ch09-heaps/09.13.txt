@@ -1,0 +1,9 @@
+9.13 Show which item would be deleted from the following heap after calling the
+delete algorithm three times:
+    50 30 40 20 10 25 35 10 5
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+50, 40, 35

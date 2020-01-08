@@ -1,0 +1,12 @@
+9.17 Show the contents of the priority queue in Exercise 16 after deleting
+three items from the queue.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+      __3G__
+     /      \
+   2D        2F
+  /  \      /  \
+2H    2J  1E    2I

@@ -1,0 +1,14 @@
+9.18 Show the contents of the original priority queue in Exercise 16 after the
+following operations: Insert 4-K, Insert 3-L, Delete, Insert 2-M, Delete
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+           _______3A___
+          /            \
+      __2D__           3C
+     /      \         /  \
+   2H        2J     3L    3G
+  /  \      /  \
+2M    2I  1E    2F

@@ -1,0 +1,10 @@
+9.1 Show which of the structures in Figure 9-18 are heaps and which are not.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Heaps: "b", "d"
+
+"a" is not a heap because it is not a complete or nearly complete tree.
+"c" is not a heap because 13 is greater than 12.

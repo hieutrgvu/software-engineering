@@ -1,0 +1,8 @@
+9.9 In the heap in Figure 9-22, show the parent of 11, the parent of 20, and
+the parent of 25.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Parents of 11, 20 and 25 are 15, 32 and 32 respectively.

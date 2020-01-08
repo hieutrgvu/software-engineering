@@ -1,0 +1,8 @@
+9.10 If a node is at index 25, what is the index of its right child? What is
+the index of its left child? Assume the indexes start from 0.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+The indexes of right and left children (if exist) is 51 and 52.
