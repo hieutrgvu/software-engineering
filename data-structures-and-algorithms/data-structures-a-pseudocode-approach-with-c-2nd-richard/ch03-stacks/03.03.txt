@@ -1,0 +1,27 @@
+3.3 Using manual transformation, write the following infix expressions in their
+postfix and prefix forms:
+
+a. D – B+ C
+b. A * B + C * D
+c. (A + B) * C – D * F + C
+d. (A – 2 * (B + C) – D * E) * F
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+a. Postfix: D – B + C = ((D – B) + C) = ((DB-)C+) = DB-C+
+   Prefix:  D – B + C = ((D – B) + C) = (+(-DB)C) = DB-C+
+
+b. Postfix: A * B + C * D = ((A * B) + (C * D)) = ((AB*)(CD*)+) = AB*CD*+
+   Prefix:  A * B + C * D = ((A * B) + (C * D)) = (+(*AB)(*CD)) = +*AB*CD
+
+c. Postfix: (A + B) * C – D * F + C = ((((A + B) * C) – (D * F)) + C)
+          = ((((AB+)C*)(DF*)-)C+) = AB+C*DF*-C+
+   Prefix:  (A + B) * C – D * F + C = ((((A + B) * C) – (D * F)) + C)
+          = (+(-(*(+AB)C)(*DF))C) = +-*+ABC*DFC
+
+d. Postfix: (A – 2 * (B + C) – D * E) * F = ((A – (2 * (B + C))) – (D * E)) * F
+          = ((A(2(BC+)*)-)(DE*)-)F* = A2BC+*-DE*-F*
+   Prefix:  (A – 2 * (B + C) – D * E) * F = ((A – (2 * (B + C))) – (D * E)) * F
+          = *(-(-A(*2(+BC)))(*DE))F = *--A*2+BC*DEF

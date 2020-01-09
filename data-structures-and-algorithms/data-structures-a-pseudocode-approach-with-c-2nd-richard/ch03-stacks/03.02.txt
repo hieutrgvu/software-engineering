@@ -1,0 +1,24 @@
+3.2 Imagine we have two empty stacks of integers, s1 and s2. Draw a picture of
+each stack after the following operations:
+
+1 pushStack (s1, 3)
+2 pushStack (s1, 5)
+3 pushStack (s1, 7)
+4 pushStack (s1, 9)
+5 pushStack (s1, 11)
+6 pushStack (s1, 13)
+7 loop not emptyStack (s1)
+  1 popStack (s1, x)
+  2 popStack (s1, x)
+  3 pushStack (s2, x)
+8 end loop
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+|    |    |  3 |
+|    |    |  7 |
+|    |    | 11 |
++----+    +----+
+  s1        s2

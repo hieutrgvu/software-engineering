@@ -1,0 +1,78 @@
+3.5 Change the following infix expressions to postfix expressions using the
+algorithmic method (a stack):
+
+a. D – B+ C
+b. A * B + C * D
+c. (A + B) * C – D * F + C
+d. (A – 2 * (B + C) – D * E) * F
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+a.
+string             |   stack            |     output
+-------------------+--------------------+---------------------
+D - B + C          |                    |
+- B + C            |                    |     D
+B + C              |   -                |     D
++ C                |   -                |     DB
+C                  |   +                |     DB-
+                   |   +                |     DB-C
+                   |                    |     DB-C+
+
+b.
+string             |   stack            |     output
+-------------------+--------------------+---------------------
+A * B + C * D      |                    |
+* B + C * D        |                    |     A
+B + C * D          |   *                |     A
++ C * D            |   *                |     AB
+C * D              |   +                |     AB*
+* D                |   +                |     AB*C
+D                  |   *+               |     AB*C
+                   |   *+               |     AB*CD
+                   |   +                |     AB*CD*
+                   |                    |     AB*CD*+
+
+c.
+string             |   stack            |     output
+-------------------+--------------------+---------------------
+(A+B)*C–D*F+C      |                    |
+A+B)*C–D*F+C       |   (                |
++B)*C–D*F+C        |   (                |     A
+B)*C–D*F+C         |   +(               |     A
+)*C–D*F+C          |   +(               |     AB
+*C–D*F+C           |                    |     AB+
+C–D*F+C            |   *                |     AB+
+–D*F+C             |   *                |     AB+C
+D*F+C              |   -                |     AB+C*
+*F+C               |   -                |     AB+C*D
+F+C                |   *-               |     AB+C*D
++C                 |   *-               |     AB+C*DF
+C                  |   +                |     AB+C*DF*-
+                   |   +                |     AB+C*DF*-C
+                   |                    |     AB+C*DF*-C+
+
+d.
+string             |   stack            |     output
+-------------------+--------------------+---------------------
+(A–2*(B+C)–D*E)*F  |                    |
+A–2*(B+C)–D*E)*F   |   (                |
+–2*(B+C)–D*E)*F    |                    |     A
+2*(B+C)–D*E)*F     |   -(               |     A
+*(B+C)–D*E)*F      |   -(               |     A2
+(B+C)–D*E)*F       |   *-(              |     A2
+B+C)–D*E)*F        |   (*-(             |     A2
++C)–D*E)*F         |   (*-(             |     A2B
+C)–D*E)*F          |   +(*-(            |     A2B
+)–D*E)*F           |   +(*-(            |     A2BC
+–D*E)*F            |   *-(              |     A2BC+
+D*E)*F             |   -(               |     A2BC+*-
+*E)*F              |   -(               |     A2BC+*-D
+E)*F               |   *-(              |     A2BC+*-D
+)*F                |   *-(              |     A2BC+*-DE
+*F                 |                    |     A2BC+*-DE*-
+F                  |   *                |     A2BC+*-DE*-
+                   |   *                |     A2BC+*-DE*-F
+                   |                    |     A2BC+*-DE*-F*

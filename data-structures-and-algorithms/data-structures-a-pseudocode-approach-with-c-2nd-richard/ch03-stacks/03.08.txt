@@ -1,0 +1,12 @@
+3.8 Determine the value of the following postfix expressions when the variables
+have the following values: A is 2, B is 3, C is 4, and D is 5.
+
+a. A B C D * – +
+b. D C * B A + –
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+a. A + B - C * D = 2 + 3 - 4 * 5 = -15
+b. (D * C) - (B + A) = (4 * 5) - (3 + 2) = 15
