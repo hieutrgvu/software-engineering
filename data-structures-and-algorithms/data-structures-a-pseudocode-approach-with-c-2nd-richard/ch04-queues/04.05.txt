@@ -1,0 +1,29 @@
+4.5 What would be the contents of queue Q1 after the following code is
+executed and the following data are entered?
+
+1 Q1 = createQueue
+2 S1 = createStack
+3 loop (not end of file)
+    1 read number
+    2 if (number not 0)
+        1 pushStack (S1, number)
+    3 else
+        1 popStack (S1, x)
+        2 popStack (S1, x)
+        3 loop (not empty S1)
+            1 popStack (S1, x)
+            2 enqueue (Q1, x)
+        4 end loop
+    4 end if
+4 end loop
+
+The data are 5, 7, 12, 4, 0, 4, 6, 8, 67, 34, 23, 5, 0, 44, 33, 22, 6, 0.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+        -------------------------------------------------------------
+HEAD ->  7, 5, 34, 67, 8, 6, 4, 33, 44
+        -------------------------------------------------------------
+          Q1

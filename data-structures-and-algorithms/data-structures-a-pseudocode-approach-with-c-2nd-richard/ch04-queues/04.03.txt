@@ -1,0 +1,24 @@
+4.3 What would be the contents of queue Q after the following code is executed
+and the following data are entered?
+
+1 Q = createQueue
+2 loop (not end of file)
+    1 read number
+    2 if (number not 0)
+        1 enqueue (Q, number)
+    3 else
+        1 x = queuerear (Q)
+        2 enqueue (Q, x)
+    4 end if
+3 end loop
+
+The data are: 5, 7, 12, 4, 0, 4, 6, 8, 67, 34, 23, 5, 0, 44, 33, 22, 6, 0.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+        -------------------------------------------------------------
+HEAD ->  5, 7, 12, 4, 4, 4, 6, 8, 67, 34, 23, 5, 5, 44, 33, 22, 6, 6
+        -------------------------------------------------------------
+          Q

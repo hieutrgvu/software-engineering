@@ -1,0 +1,26 @@
+4.6 Imagine that the contents of queue Q1 and queue Q2 are as shown. What would
+be the contents of Q3 after the following code is executed? The queue contents
+are shown front (left) to rear (right).
+
+Q1: 42 30 41 31 19 20 25 14 10 11 12 15
+Q2: 4 5 4 10 13
+
+1 Q3 = createQueue
+2 count = 0
+3 loop (not empty Q1 and not empty Q2)
+    1 count = count + 1
+    2 dequeue (Q1, x)
+    3 dequeue (Q2, y)
+    4 if (y equal count)
+        1 enqueue (Q3, x)
+    5 end if
+4 end loop
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+        -------------------------------------------------------------
+HEAD ->
+        -------------------------------------------------------------
+          Q3

@@ -1,0 +1,47 @@
+4.2 What would be the value of queues Q1 and Q2, and stack S after the
+following algorithm segment:
+
+1 S = createStack
+2 Q1 = createQueue
+3 Q2 = createQueue
+4 enqueue (Q1, 5)
+5 enqueue (Q1, 6)
+6 enqueue (Q1, 9)
+7 enqueue (Q1, 0)
+8 enqueue (Q1, 7)
+9 enqueue (Q1, 5)
+10 enqueue (Q1, 0)
+11 enqueue (Q1, 2)
+12 enqueue (Q1, 6)
+13 loop (not emptyQueue (Q1))
+    1 dequeue (Q1, x)
+    2 if (x == 0)
+        1 z=0
+        2 loop (not emptyStack (S))
+            1 popStack (S, y)
+            2 z=z+y
+        3 end loop
+        4 enqueue (Q2, z)
+    3 else
+        1 pushStack (S, x)
+    4 end if
+14 end loop
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+|  6 |
+|  2 |
++----+
+  S
+
+        ------
+HEAD ->
+        ------
+          Q1
+
+        -------
+HEAD ->  20 12
+        -------
+          Q2

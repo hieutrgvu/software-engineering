@@ -1,0 +1,30 @@
+4.1 Imagine you have a stack of integers, S, and a queue of integers, Q.
+Draw a picture of S and Q after the following operations:
+
+1 pushStack (S, 3)
+2 pushStack (S, 12)
+3 enqueue (Q, 5)
+4 enqueue (Q, 8)
+5 popStack (S, x)
+6 pushStack (S, 2)
+7 enqueue (Q, x)
+8 dequeue (Q, y)
+9 pushStack (S, x)
+10 pushStack (S, y)
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+|  5 |
+| 12 |
+|  2 |
+|  3 |
++----+
+  S
+
+        ------
+HEAD ->  8 12  <-- TAIL
+        ------
+          Q
+
