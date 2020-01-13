@@ -1,0 +1,15 @@
+5.6 Write the statements to add a node in the middle of a list with the dummy
+node (see Exercise 3). Compare your answer with the answer to Exercise 5. Are
+they the same? What do you conclude? Does the dummy node simplify the operation
+on a list? How?
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+The pseudocode:
+    1 allocate (pNew)
+    2 ...
+      2.1 pPre->link = pCur->link
+    3 set pNew link to pPre link
+    4 set pPre link to pNew

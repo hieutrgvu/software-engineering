@@ -1,0 +1,15 @@
+5.1 Imagine we have the list shown in Figure 5-25 implemented as a linked list.
+Show what happens if we use the following statement in a search of this list:
+    pHead = pHead->link
+
+What is the problem with using this kind of statement? Does it justify the two
+walking pointers (pPre and pLoc) we introduced in the text?
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+pHead points to the head of list. If the mentioned statement is used, the head
+of list will change and the logic is wrong. This is demonstrate the need for the
+two walking pointers which keep track of the predecessor and the current nodes
+without changing the head pointer.

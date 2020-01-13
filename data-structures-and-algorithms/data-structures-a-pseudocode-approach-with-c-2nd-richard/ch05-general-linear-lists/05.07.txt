@@ -1,0 +1,10 @@
+5.7 Imagine we have the two lists shown in Figure 5-29. What would happen if we
+applied the following statement to these two lists?
+    list1 = list2
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+The head of list 2 is pointed by list1. The head of list 1 is no longer pointed
+by any pointers.

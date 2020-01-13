@@ -1,0 +1,16 @@
+5.2 Imagine we have the list shown in Figure 5-26 implemented as a linked list.
+As discussed in “List Search,” in Section 5.2, the search needs to be able to
+pass back both the location of the predecessor (pPre) and the location of the
+current (pLoc) node based on search criteria.
+
+The following code to set pPre and pLoc contains a common error. What is it and
+how should it be corrected?
+
+    pLoc = pLoc->link
+    pPre = pPre->link
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+The initial value of pPre is NULL. This will crash the program.

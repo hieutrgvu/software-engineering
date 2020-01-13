@@ -1,0 +1,19 @@
+5.3 Imagine we implement a list using a dummy node at the beginning of the list.
+The dummy node does not carry any data. It is not the first data node, it is an
+empty node. Figure 5-27 shows a list with a dummy node.
+
+Write the code to delete the first node (the node after the dummy node) in the
+list.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+bool DeleteFirstNode(List * plist) {
+  if (count == 0) return false;
+  Node * phold = plist->link
+  plist->link = phold->link;
+  free(phold);
+  count--;
+  return true;
+}

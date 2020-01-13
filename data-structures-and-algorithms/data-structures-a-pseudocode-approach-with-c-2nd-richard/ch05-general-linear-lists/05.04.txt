@@ -1,0 +1,15 @@
+5.4 Write the code to delete a node in the middle of a list implemented as a
+linked list with the dummy node (see Exercise 3). Compare your answer with the
+answer to Exercise 3. Are they the same? What do you conclude? Does the dummy
+node simplify the operation on a list? How?
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+The pseudocode is the same with deleting the first node:
+    pPre->link = pCur->link
+    recycle (pCur)
+
+This way just simplify the operation on a list a little bit because the initial
+value of pPre is not NULL.

@@ -1,0 +1,14 @@
+5.9 Imagine we have the list shown in Figure 5-30. What would happen if we
+applied the following statements to this list?
+
+1 set temp to pList
+2 loop (temp link not null)
+  1 set temp to temp link
+3 end loop
+4 set temp link to pList
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Create circularly linked list
