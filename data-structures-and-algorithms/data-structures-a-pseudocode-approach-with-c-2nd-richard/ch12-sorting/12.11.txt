@@ -1,0 +1,27 @@
+12.11 Starting with the following file, show the contents of all of the files
+created using external sorting and the natural merge method (do not include a
+sort phase):
+
+37 9 23 56 4 5 12 45 78 22 33 44 14 17 57 11 35 46 59
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+After distribution phase:
+  File 1: 37 | 4 5 12 45 78 | 14 17 57
+  File 2: 9 23 56 | 22 33 44 | 11 35 46 59
+After merge:
+  File 3: 9 23 37 56 | 4 5 12 22 33 44 45 78 | 11 14 17 35 46 57 59
+
+After distribution phase:
+  File 1: 9 23 37 56 | 11 14 17 35 46 57 59
+  File 2: 4 5 12 22 33 44 45 78
+After merge:
+  File 3: 4 5 9 12 22 23 33 37 44 45 56 78 | 11 14 17 35 46 57 59
+
+After distribution phase:
+  File 1: 4 5 9 12 22 23 33 37 44 45 56 78
+  File 2: 11 14 17 35 46 57 59
+After merge:
+  File 3: 4 5 9 11 12 14 17 22 23 33 35 37 44 45 46 56 57 59 78

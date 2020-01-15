@@ -1,0 +1,11 @@
+12.3 An array contains the elements shown below. The first two elements have
+been sorted using a straight selection sort. What would be the value of the
+elements in the array after three more passes of the selection sort algorithm?
+
+7 8 26 44 13 23 98 57
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+7 8 13 23 26 44 98 57

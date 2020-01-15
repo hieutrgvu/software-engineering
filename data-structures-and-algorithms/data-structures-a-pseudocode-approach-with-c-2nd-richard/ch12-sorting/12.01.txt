@@ -1,0 +1,12 @@
+12.1 An array contains the elements shown below. The first two elements have
+been sorted using a straight insertion sort. What would be the value of the
+elements in the array after three more passes of the straight insertion sort
+algorithm?
+
+3 13 7 26 44 23 98 57
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+3 7 13 26 44 23 98 57

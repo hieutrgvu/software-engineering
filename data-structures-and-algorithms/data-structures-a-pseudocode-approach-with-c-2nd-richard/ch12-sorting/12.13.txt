@@ -1,0 +1,23 @@
+12.13 Rework Exercise 11 using the polyphase merge method with an array size
+of seven and an insertion sort.
+
+37 9 23 56 4 5 12 45 78 22 33 44 14 17 57 11 35 46 59
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+After sort phase (sort array size of seven):
+  File 1: 4 5 9 12 23 37 56 | 11 35 46 57 59
+  File 2: 14 17 22 33 44 45 78
+  File 3: (empty)
+
+After merge:
+  File 1: 11 35 46 57 59
+  File 2: (empty)
+  File 3: 4 5 9 12 14 17 22 23 33 37 44 45 56 78
+
+After first input file rotation:
+  File 1: (empty)
+  File 2: (sorted) 4 5 9 11 12 14 17 22 23 33 35 37 44 45 46 56 57 59 78
+  File 3: (empty)

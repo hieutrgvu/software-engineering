@@ -1,0 +1,12 @@
+12.5 An array contains the elements shown below. The first two elements have
+been sorted using a bubble sort. What would be the value of the elements in the
+array after three more passes of the bubble sort algorithm? Use the version of
+bubble sort that starts from the end and bubbles up the smallest element.
+
+7 8 26 44 13 23 57 98
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+7 8 13 23 26 44 57 98

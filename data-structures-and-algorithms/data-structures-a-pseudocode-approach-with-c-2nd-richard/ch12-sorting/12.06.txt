@@ -1,0 +1,16 @@
+12.6 An array contains the elements shown below. Using a quick sort, show the
+contents of the array after the first pivot has been placed in its correct
+location. Identify the three sublists that exist at that point.
+
+44 78 22 7 98 56 34 2 38 35 45
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+44 78 22 7 98 45 34 2 38 35 56
+
+Sublist:
++ 44 78 22 7 98
++ 45
++ 34 2 38 35 56

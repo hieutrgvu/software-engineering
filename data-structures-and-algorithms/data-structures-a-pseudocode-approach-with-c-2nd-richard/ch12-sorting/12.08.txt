@@ -1,0 +1,19 @@
+12.8 After two passes of a sorting algorithm, the following array:
+
+80 72 66 44 21 33
+
+has been rearranged as shown below.
+
+21 33 80 72 66 44
+
+Which sorting algorithm is being used (straight selection, bubble, or straight
+insertion)? Defend your answer.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+It is bubble algorithm.
+
+Step 1: 21 80 72 66 44 33
+Step 2: 21 33 80 72 66 44

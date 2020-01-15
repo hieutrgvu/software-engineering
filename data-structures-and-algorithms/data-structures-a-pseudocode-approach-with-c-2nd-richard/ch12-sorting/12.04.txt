@@ -1,0 +1,10 @@
+12.4 An array contains the elements shown below. What would be the value of
+the elements in the array after three passes of the heap sort algorithm?
+
+44 78 22 7 98 56 34 2 38 35 45
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+45 44 35 38 7 22 34 2 56 78 98

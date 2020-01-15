@@ -1,0 +1,19 @@
+12.9 After two passes of a sorting algorithm, the following array:
+
+47 3 66 32 56 92
+
+has been rearranged as shown below.
+
+3 47 66 32 56 92
+
+Which sorting algorithm is being used (straight selection, bubble, or straight
+insertion)? Defend your answer.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+It is straight insertion algorithm.
+
+Step 1: 47 3 66 32 56 92
+Step 2: 3 47 66 32 56 92
