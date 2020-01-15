@@ -1,0 +1,13 @@
+11.3 In the graph in Figure 11-23, find the degree, outdegree, and indegree of
+vertices A, E, F, G, and H.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Vertices  |  Degree  |  Outdegree  |  Indegree
+   A      |    6     |      3      |     3
+   E      |    4     |      2      |     2
+   F      |    6     |      3      |     3
+   G      |    6     |      3      |     3
+   H      |    4     |      2      |     2

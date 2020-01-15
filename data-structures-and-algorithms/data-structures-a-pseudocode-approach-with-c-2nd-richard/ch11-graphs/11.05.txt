@@ -1,0 +1,9 @@
+11.5 Give the breadth-first traversal of the graph in Figure 11-23, starting
+from vertex A.
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+Assume arcs are stored in alphabet sequence:
+A -> B -> C -> G -> E -> D -> F -> H

@@ -1,0 +1,31 @@
+11.1 In the graph in Figure 11-23, find:
+a. all noncyclic paths from A to H
+b. all noncyclic paths from C to E
+c. all noncyclic paths from B to F
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+a.
++ A B E G F H
++ A B E G F C D H
++ A G F H
++ A G F C D H
++ A C F H
++ A C D H
+
+b.
++ C A B E
++ C A G E
++ C F G E
++ C F G A B E
++ C D H F G A B E
++ C D H F G E
+
+c.
++ B E G A C F
++ B E G F
++ B A G F
++ B A C F
++ B A C D H F

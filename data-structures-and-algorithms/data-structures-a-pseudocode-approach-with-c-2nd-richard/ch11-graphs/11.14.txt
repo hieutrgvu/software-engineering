@@ -1,0 +1,23 @@
+11.14 A graph can be used to show relationships. For example, from the following
+list of people belonging to the same club (vertices) and their friendships
+(edges), find:
+
+    People = {George, Jim, Jean, Frank, Fred, John, Susan}
+    Friendship = {(George, Jean), (Frank, Fred),
+                  (George, John), (Jim, Fred),
+                  (Jim, Frank),   (Jim, Susan),
+                  (Susan, Frank)}
+
+a. all friends of John
+b. all friends of Susan
+c. all friends of friends of Jean
+d. all friends of friends of Jim
+
+********************************************************************************
+Resolve by: Hieu Vu
+********************************************************************************
+
+a. George
+b. Jim, Frank
+c. Jean, John
+d. Jim, Frank, Fred, Susan
