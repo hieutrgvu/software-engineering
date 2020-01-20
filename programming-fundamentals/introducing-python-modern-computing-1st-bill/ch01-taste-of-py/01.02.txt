@@ -1,0 +1,16 @@
+1.2 Start the Python 3 interactive interpreter. Again, details are in
+Appendix D. It should print a few lines about itself and then a single line
+starting with >>>. That’s your prompt to type Python commands.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ In terminal, type command:
+$ python3
+
++ It should print a few lines like:
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>

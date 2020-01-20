@@ -1,0 +1,12 @@
+1.1 If you don’t already have Python 3 installed on your computer, do it now.
+Read Appendix D for the details for your computer system.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ After installing, run:
+$ python3 --version
+
++ It should print as below (or the latest version):
+Python 3.7.5
