@@ -1,0 +1,18 @@
+2.1 How many seconds are in an hour? Use the interactive interpreter as a
+calculator and multiply the number of seconds in a minute (60) by the number
+of minutes in an hour (also 60).
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ 60s are in an hour.
+
++ Use the interpreter:
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 60 * 60
+3600
+>>>

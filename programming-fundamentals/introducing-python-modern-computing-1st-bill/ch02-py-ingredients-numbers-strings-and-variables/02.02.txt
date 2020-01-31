@@ -1,0 +1,17 @@
+2.2 Assign the result from the previous task (seconds in an hour) to a variable
+called seconds_per_hour.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> seconds_per_hour = 60 * 60
+>>> seconds_per_hour
+3600
+>>> print(seconds_per_hour)
+3600
+>>>
