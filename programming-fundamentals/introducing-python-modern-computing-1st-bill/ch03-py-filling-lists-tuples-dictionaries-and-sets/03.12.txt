@@ -1,0 +1,21 @@
+3.12 Make a French-to-English dictionary called f2e from e2f. Use the items
+method.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> e2f = { 'dog': 'chien',
+... 'cat': 'chat',
+... 'walrus': 'morse',
+... }
+>>> e2f
+{'dog': 'chien', 'cat': 'chat', 'walrus': 'morse'}
+>>> f2e = {v: k for k, v in e2f.items()}
+>>> f2e
+{'chien': 'dog', 'chat': 'cat', 'morse': 'walrus'}
+>>>

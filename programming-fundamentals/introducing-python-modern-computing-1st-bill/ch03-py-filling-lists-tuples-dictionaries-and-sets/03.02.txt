@@ -1,0 +1,17 @@
+3.2 In which year in years_list was your third birthday? Remember, you were 0
+years of age for your first year.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> years_list = [1996, 1997, 1998, 1999, 2000]
+>>> years_list
+[1996, 1997, 1998, 1999, 2000]
+>>> years_list[3]
+1999
+>>>

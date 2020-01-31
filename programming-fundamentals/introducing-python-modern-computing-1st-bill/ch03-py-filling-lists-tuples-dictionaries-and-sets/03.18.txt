@@ -1,0 +1,20 @@
+3.18 Print the values for life['animals']['cats'].
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> life = { 'animals': { 'cats': ['Henri', 'Grumpy', 'Lucy'],
+...                       'octopi': {},
+...                       'emus': {},
+...                     },
+...          'plants': {},
+...          'other': {},
+...        }
+>>> life['animals']['cats']
+['Henri', 'Grumpy', 'Lucy']
+>>>

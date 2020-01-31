@@ -1,0 +1,15 @@
+3.4 Make a list called things with these three strings as elements:
+"mozzarella", "cinderella", "salmonella".
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> things = ["mozzarella", "cinderella", "salmonella"]
+>>> things
+['mozzarella', 'cinderella', 'salmonella']
+>>>
