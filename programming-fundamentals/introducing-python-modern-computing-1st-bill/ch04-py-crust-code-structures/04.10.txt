@@ -1,0 +1,27 @@
+4.10 Define a decorator called test that prints 'start' when a function is
+called and 'end' when it finishes.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def test(func):
+...     def new_func(*args, **kwargs):
+...         print('start')
+...         func(*args, **kwargs)
+...         print('end')
+...     return new_func
+...
+>>> def hello():
+...     print('Hi')
+...
+>>> new_hello = test(hello)
+>>> new_hello()
+start
+Hi
+end
+>>>

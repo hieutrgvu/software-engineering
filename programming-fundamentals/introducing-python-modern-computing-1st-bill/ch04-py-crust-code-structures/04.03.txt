@@ -1,0 +1,18 @@
+4.3 Use a for loop to print the values of the list [3, 2, 1, 0].
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> for v in [3, 2, 1, 0]:
+...     print(v)
+...
+3
+2
+1
+0
+>>>

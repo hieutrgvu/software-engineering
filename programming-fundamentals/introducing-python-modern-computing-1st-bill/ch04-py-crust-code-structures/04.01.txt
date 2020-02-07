@@ -1,0 +1,22 @@
+4.1 Assign the value 7 to the variable guess_me. Then, write the conditional
+tests (if, else, and elif) to print the string 'too low' if guess_me is less
+than 7, 'too high' if greater than 7, and 'just right' if equal to 7.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> guess_me = 7
+>>> if guess_me < 7:
+...     print('too low')
+... elif guess_me > 7:
+...     print('too high')
+... else:
+...     print('just right')
+...
+just right
+>>>

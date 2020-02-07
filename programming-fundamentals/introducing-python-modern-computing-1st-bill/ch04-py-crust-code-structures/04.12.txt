@@ -1,0 +1,19 @@
+4.12 Use zip() to make a dictionary called movies that pairs these lists:
+titles = ['Creature of Habit', 'Crewel Fate'] and
+plots = ['A nun turns into a monster', 'A haunted yarn shop'].
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> titles = ['Creature of Habit', 'Crewel Fate']
+>>> plots = ['A nun turns into a monster', 'A haunted yarn shop']
+>>> movies = dict(zip(titles, plots))
+>>> movies
+{'Creature of Habit': 'A nun turns into a monster',
+'Crewel Fate': 'A haunted yarn shop'}
+>>>

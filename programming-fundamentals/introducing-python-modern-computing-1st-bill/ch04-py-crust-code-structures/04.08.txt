@@ -1,0 +1,19 @@
+4.8 Define a function called good that returns the list:
+['Harry', 'Ron', 'Hermione'].
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def good():
+...     return ['Harry', 'Ron', 'Hermione']
+...
+>>> good
+<function good at 0x1047c7680>
+>>> good()
+['Harry', 'Ron', 'Hermione']
+>>>

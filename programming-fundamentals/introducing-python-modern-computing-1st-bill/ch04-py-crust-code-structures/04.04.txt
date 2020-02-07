@@ -1,0 +1,14 @@
+4.4 Use a list comprehension to make a list of the even numbers in range(10).
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> even_list = [num for num in range(10) if num % 2 == 0]
+>>> even_list
+[0, 2, 4, 6, 8]
+>>>

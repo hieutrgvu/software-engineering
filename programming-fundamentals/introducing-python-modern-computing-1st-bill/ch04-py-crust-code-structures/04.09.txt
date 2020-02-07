@@ -1,0 +1,25 @@
+4.9 Define a generator function called get_odds that returns the odd numbers
+from range(10). Use a for loop to find and print the third value returned.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def get_odds():
+...     for num in range(10):
+...         if num % 2 == 1:
+...             yield num
+...
+>>> start = 1
+>>> for num in get_odds():
+...     if start == 3:
+...         print(num)
+...         break
+...     start += 1
+...
+5
+>>>

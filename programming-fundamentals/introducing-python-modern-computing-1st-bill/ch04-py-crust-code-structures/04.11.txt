@@ -1,0 +1,26 @@
+4.11 Define an exception called OopsException. Raise this exception to see what
+happens. Then write the code to catch this exception and print 'Caught an oops'.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> class OopsException(Exception):
+...     pass
+...
+>>> raise OopsException('test')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+__main__.OopsException: test
+>>>
+>>> try:
+...     raise OopsException('test')
+... except OopsException as ex:
+...     print('catch an OopsException:', ex)
+...
+catch an OopsException: test
+>>>

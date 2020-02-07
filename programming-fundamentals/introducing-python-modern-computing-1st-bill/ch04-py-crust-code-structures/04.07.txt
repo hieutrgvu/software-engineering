@@ -1,0 +1,26 @@
+4.7 Use a generator comprehension to return the string 'Got ' and a number for
+the numbers in range(10). Iterate through this by using a for loop.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> gen_compre = (num for num in range(10))
+>>> for v in gen_compre:
+...     print("Got", v)
+...
+Got 0
+Got 1
+Got 2
+Got 3
+Got 4
+Got 5
+Got 6
+Got 7
+Got 8
+Got 9
+>>>
