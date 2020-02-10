@@ -1,0 +1,14 @@
+5.4 Import the hours() function as info and call it.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from zoo import hours as info
+>>> info()
+Open 9-5 daily
+>>>

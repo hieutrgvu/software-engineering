@@ -1,0 +1,20 @@
+5.7 Make a defaultdict called dict_of_lists and pass it the argument list. Make
+the list dict_of_lists['a'] and append the value 'something for a' to it in one
+assignment. Print dict_of_lists['a'].
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ python3
+Python 3.7.5 (default, Dec 18 2019, 10:17:31)
+[Clang 11.0.0 (clang-1100.0.33.12)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from collections import defaultdict
+>>> dict_of_lists = defaultdict(list)
+>>> dict_of_lists['a'] = 'something for a'
+>>> dict_of_lists['a']
+'something for a'
+>>> dict_of_lists['b']
+[]
+>>>
