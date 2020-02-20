@@ -1,0 +1,26 @@
+9.1 If you haven’t installed flask yet, do so now. This will also install
+werkzeug, jinja2, and possibly other packages.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+$ pip3 install flask
+Collecting flask
+  Downloading https://files.pythonhosted.org/packages/9b/93/628509b8d5dc749656a9641f4caf13540e2cdec85276964ff8f43bbb1d3b/Flask-1.1.1-py2.py3-none-any.whl (94kB)
+     |████████████████████████████████| 102kB 140kB/s
+Collecting click>=5.1
+  Downloading https://files.pythonhosted.org/packages/fa/37/45185cb5abbc30d7257104c434fe0b07e5a195a6847506c074527aa599ec/Click-7.0-py2.py3-none-any.whl (81kB)
+     |████████████████████████████████| 81kB 218kB/s
+Collecting Jinja2>=2.10.1
+  Downloading https://files.pythonhosted.org/packages/27/24/4f35961e5c669e96f6559760042a55b9bcfcdb82b9bdb3c8753dbe042e35/Jinja2-2.11.1-py2.py3-none-any.whl (126kB)
+     |████████████████████████████████| 133kB 636kB/s
+Collecting Werkzeug>=0.15
+  Downloading https://files.pythonhosted.org/packages/ba/a5/d6f8a6e71f15364d35678a4ec8a0186f980b3bd2545f40ad51dd26a87fb1/Werkzeug-1.0.0-py2.py3-none-any.whl (298kB)
+     |████████████████████████████████| 307kB 98kB/s
+Collecting itsdangerous>=0.24
+  Downloading https://files.pythonhosted.org/packages/76/ae/44b03b253d6fade317f32c24d100b3b35c2239807046a4c953c7b89fa49e/itsdangerous-1.1.0-py2.py3-none-any.whl
+Collecting MarkupSafe>=0.23
+  Downloading https://files.pythonhosted.org/packages/ce/c6/f000f1af136ef74e4a95e33785921c73595c5390403f102e9b231b065b7a/MarkupSafe-1.1.1-cp37-cp37m-macosx_10_6_intel.whl
+Installing collected packages: click, MarkupSafe, Jinja2, Werkzeug, itsdangerous, flask
+Successfully installed Jinja2-2.11.1 MarkupSafe-1.1.1 Werkzeug-1.0.0 click-7.0 flask-1.1.1 itsdangerous-1.1.0
