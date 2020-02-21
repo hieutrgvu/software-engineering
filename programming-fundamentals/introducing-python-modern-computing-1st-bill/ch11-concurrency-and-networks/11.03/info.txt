@@ -1,0 +1,11 @@
+11.3 Try the same with XMLRPC.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+On a console window:
+$ python3 xmlrpc_time_server.py
+
+On another console window:
+$ python3 xmlrpc_time_client.py

@@ -1,0 +1,12 @@
+11.5 Using the poem from exercise 7.7, use ZeroMQ to publish it, one word at a
+time. Write a ZeroMQ consumer that prints every word that starts with a vowel,
+and another that prints every word that contains five letters. Ignore
+punctuation characters.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Run exercise:
+$ python3 zmq_poem_client.py
+$ python3 zmq_poem_server.py

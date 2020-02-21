@@ -1,0 +1,13 @@
+11.1 Use a plain socket to implement a current-time-service. When a client
+sends the string time to the server, return the current date and time as an
+ISO string.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+On a console window:
+$ python3 udp_time_server.py
+
+On another console window:
+$ python3 udp_time_client.py

@@ -1,0 +1,11 @@
+11.2 Use ZeroMQ REQ and REP sockets to do the same thing.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+On a console window:
+$ python3 zmq_time_server.py
+
+On another console window:
+$ python3 zmq_time_client.py
