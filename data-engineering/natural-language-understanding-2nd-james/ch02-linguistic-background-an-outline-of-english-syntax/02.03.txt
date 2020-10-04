@@ -1,0 +1,29 @@
+2.3 A very useful test for determining the syntactic role of words and phrases
+is the conjunction test. Conjunctions, such as and and or, tend to join together
+two phrases of the same type. For instance, you can conjoin nouns, as in the man
+and woman; noun phrases, as in the angry men and the large dogs; and adjective
+phrases, as in the cow, angry and confused, broke the gate. In each of the
+following sentences, identify the type of phrase being conjoined, and underline
+each phrase.
+    He was tired and hungrier than a herd of elephants.
+    We have never walked home or to the store from here.
+    The dog returned quickly and dropped the stick.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+1. He was tired and hungrier than a herd of elephants.
+    Type of phrase being conjoined: Adjective phrase
+    ADJP1: tired
+    ADJP2: hungrier than a herd of elephants
+
+2. We have never walked home or to the store from here.
+    Type of phrase being conjoined: Prepositional phrase
+    PP1: home
+    PP2: to the store
+
+3. The dog returned quickly and dropped the stick.
+    Type of phrase being conjoined: Verb phrase
+    VP1: returned quickly
+    VP2: dropped the stick

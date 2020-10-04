@@ -1,0 +1,24 @@
+2.8 Classify the following verbs by specifying what different complement
+structure they allow, using the forms defined in Figure 2.11.
+    give, know, assume, insert
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+give:
+    NP+NP(bitransitive)
+    NP+PP[to]
+
+know:
+    NP(transitive)
+    VP[to]
+    S[wh]
+
+assume:
+    VP[to]
+    NP+VP[base]
+    S[WH]
+
+insert:
+    NP+PP[to]

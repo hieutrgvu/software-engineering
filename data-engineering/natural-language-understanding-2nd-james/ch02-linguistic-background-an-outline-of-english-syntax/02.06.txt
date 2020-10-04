@@ -1,0 +1,20 @@
+2.6 Using the verb "to be", give example sentences that use the six basic tenses
+listed in Figure 2.7 and the six progressive tenses listed in Figure 2.8
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+1. Simple present:                  He is a kind man.
+2. Simple past:                     He was an bad boy.
+3. Simple future:                   His infection will be better.
+4. Present perfect:                 He has been here for a while.
+5. Future perfect:                  He will have been there.
+6. Past perfect:                    He had been here.
+
+7. Present progressive:             He is being kind.
+8. Past progressive:                He was being kind.
+9. Future progressive:              He will be being kind.
+10. Present perfect progressive:    He has been good.
+11. Future perfect progressive:     He will have been good.
+12. Past perfect progressive:       He had been good.

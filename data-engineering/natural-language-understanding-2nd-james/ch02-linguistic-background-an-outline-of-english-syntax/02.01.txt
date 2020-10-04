@@ -1,0 +1,25 @@
+2.1 The text described serveral different example tests for distinguishing word
+classes. For example, nouns can occur in sentences of the form I saw the X,
+whereas adjectives can occur in sentences of the form It's so X. Give some
+additional tests to distinguish these forms and to distinguish between count
+nouns and mass nouns. State whether each of the following words can be used as
+an adjective, count noun, or mass noun. If the word is ambiguous, give its
+possible uses.
+        milk, house, liquid, green, group, concept, airborne
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
++ Noun: It is in the X.
++ Adjective: It is really X.
++ Count noun: It is a X.
++ Mass noun: I have little X.
+
++ milk: mass noun
++ house: count noun
++ liquid: count noun (water is a liquid), mass noun (this liquid is disgusting)
++ green: adjective (the leaves is green), noun (the green on table is yours)
++ group: count noun
++ concept: count noun
++ airborne: adjective

@@ -1,0 +1,13 @@
+2.7 Using the verb donate, give examples of the passive form for each of the
+six basic tenses listed in Figure 2.7.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+Simple present:     Money is donated by him.
+Simple past:        Money was donated by him.
+Simple future:      Money will be donated by him.
+Present perfect:    Money has been donated by him.
+Future perfect:     Money will have been donated by him.
+Past perfect:       Money had been donated by him.

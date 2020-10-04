@@ -1,0 +1,28 @@
+2.5 Classify the following verbs as being intransitive, transitive, or
+     (that is, it takes a two-NP complement). If the verb can be used
+in more than one of these forms, give each possible classification. Give an
+example sentence for each form to demonstrate your analysis.
+a. cry
+b. sing
+c. donate
+d. put
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. cry
+    transitive: cry yourself to sleep, cry tears of pain.
+    intransitive: He is crying.
+    bitransitive: cry me a river.
+
+b. sing
+    transitive: sing a song
+    intransitive: he is singing
+    bitransitive: sing us a song
+
+c. donate
+    transitive: donating money
+
+d. put
+    transtive: put something on the table

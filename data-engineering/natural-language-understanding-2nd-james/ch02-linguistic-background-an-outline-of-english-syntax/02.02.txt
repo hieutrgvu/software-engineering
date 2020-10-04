@@ -1,0 +1,25 @@
+2.2 Identify every major phrase (noun, verb, adjective, or adverbial phrases)
+in the following sentences. For each, indicate the head of the phrase and
+any complements of the head. Be sure to distinguish between complements and
+optional modifiers.
+    The man played his fiddle in the street.
+    The people dissatisfied with the verdict left the courtroom.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+1. The man played his fiddle in the street.
+    NP:  the MAN
+    VP:  PLAYED his fiddle in the street 
+        NP:  his FIDDLE
+            PP:  IN the street
+            NP:  the STREET
+
+2. The people dissatisfied with the verdict left the courtroom.
+    NP: The PEOPLE dissatisfied with the verdict
+        RELATIVE CLAUSE: DISSATISFIED with the verdict 
+            PP: WITH the verdict
+            NP: the VERDICT
+    VP: LEFT the courtroom
+        NP: the COURTROOM

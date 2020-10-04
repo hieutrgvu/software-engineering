@@ -1,0 +1,28 @@
+2.4 Explain in detail, using the terminology of this chapter, why each of the
+following sentences is ill formed. In particular, state what rule (given in
+this chapter) has been violated.
+a. He barked the wrong tree up.
+b. She turned waters into wine.
+c. Don't take many all the cookies!
+d. I feel floor today.
+e. They are laughed the boy.
+
+********************************************************************************
+Resolved by: Hieu Vu
+********************************************************************************
+
+a. He barked the wrong tree up.
+    In this case, 'up' is a particle not a preposition. The pronoun must
+precede the particle (p. 31), e.g. bark up the wrong tree.
+
+b. She turned waters into wine.
+    Water is a mass noun. This prural form is not ok. (p .26)
+
+c. Don't take many all the cookies!
+    Only one quantifying determiner is allow in a noun phrase. (p. 27)
+
+d. I feel floor today.
+    'today' is not an adjective, which is the complement of 'feel' (p. 33)
+
+e. They are laughed the boy.
+    'Laugh' cannot be transitive.  (Allen, p. 30)
